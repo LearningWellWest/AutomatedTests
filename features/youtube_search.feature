@@ -13,7 +13,7 @@ Scenariomall: Sök efter en term
 Exempel:
 	| sträng	| resultat 						|
 	| "banan"		| "Sean Banan - Gott nytt jul" 	|
-	| "gurka"		| "ddddddddddddddjshuhugyiygu" 	|
+	| "gurka"		| " " 	|
 
 
 
