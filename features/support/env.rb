@@ -1,7 +1,7 @@
 require 'selenium-webdriver'
 require 'capybara/cucumber'
 require 'rspec/expectations'
-require 'rails'
+require '/usr/local/bin/rails'
 Capybara.default_driver = :selenium
 APP_CONFIG = YAML.load_file("#{Rails.root}config.yml")[Rails.env]
 
