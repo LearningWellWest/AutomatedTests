@@ -11,5 +11,5 @@ Scenario Outline: Sok efter en term
 Examples:
 	| strang	| resultat 						|
 	| "banan"		| "Sean Banan - Gott nytt jul" 	|
-	| "gurka"		| " " 	|
+	| "gurka"		| "dfyguhjikoplöpiuyt" 	|
 
