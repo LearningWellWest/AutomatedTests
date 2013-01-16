@@ -1,5 +1,6 @@
 defaults: &defaults
   standard_uri: http://www.off2off.se
+youtube_uri: http://www.youtube.com
 
 development:
   <<: *defaults
