@@ -10,7 +10,7 @@ Given /^att jag skriver i faltet "(.*?)" texten "(.*?)"$/ do |field, value|
     @driver.find_element(:id, field).send_keys value
 end
 
-When /^trycker på "(.*?)"$/ do |button|
+When /^trycker pa "(.*?)"$/ do |button|
   @driver.find_element(:id, button).click
 end
 
