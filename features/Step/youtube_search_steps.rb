@@ -4,6 +4,7 @@ require "selenium-webdriver"
 require "rspec"
 include RSpec::Expectations
 
+
 Given /^att jag skriver i faltet "(.*?)" texten "(.*?)"$/ do |field, value|
 	@driver.get(@base_url + "/")
 	@driver.find_element(:id, field).clear
@@ -17,7 +18,4 @@ end
 Then /^ska jag se "(.*?)"$/ do |textString|
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{textString}[\s\S]*$/
 end
-
-
-
 
