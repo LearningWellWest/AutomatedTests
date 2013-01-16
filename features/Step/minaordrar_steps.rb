@@ -2,19 +2,6 @@
 require "selenium-webdriver"
 require "rspec"
 include RSpec::Expectations
-
-Before do
-    @driver = Selenium::WebDriver.for :firefox
-    @base_url = "http://www.off2off.se/"
-    @accept_next_alert = true
-    @driver.manage.timeouts.implicit_wait = 30
-    @verification_errors = []
-end
-  
-After do
-    @driver.quit
-    @verification_errors.should == []
-end
   
 Givet /^att jag är inloggad$/ do
 	@driver.get(@base_url + "/")
