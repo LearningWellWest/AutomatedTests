@@ -1,19 +1,15 @@
-# language: sv
 
-Egenskap: YouTube har en sökfunktion.
+Feature: YouTube har en sokfunktion.
 
-Bakgrund:
-  Givet att jag är på YouTube
+Background:Det gar att soka
 
-Scenariomall: Sök efter en term
-  När jag skriver i fältet "masthead-search-term" texten <sträng>
-  Och trycker på "search-btn"
-  Så ska jag se <resultat>
+Scenario Outline: Sok efter en term
+  Given att jag skriver i faltet "masthead-search-term" texten <strang>
+  When trycker på "search-btn"
+  Then ska jag se <resultat>
   
-Exempel:
-	| sträng	| resultat 						|
+Examples:
+	| strang	| resultat 						|
 	| "banan"		| "Sean Banan - Gott nytt jul" 	|
 	| "gurka"		| " " 	|
-
-
 
