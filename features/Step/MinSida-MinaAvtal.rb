@@ -18,10 +18,10 @@ När /^jag klickar på "min sida"$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
-När /^jag sedan klickar på "(.*?)"$/ do |arg1|
+När /^jag sedan klickar på Avtal$/ do
 	@driver.find_element(:link, "Avtal").click
 end
 
-Så /^ska jag komma till "(.*?)"$/ do |arg1|
+Så /^ska jag komma till Avtal$/ do
     @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Avtal[\s\S]*$/
 end
