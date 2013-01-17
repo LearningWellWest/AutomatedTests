@@ -2,7 +2,7 @@
 require "selenium-webdriver"
 require "rspec"
 include RSpec::Expectations
-  
+
 Givet /^att jag är inloggad$/ do
 	@driver.get(@base_url + "/")
 	@driver.find_element(:link, "[Logga in]").click
@@ -18,10 +18,10 @@ När /^jag klickar på "min sida"$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
-När /^sedan klickar på "(.*?)"$/ do |arg1|
-	@driver.find_element(:link, "Mina köp/min försäljning").click
+När /^jag sedan klickar på "(.*?)"$/ do |arg1|
+	@driver.find_element(:link, "Mina annonser").click
 end
 
 Så /^ska jag komma till "(.*?)"$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Mina ordrar[\s\S]*$/
+    @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Publicerad[\s\S]*$/
 end
