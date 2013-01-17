@@ -8,7 +8,7 @@ include RSpec::Expectations
 Given /^att jag skriver i faltet "(.*?)" texten "(.*?)"$/ do |field, value|
 	@driver.get('http://www.youtube.com' + "/")
 	@driver.find_element(:id, field).clear
-    @driver.find_element(:id, field).send_keys value
+    @driver.find_element(:id, field).send_keys "apple"
 end
 
 When /^trycker pa "(.*?)"$/ do |button|
