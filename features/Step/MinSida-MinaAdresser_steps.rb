@@ -3,7 +3,7 @@ require "selenium-webdriver"
 require "rspec"
 include RSpec::Expectations
   
-Givet /^att jag är inloggad$/ do
+Givet /^att jag är inloggad\((\d+)\)$/ do |arg1|
 	@driver.get(@base_url + "/")
 	@driver.find_element(:link, "[Logga in]").click
     @driver.find_element(:id, "Username").clear
@@ -23,5 +23,5 @@ När /^jag sedan klickar på Mina adresser$/ do
 end
 
 Så /^ska jag komma till Mina Adresser$/ do
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Mina adresser[\s\S]*$/
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Adresser[\s\S]*$/
 end
