@@ -13,15 +13,15 @@ Givet /^att jag är inloggad$/ do
     @driver.find_element(:css, "button.loginbutton.save").click
 end
 
-När /^jag klickar på "min sida"$/ do
+När /^jag klickar på min sida$/ do
 	@driver.find_element(:link, "Min sida").click
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
-När /^jag sedan klickar på "(.*?)"$/ do |arg1|
+När /^jag sedan klickar på Mina adresser$/ do
 	@driver.find_element(:link, "Mina adresser").click
 end
 
-Så /^ska jag komma till "(.*?)"$/ do |arg1|
+Så /^ska jag komma till Mina Adresser$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Mina adresser[\s\S]*$/
 end
