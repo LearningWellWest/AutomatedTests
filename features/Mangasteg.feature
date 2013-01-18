@@ -9,6 +9,7 @@ Scenario: Helst hela sidan
 	Och jag klickar på Min sida
 	Och jag klickar på Skapa annons
 	Och jag klickar på Admin
+	Och jag klickar på Gå till startsidan
 	Och jag klickar på Logga ut
 	Och jag klickar på Hem
 	Så ska jag komma till Startsidan
