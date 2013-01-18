@@ -12,4 +12,4 @@ Scenario: Helst hela sidan
 	Och jag klickar på Gå till startsidan
 	Och jag klickar på Logga ut
 	Och jag klickar på Hem
-	Så ska jag komma till Startsidan
+	Så ska jag komma till Hemsidan
