@@ -1,7 +1,4 @@
 # encoding: utf-8
-require "selenium-webdriver"
-require "rspec"
-include RSpec::Expectations
 
 När /^jag sedan klickar på Mina adresser$/ do
 	@driver.find_element(:link, "Mina adresser").click

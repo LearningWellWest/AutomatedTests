@@ -1,7 +1,4 @@
 # encoding: utf-8
-require "selenium-webdriver"
-require "rspec"
-include RSpec::Expectations
 
 När /^sedan klickar på Mina köp\/min försäljning$/ do
 	@driver.find_element(:link, "Mina köp/min försäljning").click

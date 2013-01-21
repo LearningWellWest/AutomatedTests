@@ -1,7 +1,4 @@
 # encoding: utf-8
-require "selenium-webdriver"
-require "rspec"
-include RSpec::Expectations
 
 När /^jag fyller i Annonsuppgifter$/ do
     @driver.find_element(:id, "Title").clear

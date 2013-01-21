@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 Givet /^att jag är inloggad$/ do
 	@driver.get(@base_url + "/")
 	@driver.find_element(:link, "[Logga in]").click
