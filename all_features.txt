@@ -1,0 +1,161 @@
+
+********* SkapaAnnons-Laggatillannons.feature *********
+
+# language: sv
+
+Egenskap: DEt går att skapa en annons
+
+Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
+	Givet att jag är inloggad
+	Och är på Skapa annons sidan
+
+Scenario: Inloggad Skapa annons
+	När jag fyller i Annonsuppgifter
+	Och klickar på Spara annons
+	Så ska min annons vara sparad
+
+********* MinSida-MinaOrdrar.feature *********
+
+# language: sv
+
+Egenskap: Länken Mina Ordrar ska fungera 
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: inloggad Mina köp/min försäljning
+	När jag klickar på Min sida
+	Och sedan klickar på Mina köp/min försäljning
+	Så ska jag komma till Mina ordrar
+
+********* LoggaIn.feature *********
+
+# language: sv
+
+Egenskap: Det går att logga in
+
+Scenario: Logga in med korrekta uppgifter
+	Givet att jag är på förstasidan
+	När jag klickar på Logga in-länken
+	Och jag fyller i användarnamn med "Testuser"
+	Och jag fyller i lösenord med "learningwell"
+	Och jag klickar på Logga in
+	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
+
+********* NekaLosenord.feature *********
+
+# language: sv
+
+Egenskap: Användaren ska inte kunna logga in med fel eller ogiltigt lösenord
+
+Scenario: Logga in
+	Givet att jag är på förstasidan
+	När jag klickar på Logga in-länken
+	Och jag fyller i användarnamn med "Testuser"
+	Och jag fyller i lösenord med "learningwel"
+	Och jag klickar på Logga in
+	Så ska användaren nekas inloggning
+
+********* MinSida-MinaAvtal.feature *********
+
+# language: sv
+
+Egenskap: Man ska kunna se sina avtal
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: Användaren vill kunna se avtalen	
+	När jag klickar på Min sida
+	Och jag sedan klickar på Avtal
+	Så ska jag komma till Avtal
+
+********* Mangasteg.feature *********
+
+# language: sv
+
+Egenskap: Många steg
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: Helst hela sidan
+	
+	När att jag är på Startsidan
+	Och jag klickar på Sök
+	Och jag klickar på Min sida
+	Och jag klickar på Skapa annons
+	Och jag klickar på Admin
+	Och jag klickar på Gå till startsidan
+	Och jag klickar på Logga ut
+	Och jag klickar på Hem
+	Så ska jag komma till Hemsidan
+
+********* youtube_search.feature *********
+
+@SETUP
+Feature: Setup.
+Given Something
+
+Background:Det gar att soka
+Given att jag skriver i faltet "masthead-search-term" texten "banan"
+
+Scenario: Sok efter en term
+When trycker pa "search-btn"
+Then ska jag se "Sean Banan - Gott nytt jul"
+
+********* NekaAnvandare.feature *********
+
+# language: sv
+
+Egenskap: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
+
+Scenario: Logga in
+	Givet att jag är på förstasidan
+	När jag klickar på Logga in-länken
+	Och jag fyller i användarnamn med "Testuser1"
+	Och jag fyller i lösenord med "learningwell"
+	Och jag klickar på Logga in
+	Så ska användaren nekas inloggning
+
+********* MinSida-MinaAdresser.feature *********
+
+# language: sv
+
+Egenskap: Min sida
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: inloggad Mina adresser
+	När jag klickar på Min sida
+	Och jag sedan klickar på Mina adresser
+	Så ska jag komma till Mina Adresser
+
+********* MinSida-Link.feature *********
+
+# language: sv
+
+Egenskap: Min sida länk
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: Inloggad min sida länk
+
+	När jag klickar på Min sida
+	Så ska jag komma till Min sida
+
+********* MinSida-MinaAnnonser.feature *********
+
+# language: sv
+
+Egenskap: Man ska kunna se sina annonser
+
+Bakgrund: En användare är inloggad
+	Givet att jag är inloggad
+
+Scenario: inloggad Mina annonser
+	När jag klickar på Min sida
+	Och jag klickar på Mina annonser
+	Så ska jag komma till Mina annonser
