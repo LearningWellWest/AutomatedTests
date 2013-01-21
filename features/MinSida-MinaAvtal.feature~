@@ -5,7 +5,8 @@ Egenskap: Man ska kunna se sina avtal
 Bakgrund: 
 	Givet att jag är inloggad
 
-Scenario: Användaren vill kunna se avtalen	
+Scenario: inloggad Avtal
+	
 	När jag klickar på Min sida
 	Och jag sedan klickar på Avtal
 	Så ska jag komma till Avtal
