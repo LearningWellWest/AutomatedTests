@@ -1,10 +1,8 @@
 # language: sv
 
-Egenskap: Logga in
+Egenskap: Det går att logga in
 
-Bakgrund: Användaren vill kunna logga in
-
-Scenario: Logga in
+Scenario: Logga in med korrekta uppgifter
 	Givet att jag är på förstasidan
 	När jag klickar på Logga in-länken
 	Och jag fyller i användarnamn med "Testuser"

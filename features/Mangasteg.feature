@@ -2,10 +2,13 @@
 
 Egenskap: Många steg
 
-Scenario: Helst hela sidan
+Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
-	Och att jag är på Startsidan
-	När jag klickar på Sök
+
+Scenario: Helst hela sidan
+	
+	När att jag är på Startsidan
+	Och jag klickar på Sök
 	Och jag klickar på Min sida
 	Och jag klickar på Skapa annons
 	Och jag klickar på Admin

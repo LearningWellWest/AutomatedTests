@@ -1,8 +1,6 @@
 # language: sv
 
-Egenskap: Avvisad inloggning
-
-Bakgrund: Användaren ska inte kunna logga in med fel eller ogiltigt lösenord
+Egenskap: Användaren ska inte kunna logga in med fel eller ogiltigt lösenord
 
 Scenario: Logga in
 	Givet att jag är på förstasidan
