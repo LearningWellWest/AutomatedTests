@@ -9,7 +9,7 @@ Scenariomall: Min Sida
 	När jag klickar på Min sida
 	Och ändrar förnamnet till <förnamn>
 	Och klickar på spara
-	Så ska namnet <förnamn> uppdateras och sparas
+	Så ska förnamnet <förnamn> uppdateras och sparas
 	
 Exempel:	
 	| förnamn 	|
