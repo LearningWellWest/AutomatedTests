@@ -1,9 +1,11 @@
 # language: sv
 
-Egenskap: Det går att logga in
+Egenskap: Det går att logga in på hemsidan
 
-Scenario: Logga in med korrekta uppgifter
+Bakgrund:
 	Givet att jag är på förstasidan
+
+Scenario: Logga in
 	När jag klickar på Logga in-länken
 	Och jag fyller i användarnamn med "Testuser"
 	Och jag fyller i lösenord med "learningwell"

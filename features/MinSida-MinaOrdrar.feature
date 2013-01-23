@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Länken Mina Ordrar ska fungera 
+Egenskap: Man ska kunna se sina ordrar
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad

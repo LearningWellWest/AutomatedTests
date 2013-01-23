@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Min sida
+Egenskap: Man ska kunna se sina adresser
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
