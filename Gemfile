@@ -7,6 +7,7 @@ gem 'rspec'
 gem 'page-object'
 gem 'rails'
 gem 'watir-webdriver'
+gem 'sauce-cucumber'
 
 
 #This may be needed
