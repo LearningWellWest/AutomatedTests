@@ -29,5 +29,7 @@ end
 
 After do
     @driver.quit
+    puts "itruns*******************************"
     @verification_errors.should == []
+	
 end
