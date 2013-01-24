@@ -30,6 +30,6 @@ end
 
 After do
     @driver.quit
-    #@verification_errors.should == []
+    @verification_errors.should == []
 	
 end

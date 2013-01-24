@@ -20,9 +20,3 @@ Then /^ska jag se "(.*?)"$/ do |textString|
 
  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{textString}[\s\S]*$/ 
 end
-
-#def verify(&blk)
- #   yield
-  #rescue ExpectationNotMetError => ex
-   # raise ex
- # end
