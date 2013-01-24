@@ -7,6 +7,6 @@ Bakgrund: En användare är inloggad
 
 Scenario: Min Sida
 	När jag klickar på Min sida
-	Och ändrar efternamnet till "svensson"
+	Och ändrar efternamnet till "Testarsson"
 	Och klickar på spara
-	Så ska efternamnet "svensson" uppdateras och sparas
+	Så ska efternamnet "Testarsson" uppdateras och sparas
