@@ -5,8 +5,13 @@ Egenskap: Man ska kunna ändra efternamn
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
 
-Scenario: Min Sida
+Scenariomall: Min Sida
 	När jag klickar på Min sida
-	Och ändrar efternamnet till "efternavn"
+	Och ändrar efternamnet till <efternamn>
 	Och klickar på spara
-	Så ska efternamnet "xxxxxxxxx " uppdateras och sparas
+	Så ska efternamnet <efternamn> uppdateras och sparas
+
+
+Exempel:	
+    | efternamn 	|
+    | "Svensson" 	|
