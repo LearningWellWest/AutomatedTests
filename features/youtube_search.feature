@@ -1,4 +1,4 @@
-@SETUP
+@JustForTesting
 Feature: Setup.
 Given Something
 
@@ -7,4 +7,4 @@ Given att jag skriver i faltet "masthead-search-term" texten "banan"
 
 Scenario: Sok efter en term
 When trycker pa "search-btn"
-Then ska jag se "Sean Banan - Gott nytt julss"
+Then ska jag se "Sean Banan - Gott nytt jul shallnotpass"

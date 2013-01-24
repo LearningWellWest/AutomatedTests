@@ -16,3 +16,4 @@ end
 Så /^ska efternamnet "(.*?)" uppdateras och sparas$/ do |arg1|
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
+

@@ -8,3 +8,4 @@ end
 Så /^ska jag komma till Min sida$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
+
