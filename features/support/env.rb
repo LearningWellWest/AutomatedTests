@@ -8,6 +8,7 @@ APP_CONFIG = YAML.load_file("#{Rails.root}config.yml")[Rails.env]
 
 
 Before do
+
     @driver = Selenium::WebDriver.for :firefox
 
 	#caps = Selenium::WebDriver::Remote::Capabilities.firefox
@@ -29,7 +30,6 @@ end
 
 After do
     @driver.quit
-    puts "itruns*******************************"
-    @verification_errors.should == []
+    #@verification_errors.should == []
 	
 end

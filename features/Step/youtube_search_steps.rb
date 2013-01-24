@@ -1,7 +1,8 @@
 require 'cucumber/formatter/unicode'
 require 'rbconfig'
 require "selenium-webdriver"
-require "rspec"
+require 'rspec'  
+require 'capybara/rspec' 
 include RSpec::Expectations
 
 
@@ -16,13 +17,12 @@ When /^trycker pa "(.*?)"$/ do |button|
 end
 
 Then /^ska jag se "(.*?)"$/ do |textString|
-failed
- #verify { @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{textString}[\s\S]*$/ }
+
+ @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{textString}[\s\S]*$/ 
 end
 
-def verify(&blk)
-    yield
-  rescue ExpectationNotMetError => ex
-	puts "yadayada"
-    @verification_errors << ex
-  end
+#def verify(&blk)
+ #   yield
+  #rescue ExpectationNotMetError => ex
+   # raise ex
+ # end

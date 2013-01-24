@@ -1,1 +1,3 @@
 default:  --no-source --format pretty --tags ~@not_ready
+ytubjson: features/youtube_search.feature  --format json -o cucumber.json
+ytub: features/youtube_search.feature
