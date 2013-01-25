@@ -1,3 +1,5 @@
-default:  --no-source --format pretty --tags ~@not_ready
+default:  --no-source --format pretty --tags ~@not_ready -p localFF
 ytubjson: features/youtube_search.feature  --format json -o cucumber.json
-ytub: features/youtube_search.feature
+
+localFF:  -r features/support/env.rb -r features/support/localFirefox.rb -r features/Step
+saucelabs: -r features/support/env.rb -r features/support/multipleConfigurations.rb -r features/Step
