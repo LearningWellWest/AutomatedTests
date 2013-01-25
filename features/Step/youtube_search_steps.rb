@@ -1,10 +1,3 @@
-require 'cucumber/formatter/unicode'
-require 'rbconfig'
-require "selenium-webdriver"
-require 'rspec'  
-require 'capybara/rspec' 
-include RSpec::Expectations
-
 
 Given /^att jag skriver i faltet "(.*?)" texten "(.*?)"$/ do |field, value|
 	@driver.get('http://www.youtube.com' + "/")
