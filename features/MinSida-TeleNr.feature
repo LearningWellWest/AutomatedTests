@@ -1,7 +1,9 @@
+# language: sv
+
 Egenskap: Man ska kunna ändra sitt telefonnummer
 
 Bakgrund: En användare är inloggad
-Givet att jag är inloggad
+	Givet att jag är inloggad
 
 Scenario: Min Sida
 	När jag klickar på Min sida
