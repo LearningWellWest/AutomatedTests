@@ -1,5 +1,9 @@
 puts "Running char-converter"
-ARGV.each do |file_name|
+
+paths = ["features/*.feature","features/Step/*.rb"]
+paths.each do |filepath|
+
+Dir.glob(filepath).each { |file_name|
   text = File.read(file_name)
 
 #replace å and Å
@@ -18,5 +22,7 @@ text = text.gsub("N&auml;r", "När")
 text = text.gsub("S&aring;", "Så")
 
 File.open(file_name, "w") { |file| file.puts text }
+
+}
 end
 
