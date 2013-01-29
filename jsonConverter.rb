@@ -1,14 +1,15 @@
 puts "Running json-converter"
+file_name ="cucumber.json"
 
-  text = File.read("cucumber.json")
+  text = File.read(file_name)
 
 #replace å and Å
-  text = text.gsub(/å(?=(?:[^"]*"[^"]*")*[^"]*\Z)/ , "&aring;")
-  text = text.gsub(/Å(?=(?:[^"]*"[^"]*")*[^"]*\Z)/, "&Aring;")
+  text = text.gsub("å" , "&aring;")
+  text = text.gsub("Å", "&Aring;")
 #replace ä and Ä
-  text = text.gsub(/ä(?=(?:[^"]*"[^"]*")*[^"]*\Z)/, "&auml;")
-  text = text.gsub(/Ä(?=(?:[^"]*"[^"]*")*[^"]*\Z)/, "&Auml;")
+  text = text.gsub("ä", "&auml;")
+  text = text.gsub("Ä", "&Auml;")
 #replace ö and Ö
-  text = text.gsub(/ö(?=(?:[^"]*"[^"]*")*[^"]*\Z)/, "&ouml;")
-  text = text.gsub(/Ö(?=(?:[^"]*"[^"]*")*[^"]*\Z)/, "&Ouml;")
+  text = text.gsub("ö", "&ouml;")
+  text = text.gsub("Ö", "&Ouml;")
 File.open(file_name, "w") { |file| file.puts text }
