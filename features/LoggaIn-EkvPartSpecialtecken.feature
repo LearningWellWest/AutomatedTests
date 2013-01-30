@@ -2,7 +2,7 @@
 
 @loggain
 
-Egenskap: Ekvivalenspartionering, nekas logga in med specialtecken
+Egenskap: Användaren ska nekas logga in med specialtecken
 
 Bakgrund:
 	Givet att jag är på förstasidan

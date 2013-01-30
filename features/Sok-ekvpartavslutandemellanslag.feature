@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering avslutande mellanslag
+Egenskap: Sök Strängpartionering avslutande mellanslag
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

@@ -1,12 +1,12 @@
 # language: sv
 @sok
 
-Egenskap: Sök Ekvivalenspartionering övre gräns 1
+Egenskap: Sökfunktion vid 0 träffresultat
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad
 	När jag klickar på Sök
 
-Scenario: Off2off skall hantera ogiltliga värden
-	Och jag skriver in "2147483647"
+Scenario: Off2off skall hantera 0 träffresultat
+	Och jag skriver in "kjsdfjkhdfkjhasdf"
 	Så ska sidan hantera värdet rätt

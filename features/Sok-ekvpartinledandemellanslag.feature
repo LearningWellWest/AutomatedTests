@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering inledande mellanslag
+Egenskap: Sök Strängpartionering inledande mellanslag
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

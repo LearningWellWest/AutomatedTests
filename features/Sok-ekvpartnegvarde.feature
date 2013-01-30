@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Ekvivalenspartionering negativt värde
+Egenskap: Sök Ekvivalenspartionering negativt värde
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

@@ -2,7 +2,7 @@
 
 @loggain
 
-Egenskap: Ekvivalenspartionering, nekas logga in med negativa värden
+Egenskap: Användaren ska nekas logga in med negativa värden
 
 Bakgrund:
 	Givet att jag är på förstasidan

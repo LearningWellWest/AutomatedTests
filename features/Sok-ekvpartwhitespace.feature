@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering tomt
+Egenskap: Sök Strängpartionering tomt
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering unicode tecken
+Egenskap: Sök Strängpartionering unicode tecken
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad
@@ -9,4 +9,4 @@ Bakgrund: Användaren är inloggad
 
 Scenario: Off2off skall hantera ogiltliga värden
 	Och jag skriver in "ζ܁᝛￤ꙛ᱑𢒚ㄔ᧐ゼᶈ혍ꡖﷄ"
-	Så ska sidan hantera värdet rätt
+	Så ska sidan visa texten "Inga annonser hittades"

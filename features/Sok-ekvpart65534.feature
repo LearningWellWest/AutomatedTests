@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Ekvivalenspartionering 65534
+Egenskap: Sök Ekvivalenspartionering 65534
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad
