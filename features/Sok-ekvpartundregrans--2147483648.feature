@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Ekvivalenspartionering undre gräns 1
+Egenskap: Sök Ekvivalenspartionering undre gräns 1
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

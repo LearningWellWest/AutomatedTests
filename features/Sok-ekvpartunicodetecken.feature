@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering unicode tecken
+Egenskap: Sök Strängpartionering unicode tecken
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

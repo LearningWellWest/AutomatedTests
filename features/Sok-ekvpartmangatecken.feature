@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering många tecken
+Egenskap: Sök Strängpartionering många tecken
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad

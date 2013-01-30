@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Strängpartionering giltliga bokstäver
+Egenskap: Sök Strängpartionering giltliga bokstäver
 
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad
