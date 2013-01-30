@@ -1,5 +1,7 @@
 # language: sv
 
+@loggain
+
 Egenskap: Användaren ska inte kunna logga in med fel eller ogiltigt lösenord
 
 Scenario: Logga in

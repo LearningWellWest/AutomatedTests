@@ -1,5 +1,7 @@
 # language: sv
 
+@loggain
+
 Egenskap: Det går att logga in på hemsidan
 
 Bakgrund:

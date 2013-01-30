@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna se sina ordrar
 
 Bakgrund: En användare är inloggad

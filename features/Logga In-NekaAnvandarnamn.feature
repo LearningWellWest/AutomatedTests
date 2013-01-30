@@ -1,4 +1,6 @@
-# language: sv
+# language: sv	
+
+@loggain
 
 Egenskap: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
 

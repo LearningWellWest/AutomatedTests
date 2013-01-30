@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna ta bort en adress
 
 Bakgrund:

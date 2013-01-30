@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna ändra sin Email-adress
 
 Bakgrund: En användare är inloggad

@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Min sida länk
 
 Bakgrund: En användare är inloggad
