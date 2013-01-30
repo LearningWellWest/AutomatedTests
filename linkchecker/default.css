@@ -1,10 +1,33 @@
-table, td, th{
-border-collapse:collapse;
-background-color: #FFFFCC;
+table{
+color:black;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
 }
 th
 {
-background-color:darkblue;;
-color:white;
+color:black;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: #66CCEE;
+
+
 }
-.tstatus{background:#FA8072}
+
+td
+{
+	color:black;
+  text-align: center;
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	
+	}
+.tstatus{background:#D88A8A}
