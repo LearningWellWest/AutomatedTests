@@ -7,5 +7,5 @@ Bakgrund: Användaren är inloggad
 	Och att jag klickar på Sök
 	
 Scenario: Off2off skall hantera ogiltliga värden
-	När jag skriver in 65534
+	När jag skriver in "65534"
 	Så ska sidan hantera värdet rätt
