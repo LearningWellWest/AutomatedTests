@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Ekvivalenspartionering 4, logga in med ogiltiga tecken
+Egenskap: Ekvivalenspartionering, nekas logga in med ÅÄÖ och mellanslag
 
 Bakgrund:
 	Givet att jag är på förstasidan

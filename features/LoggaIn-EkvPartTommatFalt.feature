@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Ekvivalenspartionering 2, logga in med ogiltiga tecken
+Egenskap: Ekvivalenspartionering, nekas logga in med tomma fält
 
 Bakgrund:
 	Givet att jag är på förstasidan
