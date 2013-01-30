@@ -1,13 +1,13 @@
 # language: sv
 
-Egenskap: Det går att logga in på hemsidan
+Egenskap: Ekvivalenspartionering 3, logga in med ogiltiga tecken
 
 Bakgrund:
 	Givet att jag är på förstasidan
 
-Scenario: Logga in
+Scenario: Off2off skall hantera specialtecken
 	När jag klickar på Logga in-länken
-	Och jag fyller i användarnamn med "Testuser"
-	Och jag fyller i lösenord med "learningwell"
+	Och jag fyller i användarnamn med "?+¨€]}="!^'>-"
+	Och jag fyller i lösenord med ":,_;#)(\`´*^^"
 	Och jag klickar på Logga in
-	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
+	Så ska användaren nekas inloggning
