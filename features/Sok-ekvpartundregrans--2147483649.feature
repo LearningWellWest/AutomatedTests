@@ -1,4 +1,5 @@
 # language: sv
+@sok
 
 Egenskap: Ekvivalenspartionering undre gräns 2
 

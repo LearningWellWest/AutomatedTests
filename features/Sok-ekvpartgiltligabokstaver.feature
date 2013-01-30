@@ -1,4 +1,5 @@
 # language: sv
+@sok
 
 Egenskap: Strängpartionering giltliga bokstäver
 
