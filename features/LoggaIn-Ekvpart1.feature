@@ -10,4 +10,4 @@ Scenario: Off2off skall hantera negativa värden
 	Och jag fyller i användarnamn med "-1"
 	Och jag fyller i lösenord med "-003478934"
 	Och jag klickar på Logga in
-	Så ska användaren nekas inloggning
+	Så ska texten "Fel användarnamn eller lösenord" visas

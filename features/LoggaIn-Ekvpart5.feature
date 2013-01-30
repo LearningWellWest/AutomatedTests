@@ -10,4 +10,4 @@ Scenario: Off2off skall hantera Unicode-tecken
 	Och jag fyller i användarnamn med "ɇ𐨅ቔἷㄣᐷ᝗ഇv┗܅﯑カ𦙍׀릑ᚍꈳ꨷〸"
 	Och jag fyller i lösenord med "φ۞χψγὭӶꀴ♚♛௵௶δεζ"
 	Och jag klickar på Logga in
-	Så ska användaren nekas inloggning
+	Så ska texten "Fel användarnamn eller lösenord" visas

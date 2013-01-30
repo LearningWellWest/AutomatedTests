@@ -8,4 +8,4 @@ Bakgrund:
 Scenario: Off2off skall hantera tomt fält
 	När jag klickar på Logga in-länken
 	Och jag klickar på Logga in
-	Så ska användaren nekas inloggning
+	Så ska texten "Fel användarnamn eller lösenord" visas

@@ -10,4 +10,4 @@ Scenario: Off2off skall hantera ÅÄÖ samt mellanslag
 	Och jag fyller i användarnamn med "          "
 	Och jag fyller i lösenord med "ä Ö  öå ÄÅ"
 	Och jag klickar på Logga in
-	Så ska användaren nekas inloggning
+	Så ska texten "Fel användarnamn eller lösenord" visas
