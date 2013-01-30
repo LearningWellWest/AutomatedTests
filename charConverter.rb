@@ -1,5 +1,6 @@
-puts "Running json-converter"
-file_name ="cucumber.json"
+puts "Running char-converter"
+
+ARGV.each do |file_name|
 
   text = File.read(file_name)
 
@@ -13,3 +14,4 @@ file_name ="cucumber.json"
   text = text.gsub("ö", "&ouml;")
   text = text.gsub("Ö", "&Ouml;")
 File.open(file_name, "w") { |file| file.puts text }
+end
