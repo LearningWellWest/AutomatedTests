@@ -2,7 +2,7 @@
 
 @loggain
 
-Egenskap: Ekvivalenspartionering, nekas logga in med tomma fält
+Egenskap: Användaren ska nekas logga in med tomma fält
 
 Bakgrund:
 	Givet att jag är på förstasidan

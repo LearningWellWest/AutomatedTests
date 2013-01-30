@@ -2,7 +2,7 @@
 
 @loggain
 
-Egenskap: Ekvivalenspartionering, nekas logga in med ÅÄÖ och mellanslag
+Egenskap: Användaren ska nekas logga in med ÅÄÖ och mellanslag
 
 Bakgrund:
 	Givet att jag är på förstasidan

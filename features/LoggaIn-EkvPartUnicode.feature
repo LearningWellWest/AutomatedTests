@@ -2,7 +2,7 @@
 
 @loggain
 
-Egenskap: Ekvivalenspartionering, nekas logga in med Unicode-tecken
+Egenskap: Användaren ska nekas logga in med Unicode-tecken
 
 Bakgrund:
 	Givet att jag är på förstasidan
