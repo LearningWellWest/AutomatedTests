@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna se sina adresser
 
 Bakgrund: En användare är inloggad

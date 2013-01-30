@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna ändra sitt mobilnummer
 
 Bakgrund: En användare är inloggad

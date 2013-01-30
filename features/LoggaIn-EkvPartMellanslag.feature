@@ -1,5 +1,7 @@
 # language: sv
 
+@loggain
+
 Egenskap: Ekvivalenspartionering, nekas logga in med ÅÄÖ och mellanslag
 
 Bakgrund:

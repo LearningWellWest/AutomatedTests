@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna ändra efternamn
 
 Bakgrund: En användare är inloggad &Auml;

@@ -1,5 +1,7 @@
 # language: sv
 
+@minsida
+
 Egenskap: Man ska kunna se sina annonser
 
 Bakgrund: En användare är inloggad
