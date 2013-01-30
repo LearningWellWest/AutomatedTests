@@ -1,0 +1,10 @@
+table, td, th{
+border-collapse:collapse;
+background-color: #FFFFCC;
+}
+th
+{
+background-color:darkblue;;
+color:white;
+}
+.tstatus{background:#FA8072}
