@@ -1,13 +1,13 @@
 # language: sv
 
-Egenskap: Ekvivalenspartionering 3, logga in med ogiltiga tecken
+Egenskap: Ekvivalenspartionering 5, logga in med ogiltiga tecken
 
 Bakgrund:
-	Givet att jag �r p� f�rstasidan
+	Givet att jag är på förstasidan
 
 Scenario: Off2off skall hantera Unicode-tecken
-	N�r jag klickar p� Logga in-l�nken
-	Och jag fyller i anv�ndarnamn med "ЖЗИ⓳ㆣႼ᝾ドᡮꂭװᕘzፈ暻ڬЙКऒओЛ"
-	Och jag fyller i l�senord med "φ۞χψγὭӶꀴ♚♛௵௶δεζ"
-	Och jag klickar p� Logga in
-	S� ska anv�ndaren nekas inloggning�
+	När jag klickar på Logga in-länken
+	Och jag fyller i användarnamn med "ɇ𐨅ቔἷㄣᐷ᝗ഇv┗܅﯑カ𦙍׀릑ᚍꈳ꨷〸"
+	Och jag fyller i lösenord med "φ۞χψγὭӶꀴ♚♛௵௶δεζ"
+	Och jag klickar på Logga in
+	Så ska användaren nekas inloggning
