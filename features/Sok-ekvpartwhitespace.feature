@@ -9,4 +9,4 @@ Bakgrund: Användaren är inloggad
 
 Scenario: Off2off skall hantera ogiltliga värden
 	Och jag skriver in ""
-	Så ska sidan hantera värdet rätt
+	Så ska sidan ge felmeddelande
