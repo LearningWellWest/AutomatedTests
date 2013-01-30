@@ -1,5 +1,5 @@
 # encoding: utf-8
 
-Så /^ska användaren nekas inloggning$/ do
-  @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*Hej, Testuser![\s\S]*$/
+Så /^ska texten "(.*?)" visas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end

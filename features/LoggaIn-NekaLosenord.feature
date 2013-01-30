@@ -8,4 +8,4 @@ Scenario: Logga in
 	Och jag fyller i användarnamn med "Testuser"
 	Och jag fyller i lösenord med "learningwel"
 	Och jag klickar på Logga in
-	Så ska användaren nekas inloggning
+	Så ska texten "Fel användarnamn eller lösenord" visas
