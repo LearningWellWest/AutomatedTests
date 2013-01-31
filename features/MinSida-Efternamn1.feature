@@ -4,7 +4,7 @@
 
 Egenskap: Man ska kunna ändra efternamn
 
-Bakgrund: En användare är inloggad &Auml;
+Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
 
 Scenario: Min Sida
