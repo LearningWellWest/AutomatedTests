@@ -11,4 +11,4 @@ Scenario: Inloggad Skapa annons med många tecken
 	När jag fyller i beskrivningen med över 1000 tecken
 	Och fyller i resten av uppgifterna
 	Och klickar på Spara annons
-	Så ska felmedelandet "Rubriken innehåller för många tecken, max:" visas
+	Så ska felmedelandet "Fältet innehåller för många tecken, max:" visas

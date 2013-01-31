@@ -11,4 +11,4 @@ Scenario: Inloggad Skapa annons med många siffror
 	När jag fyller i beskrivningen med över x antal siffror
 	Och fyller i resten av uppgifterna
 	Och klickar på Spara annons
-	Så ska felmedelandet "Priset innehåller för många siffror, max:" visas
+	Så ska felmedelandet "Fältet innehåller för många tecken, max:" visas

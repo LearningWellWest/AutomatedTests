@@ -8,6 +8,7 @@ Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
 	Och är på Skapa annons sidan
 
 Scenario: Inloggad Skapa annons med bokstäver
-	När jag fyller i Annonsuppgifter samt skriver in bokstäver i prisfältet
+	När jag fyller i bokstäver i prisfältet
+	Och fyller i resten av uppgifterna
 	Och klickar på Spara annons
 	Så ska felmedelandet "fältet måste innehålla siffror" visas

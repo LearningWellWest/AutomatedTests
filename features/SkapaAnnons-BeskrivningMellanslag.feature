@@ -11,4 +11,4 @@ Scenario: Inloggad Skapa annons med ogiltiga tecken
 	När jag fyller i beskrivningen med flera mellanslag
 	Och fyller i resten av uppgifterna
 	Och klickar på Spara annons
-	Så ska felmedelandet "Beskrivningen måste innehålla siffror eller bokstäver" visas
+	Så ska felmedelandet "Fältet måste innehålla siffror eller bokstäver" visas
