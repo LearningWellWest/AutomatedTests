@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='default.css' />
+    <title>Link test</title>
+
+</head>
+<body>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js'></script>
+<script type='text/javascript'>
+
+$(document).ready(function(){
+    $("#table_status td.tstatus:contains(200)").css('background-color','#C5D88A');
+    $("#table_status td.tstatus:contains(404)").css('background-color','#D88A8A');
+    $("#table_status td.twarning:contains( )").css('background-color','#ebcc81');
+    
+    
+});
+</script>
+
+<script>
+xmlhttp=new XMLHttpRequest();
+  
+xmlhttp.open("GET","linkchecker-out.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+document.write("<table border='1' id='table_status'>");
+document.write("<tr><th>Missing URL</th><th>Called from</th><th>Result</th><th>Warning</th></tr>");
+
+
+var urldata=xmlDoc.getElementsByTagName("urldata");
+for (i=0;i<urldata.length;i++)
+  { 
+
+  document.write("<tr>");
+  document.write("<td class='turl'>");
+  document.write(urldata[i].getElementsByTagName("url")[0].childNodes[0].nodeValue);
+  document.write("</td>");
+  document.write("<td class= 'tparent'>");
+  document.write(urldata[i].getElementsByTagName("parent")[0].childNodes[0].nodeValue);
+  document.write(" ln:");
+  document.write(urldata[i].getElementsByTagName("parent")[0].getAttribute("line"));
+  document.write(" col:");
+  document.write(urldata[i].getElementsByTagName("parent")[0].getAttribute("column"));
+  document.write(" </td>");
+  document.write("<td class='tstatus'>");
+  document.write(urldata[i].getElementsByTagName("valid")[0].getAttribute("result"));
+  document.write("</td>");
+  
+  document.write("<td class='twarning'>");
+  
+  
+	var warnings=urldata[i].getElementsByTagName("warnings");
+  for (k=0;k<warnings.length;k++)
+  { 
+    document.write(warnings[k].getElementsByTagName("warning")[0].childNodes[0].nodeValue);
+	}
+
+  document.write("</td>");
+
+  
+  
+
+  
+
+  
+  
+  document.write("</tr>");
+  }
+document.write("</table>");
+</script>
+
+</body>
+</html>
+
