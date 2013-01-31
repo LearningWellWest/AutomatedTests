@@ -1,1 +1,1 @@
-linkchecker http://www.off2off.se --file-output=gg/xml
+linkchecker http://www.off2off.se --file-output=xml/linkchecker/linkcheck.xml
