@@ -9,4 +9,4 @@ Bakgrund: Användaren är inloggad
 
 Scenario: Off2off skall hantera ogiltliga värden
 	Och jag skriver in "ζ܁᝛￤ꙛ᱑𢒚ㄔ᧐ゼᶈ혍ꡖﷄ"
-	Så ska sidan visa texten "Inga annonser hittades"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
