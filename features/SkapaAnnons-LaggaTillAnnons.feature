@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: DEt går att skapa en annons
+Egenskap: Det går att skapa en annons
 
 Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
 	Givet att jag är inloggad
