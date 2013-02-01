@@ -9,5 +9,4 @@ Bakgrund: Användaren är inloggad
 
 Scenario: Off2off skall hantera giltliga värden
 	Och jag skriver in "stol"
-	//Så ska sidan ge resultat i form av "poster"
-	Så ska texten "Elevstolar" visas
+	Så ska sidan ge resultat i form av "poster"
