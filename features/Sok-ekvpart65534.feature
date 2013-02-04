@@ -1,10 +1,10 @@
 # language: sv
-@soksok
+@sok
 
 Egenskap: Sök Ekvivalenspartionering 65534
-	Som en användare
-	Vill jag kunna använda mig utav kontiga datanummer
-	så att sidan inte krashar
+	För att sidan skall vara stabil
+	Som en inloggad användare
+	Vill jag inte krasha sidan vid en vanlig sifferinmatning
 	
 Scenario: Off2off skall hantera ogiltliga värden
 	Givet att jag är inloggad
