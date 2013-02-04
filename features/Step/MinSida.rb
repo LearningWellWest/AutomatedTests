@@ -11,7 +11,7 @@ Så /^ska jag komma till Min sida$/ do
 end
 
 
-När /^ändrar efternamnet till "(.*?)"$/ do |arg1|
+När /^jag ändrar efternamnet till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "LastName").clear
   @driver.find_element(:id, "LastName").send_keys arg1
 end
@@ -21,7 +21,7 @@ Så /^ska efternamnet "(.*?)" uppdateras och sparas$/ do |arg1|
 end
 
 
-När /^ändrar Email\-adressen till "(.*?)"$/ do |arg1|
+När /^jag ändrar Email\-adressen till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Email").clear
     @driver.find_element(:id, "Email").send_keys arg1
 end
@@ -30,7 +30,7 @@ Så /^ska Email\-adressen "(.*?)" uppdateras och sparas$/ do |arg1|
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
-När /^ändrar förnamnet till "(.*?)"$/ do |arg1|
+När /^jag ändrar förnamnet till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "FirstName").clear
   @driver.find_element(:id, "FirstName").send_keys arg1
 end
@@ -45,7 +45,7 @@ När /^klickar på spara$/ do
 end
 
 
-När /^ändrar mobilnumret till "(.*?)"$/ do |arg1|
+När /^jag ändrar mobilnumret till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Cellphone").clear
   @driver.find_element(:id, "Cellphone").send_keys "+46701234567"
 end

@@ -2,7 +2,7 @@
 @loggain
 
 Egenskap: Man ska kunna logga in korrekt på hemsidan
-	För att kunna hantera mina personliga uppgifter, annonser och avtal
+	För att kunna skapa annonser samt använda Mina sidor
 	Som en utloggad användare
 	Vill jag kunna logga in på hemsidan
 	

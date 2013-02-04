@@ -2,9 +2,9 @@
 @loggain
 
 Egenskap: Logga in ekvivalenspartionering
-	För att sidan skall vara stabil
-	Som en inloggad användare
-	Vill jag inte krasha sidan vid en vanlig/ofrivillig datainmatning
+	För att sidan skall vara stabil och säker
+	Som en utloggad användare
+	Vill jag inte att sidan ska krascha vid en vanlig/ofrivillig datainmatning
 	
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
 	När jag fyller i användarnamn med "Testuser1"

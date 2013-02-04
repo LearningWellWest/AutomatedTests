@@ -1,8 +1,11 @@
 # language: sv
 @minsida
 
-Egenskap: En användare ska kunna se sina personliga länkar
-
+Egenskap: Man ska kunna se sina personliga länkar
+	För att kunna hantera mina ordrar, adresser, annonser och avtal
+	Som en inloggad användare
+	Vill jag att personliga länkar ska fungera
+	
 Bakgrund: Användaren är inloggad och klickar på Min sida
 	Givet att jag är på förstasidan
 	Och jag klickar på Min sida
