@@ -1,5 +1,23 @@
 # encoding: utf-8
 
+När /^jag sedan klickar på Mina adresser$/ do
+	@driver.find_element(:link, "Mina adresser").click
+end
+
+Så /^ska jag komma till Mina Adresser$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Adresser[\s\S]*$/
+end
+
+
+När /^klickar på Ta bort$/ do
+	@driver.find_element(:xpath, "(//input[@value='Ta bort'])[3]").click
+end
+
+Så /^ska adressen raderas$/ do
+	@driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*admin Adminsson[\s\S]*$/
+end
+
+
 När /^lägger till nya adressuppgifter$/ do
     @driver.find_element(:css, "input.addaddressbutton.save").click
     @driver.find_element(:id, "Address_FirstName").clear
@@ -24,3 +42,13 @@ end
 Så /^ska adressen sparas och visas$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*admin Adminsson[\s\S]*$/
 end
+
+När /^ändrar telefonnumret till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Phone").clear
+  @driver.find_element(:id, "Phone").send_keys "0987654321"
+end
+
+Så /^ska telefonnumret "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
