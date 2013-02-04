@@ -3,6 +3,10 @@
 
 Egenskap: En användare ska kunna se sina personliga länkar
 
+Bakgrund: Användaren är inloggad och klickar på Min sida
+	Givet att jag är på förstasidan
+	Och jag klickar på Min sida
+
 Scenario: Användaren vill kunna se sina ordrar
 	När jag klickar på Mina köp/min försäljning
 	Så ska jag komma till Mina ordrar
