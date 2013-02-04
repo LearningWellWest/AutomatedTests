@@ -2,9 +2,9 @@
 @sokfilt
 
 Egenskap: Sök - KategoriFiltrering
-	För att 
-	Som 
-	Vill jag 
+	För att underlätta i sökfunktionen
+	Som vilken användare som helst
+	Vill jag filtrera all skit på söksidan
 	
 Bakgrund:
 	Givet att jag är inloggad
