@@ -1,5 +1,5 @@
 # language: sv
-@sok
+@soksok
 
 Egenskap: Sök Ekvivalenspartionering
 	För att sidan skall vara stabil
@@ -38,4 +38,44 @@ Scenario: Off2off skall hantera Extremt många tecken
 Scenario: Off2off skall hantera giltliga värden
 	Och jag skriver in "stol"
 	Så ska sidan ge resultat i form av "poster"	
+	
+Scenario: Off2off skall hantera inledande mellanslag
+	Och jag skriver in " stol"
+	Så ska sidan ge resultat i form av "poster"
+	
+Scenario: Off2off skall hantera ovanligt många tecken
+	Och jag skriver in "Jdjdhdhdj dnchdweowowu shsnalksd iuigdfsdmn fslkdfjdhfuuye ruywjsj sksjdfhf dhjsios dhgdfjshdfd dhfgsjhfgsdguywhdb dgfisdbfkjsdf sdjfhsjkdf sjkfhskdfhsdjkfh sfh dhflkwioerhsdj f huidf idhf jkdfhsdgf jkhfiojhwiefgb sdkjho f"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
+	
+Scenario: Off2off skall hantera negativt värde
+	Och jag skriver in "-1"
+	Så ska sidan ge resultat i form av "poster"
+	
+Scenario: Off2off skall hantera max integer
+	Och jag skriver in "2147483647"
+	Så ska sidan ge resultat i form av "poster"	
+	
+Scenario: Off2off skall hantera max integer plus 1
+	Och jag skriver in "2147483648"
+	Så ska sidan ge resultat i form av "poster"	
+	
+Scenario: Off2off skall hantera minst integer
+	Och jag skriver in "-2147483648"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
+	
+Scenario: Off2off skall hantera minst integer + 1
+	Och jag skriver in "-2147483649"
+	Så ska sidan ge resultat i form av "poster"	
+	
+Scenario: Off2off skall hantera unicode tecken
+	Och jag skriver in "ζ܁᝛￤ꙛ᱑𢒚ㄔ᧐ゼᶈ혍ꡖﷄ"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
+	
+Scenario: Off2off skall hantera whitespaces
+	Och jag skriver in " "
+	Så ska sidan ge resultat i form av "poster"	
+
+Scenario: Off2off skall hantera 0 träffresultat
+	Och jag skriver in "kjsdfjkhdfkjhasdf"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
