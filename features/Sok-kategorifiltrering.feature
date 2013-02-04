@@ -1,5 +1,5 @@
 # language: sv
-@sok
+@sokfilt
 
 Egenskap: Sök - KategoriFiltrering
 	För att 
