@@ -5,6 +5,11 @@ Egenskap: Logga in ekvivalenspartionering
 	För att sidan skall vara stabil och säker
 	Som en utloggad användare
 	Vill jag inte att sidan ska krascha vid en vanlig/ofrivillig datainmatning
+
+Bakgrund: Användaren är utloggad och klickar på logga in
+	Givet att jag är på förstasidan
+	Och jag klickar på Logga in-länken
+
 	
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
 	När jag fyller i användarnamn med "Testuser1"
