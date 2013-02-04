@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-När /^sedan klickar på Mina köp\/min försäljning$/ do
+När /^jag klickar på Mina köp\/min försäljning$/ do
 	@driver.find_element(:link, "Mina köp/min försäljning").click
 end
 
