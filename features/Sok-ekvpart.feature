@@ -1,5 +1,5 @@
 # language: sv
-@soksok
+@sok
 
 Egenskap: Sök Ekvivalenspartionering
 	För att sidan skall vara stabil
