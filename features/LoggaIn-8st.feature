@@ -1,7 +1,7 @@
 # language: sv	
 @loggain
 
-Egenskap: Off2Off ska ha en fungerande login-funktion
+Egenskap: Hemsidan ska ha en fungerande login-funktion
 
 Bakgrund:
 	Givet att jag är på förstasidan
