@@ -1,17 +1,10 @@
 # language: sv	
 @loggain
 
-Egenskap: Hemsidan ska ha en fungerande login-funktion
-
-Bakgrund: Användaren är inloggad och klickar på logga in
-	Givet att jag är på förstasidan
-	Och jag klickar på Logga in-länken
-	
-Scenario: Användaren ska kunna logga in korrekt
-	När jag fyller i användarnamn med "Testuser"
-	Och jag fyller i lösenord med "learningwell"
-	Och jag klickar på Logga in
-	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
+Egenskap: Logga in ekvivalenspartionering
+	För att sidan skall vara stabil
+	Som en inloggad användare
+	Vill jag inte krasha sidan vid en vanlig/ofrivillig datainmatning
 	
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
 	När jag fyller i användarnamn med "Testuser1"
