@@ -11,15 +11,15 @@ Bakgrund:
 	Och jag klickar på Sök
 
 	
-Scenario: Off2off skall hantera 65534
+Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65534"
 	Så ska sidan ge resultat i form av "poster"
 	
-Scenario: Off2off skall hantera 65535
+Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65535"
 	Så ska sidan ge resultat i form av "poster"
 	
-Scenario: Off2off skall hantera 65536
+Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65536"
 	Så ska sidan ge resultat i form av "poster"
 	
