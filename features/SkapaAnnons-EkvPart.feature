@@ -3,7 +3,7 @@
 
 Egenskap: Skapa annons ekvivalenspartionering
 	För att man inte ska kunna skapa annonser utan data eller med för mycket data
-    Som en användare
+    Som en inloggad användare
 	Vill jag att det ska visas varningsmeddelande vid orimlig inmatning
 
 Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
