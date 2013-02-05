@@ -10,7 +10,6 @@ Bakgrund: Användaren är utloggad och klickar på logga in
 	Givet att jag är på förstasidan
 	Och jag klickar på Logga in-länken
 
-	
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
 	När jag fyller i användarnamn med "Testuser1"
 	Och jag fyller i lösenord med "learningwell"
