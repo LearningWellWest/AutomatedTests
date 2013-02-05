@@ -7,7 +7,7 @@ Egenskap: Man ska kunna se sina personliga länkar
 	Vill jag att personliga länkar ska fungera
 	
 Bakgrund: Användaren är inloggad och klickar på Min sida
-	Givet att jag är på förstasidan
+	Givet att jag är inloggad
 	Och jag klickar på Min sida
 
 Scenario: Användaren vill kunna se sina ordrar
