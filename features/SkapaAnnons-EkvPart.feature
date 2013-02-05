@@ -2,10 +2,10 @@
 @not_ready
 
 Egenskap: Skapa annons ekvivalenspartionering
-		  För att man inte ska kunna skapa annonser utan data eller med för mycket data
-		  Som en användare
-		  Vill jag att det ska visas varningsmeddelande vid orimlig inmatning
-		  
+	För att man inte ska kunna skapa annonser utan data eller med för mycket data
+    Som en användare
+	Vill jag att det ska visas varningsmeddelande vid orimlig inmatning
+
 Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
 	Givet att jag är inloggad
 	Och är på Skapa annons sidan
