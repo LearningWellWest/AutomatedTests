@@ -1,12 +1,10 @@
-# language: sv
+@JustForTesting
 
-@minsida
+Feature: My Page link should work
 
-Egenskap: Min sida länk
+Bakgrund: A user is inlogged
+	Given i am inlogged
 
-Bakgrund: En användare är inloggad
-	Givet att jag är inloggad
-
-Scenario: Inloggad min sida länk
-	När jag klickar på Min sida
-	Så ska jag komma till Min sida
+Scenario: A user wants to go to my page link
+	When i click on Min sida
+	Then i should come to "Min sida"
