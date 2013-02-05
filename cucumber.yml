@@ -5,3 +5,6 @@ localFF:  -r features/support/env.rb -r features/support/localFirefox.rb -r feat
 
 linuxFirefox: -r features/support/env.rb -r features/support/linuxFirefox-SauceLabs.rb -r features/Step
 winXPChrome: -r features/support/env.rb -r features/support/chromeWinXP-SauceLabs.rb -r features/Step
+
+
+skipAll: -r features/support/env.rb -r features/support/skipAll.rb
