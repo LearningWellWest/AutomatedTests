@@ -1,10 +1,10 @@
 @JustForTesting
 
-Feature: My Page link should work
+Feature: The link to My page should work
 
-Bakgrund: A user is inlogged
+Background: A user is inlogged
 	Given i am inlogged
 
-Scenario: A user wants to go to my page link
-	When i click on Min sida
-	Then i should come to "Min sida"
+Scenario: A user wants to go to My page
+	When i click on My page
+	Then i should come to My page
