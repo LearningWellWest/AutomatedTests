@@ -1,4 +1,5 @@
 # language: sv
+@tabort
 
 Egenskap: Ta bort annons
 	För ångra en annons
@@ -7,9 +8,9 @@ Egenskap: Ta bort annons
 
 Scenario:
 	Givet att jag är inloggad
-	Och klickar på "Min sida"
-	Och klickar på "Mina annonser"
-	När jag sedan väljer annons och klickar på den
+	När jag klickar på min sida
+	Och jag klickar på mina annonser
+	Och jag sedan väljer annons och klickar på den
 	Och klickar på "Ta bort annons"
 	Så ska annonsen vara borttagen
-	och texten "Annonsen är borttagen" visas
+	Och texten "Annonsen är borttagen" visas
