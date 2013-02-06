@@ -14,7 +14,6 @@ function setUpPanels()
 	
 	// get all headings
 	var headingTags = document.getElementsByTagName(PANEL_HEADING_TAG);
-	alert("Under construction");
 	
 	// go through all tags
 	for (var i=0; i<headingTags.length; i++)

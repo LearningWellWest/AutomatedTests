@@ -3,19 +3,19 @@
  <head>
  <title>All features</title>
  <link rel="stylesheet" type="text/css" href="main.css" />                                              
- <script type="text/javascript" src="jquery-1.9.0.js"></script>        
-  <script type="text/javascript" src="utils.js"></script>       
+ <script type="text/javascript" src="jquery-1.9.0.js"></script>            
  <script type="text/javascript">     
-  
-   $(document).ready(function() {
+
           $.getJSON('allUndefined.json', function(feature) {
           
           var html = [''];	
 			$.each(feature, function() {	
 			
-			html.push("<div class='panel'>");
+			html.push("<div class='panelcollapsed'>");
 			html.push("<h2>");
-			html.push(this.uri);
+			var filename = this.uri;			
+			filename = filename.replace(/^.*[\\\/]/, '')
+			html.push(filename);
 			html.push("</h2>");
 			html.push("<div class='panelcontent'>");
 			
@@ -25,6 +25,7 @@
 			html.push(this.description);
 			html.push('<br>');
 			
+			<!--Elements-->
 			var elements = this.elements || [];
 			for (var i = 0; i < elements.length; i++)
          {			
@@ -37,7 +38,7 @@
          	html.push( name);
          	html.push('<p>')
          	
-         	
+         	<!--Steps-->
          	var steps = element.steps || [];			
 				for (var k = 0; k < steps.length; k++)
          	{
@@ -59,8 +60,8 @@
          });
 		document.getElementById('cucumber').innerHTML = html.join('');
           });
-          });
    </script>  
+     <script type="text/javascript" src="utils.js"></script>   
 </head>
 <body>
 <a href="javascript:expandAll()">Expand</a>
