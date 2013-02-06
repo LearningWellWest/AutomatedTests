@@ -1,13 +1,12 @@
 # language: sv
 
 Egenskap: 
-Många steg
+	Många steg
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
 
 Scenario: Helst hela sidan
-	
 	När att jag är på Startsidan
 	Och jag klickar på Sök
 	Och jag klickar på Min sida
