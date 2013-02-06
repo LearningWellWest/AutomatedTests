@@ -1,6 +1,7 @@
 # language: sv
 
-Egenskap: Många steg
+Egenskap: 
+Många steg
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad

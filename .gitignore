@@ -1,5 +1,5 @@
 *~
 all_features.txt
-cucumber.json
+*.json
 linkcheck.xml
 all_features.html
