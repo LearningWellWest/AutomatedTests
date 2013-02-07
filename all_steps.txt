@@ -1,0 +1,353 @@
+
+********* Sok.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Sök$/ do
+  @driver.find_element(:link, "Sök").click
+end
+
+Så /^ska sidan visa texten "(.*?)"$/ do |arg1|
+	@driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/ 
+end
+
+
+Så /^ska sidan ge resultat i form av "(.*?)"$/ do |arg1|
+	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/ 
+end
+
+
+När /^jag skriver in "(.*?)"$/ do |arg1|
+     @driver.find_element(:id, "FilterItemText").clear
+    @driver.find_element(:id, "FilterItemText").send_keys arg1
+    @driver.find_element(:id, "search-button").click
+end
+
+När /^jag skriver in extremt många tecken$/ do
+
+o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten
+string  =  (0...9999).map{ o[rand(o.length)] }.join
+
+    @driver.find_element(:id, "FilterItemText").clear
+    @driver.find_element(:id, "FilterItemText").send_keys string
+    sleep 1
+    @driver.find_element(:id, "search-button").click
+end
+
+
+********* MinSida-MinaAdresser.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Mina adresser$/ do
+	@driver.find_element(:link, "Mina adresser").click
+end
+
+Så /^ska jag komma till Mina Adresser$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Adresser[\s\S]*$/
+end
+
+
+När /^klickar på Ta bort$/ do
+	@driver.find_element(:xpath, "(//input[@value='Ta bort'])[3]").click
+end
+
+Så /^ska adressen raderas$/ do
+	@driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*admin Adminsson[\s\S]*$/
+end
+
+
+När /^lägger till nya adressuppgifter$/ do
+    @driver.find_element(:css, "input.addaddressbutton.save").click
+    @driver.find_element(:id, "Address_FirstName").clear
+    @driver.find_element(:id, "Address_FirstName").send_keys "admin"
+    @driver.find_element(:id, "Address_LastName").clear
+    @driver.find_element(:id, "Address_LastName").send_keys "Adminsson"
+    @driver.find_element(:id, "Address_Email").clear
+    @driver.find_element(:id, "Address_Email").send_keys "admin@test.com"
+    @driver.find_element(:id, "Address_Company").clear
+    @driver.find_element(:id, "Address_Company").send_keys "Off2Off"
+    @driver.find_element(:id, "Address_City").clear
+    @driver.find_element(:id, "Address_City").send_keys "Karlstad"
+    @driver.find_element(:id, "Address_Address1").clear
+    @driver.find_element(:id, "Address_Address1").send_keys "testgatan 359"
+    @driver.find_element(:id, "Address_ZipPostalCode").clear
+    @driver.find_element(:id, "Address_ZipPostalCode").send_keys "65222"
+    @driver.find_element(:id, "Address_PhoneNumber").clear
+    @driver.find_element(:id, "Address_PhoneNumber").send_keys "054111111"
+    @driver.find_element(:css, "input.saveaddressbutton.save").click
+end
+
+Så /^ska adressen sparas och visas$/ do
+	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*admin Adminsson[\s\S]*$/
+end
+
+När /^ändrar telefonnumret till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Phone").clear
+  @driver.find_element(:id, "Phone").send_keys "0987654321"
+end
+
+Så /^ska telefonnumret "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+********* MinSida-Link_steps.rb *********
+
+Given /^I am logged in$/ do
+	@driver.get('http://www.off2off.se' + "/")
+	@driver.find_element(:link, "[Logga in]").click
+    @driver.find_element(:id, "Username").clear
+    @driver.find_element(:id, "Username").send_keys "Testuser"
+    @driver.find_element(:id, "Password").clear
+    @driver.find_element(:id, "Password").send_keys "learningwell"
+    @driver.find_element(:css, "button.loginbutton.save").click
+end
+
+When /^I click on My page$/ do 
+	@driver.find_element(:link, "Min sida").click
+end
+
+Then /^I should come to My page$/ do
+	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
+end
+
+********* Startsidan.rb *********
+
+# encoding: utf-8
+
+Givet /^att jag är på Startsidan$/ do
+  @driver.get(@base_url + "/")
+end
+
+# encoding: utf-8
+
+Givet /^att jag är på förstasidan$/ do
+  @driver.get(@base_url)
+end
+
+
+När /^jag klickar på Hem$/ do
+  @driver.find_element(:link, "Hem").click
+end
+
+********* MinSida-MinaOrdrar.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Mina köp\/min försäljning$/ do
+	@driver.find_element(:link, "Mina köp/min försäljning").click
+end
+
+Så /^ska jag komma till Mina ordrar$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Mina ordrar[\s\S]*$/
+end
+
+********* MinSida-MinaAnnonser.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Mina annonser$/ do
+	@driver.find_element(:link, "Mina annonser").click
+end
+
+Så /^ska jag komma till Mina annonser$/ do
+    @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Publicerad[\s\S]*$/
+end
+
+********* VerifieraHome.rb *********
+
+# encoding: utf-8
+
+Så /^ska jag komma till Hemsidan$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Möbler[\s\S]*$/
+end
+********* LoggaIn.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Logga in\-länken$/ do
+@driver.get(@base_url + "/Customer/Login")
+end
+
+När /^jag klickar på Logga in$/ do
+  @driver.find_element(:css, "button.loginbutton.save").click
+end
+
+Givet /^att jag är inloggad$/ do
+	@driver.get(@base_url + "/")
+	@driver.find_element(:link, "[Logga in]").click
+    @driver.find_element(:id, "Username").clear
+    @driver.find_element(:id, "Username").send_keys "Testuser"
+    @driver.find_element(:id, "Password").clear
+    @driver.find_element(:id, "Password").send_keys "learningwell"
+    @driver.find_element(:css, "button.loginbutton.save").click
+end
+
+När /^jag fyller i lösenord med "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Password").clear
+  @driver.find_element(:id, "Password").send_keys arg1
+end
+
+När /^jag fyller i användarnamn med "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Username").clear
+  @driver.find_element(:id, "Username").send_keys arg1
+end
+
+
+Så /^ska användaren loggas in och sidan visar "(.*?)"$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Hej, Testuser![\s\S]*$/
+end
+
+
+Så /^ska texten "(.*?)" visas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+********* MinSida.rb *********
+
+# encoding: utf-8
+
+
+När /^jag klickar på Min sida$/ do
+	@driver.find_element(:link, "Min sida").click
+	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
+end
+
+Så /^ska jag komma till Min sida$/ do
+	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
+end
+
+
+När /^jag ändrar efternamnet till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "LastName").clear
+  @driver.find_element(:id, "LastName").send_keys arg1
+end
+
+Så /^ska efternamnet "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+När /^jag ändrar Email\-adressen till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Email").clear
+    @driver.find_element(:id, "Email").send_keys arg1
+end
+
+Så /^ska Email\-adressen "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+När /^jag ändrar förnamnet till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "FirstName").clear
+  @driver.find_element(:id, "FirstName").send_keys arg1
+end
+
+Så /^ska förnamnet "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+När /^klickar på spara$/ do
+  @driver.find_element(:css, "input.save").click
+end
+
+
+När /^jag ändrar mobilnumret till "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Cellphone").clear
+  @driver.find_element(:id, "Cellphone").send_keys "+46701234567"
+end
+
+Så /^ska mobilnumret "(.*?)" uppdateras och sparas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+********* Admin.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Admin$/ do
+  @driver.find_element(:link, "Admin").click
+end
+
+När /^jag klickar på Gå till startsidan$/ do
+  @driver.find_element(:link, "Gå till startsidan").click
+end
+
+********* SkapaAnnons.rb *********
+
+# encoding: utf-8
+
+När /^klickar på skapa annons$/ do
+  @driver.find_element(:link, "Skapa annons").click
+end
+
+
+Givet /^är på Skapa annons sidan$/ do
+  @driver.find_element(:link, "Skapa annons").click
+end
+
+När /^ger annonsen rubriken "(.*?)"$/ do |arg1|
+    @driver.find_element(:id, "Title").clear
+    @driver.find_element(:id, "Title").send_keys arg1
+end
+
+
+När /^jag fyller i Annonsuppgifter$/ do
+    @driver.find_element(:id, "Title").clear
+    @driver.find_element(:id, "Title").send_keys "En sak"
+    @driver.find_element(:id, "Description").clear
+    @driver.find_element(:id, "Description").send_keys "En trevlig sak för en billig penning"
+    @driver.find_element(:id, "PublishedEndDate").click
+    @driver.find_element(:link, "31").click
+    @driver.find_element(:id, "Price").clear
+    @driver.find_element(:id, "Price").send_keys "10"
+    @driver.find_element(:id, "PriceToday").clear
+    @driver.find_element(:id, "PriceToday").send_keys "10"
+    @driver.find_element(:id, "PriceWhenNew").clear
+    @driver.find_element(:id, "PriceWhenNew").send_keys "10"
+end
+
+När /^klickar på Spara annonsen$/ do
+  @driver.find_element(:css, "input.save").click
+end
+
+********* MinSida-MinaAvtal.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på Avtal$/ do
+	@driver.find_element(:link, "Avtal").click
+end
+
+Så /^ska jag komma till Avtal$/ do
+    @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Avtal[\s\S]*$/
+end
+
+********* VerifieraAnnons.rb *********
+
+# encoding: utf-8
+
+Så /^ska min annons vara sparad$/ do
+    @driver.find_element(:link, "Min sida").click
+    @driver.find_element(:link, "Mina annonser").click
+end
+
+#här jobbas
+Så /^ska annonsen "(.*?)" finnas på sidan$/ do |arg1|
+  @driver.find_element(:link, "Min sida").click
+  @driver.find_element(:link, "Mina annonser").click
+end
+
+********* LoggaUt.rb *********
+
+# encoding: utf-8
+
+När /^jag klickar på logga ut$/ do
+  @driver.find_element(:link, "[Logga ut]").click
+end
+
+Så /^ska sidan inte visa "(.*?)"$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
