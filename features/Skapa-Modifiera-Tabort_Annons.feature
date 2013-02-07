@@ -9,8 +9,8 @@ Bakgrund: En användare är inloggad
 
 Scenario: Användaren skapar en ny annons
 
-	När klickar på skapa annons
-	Och jag fyller i Annonsuppgifter
+	När jag klickar på skapa annons
+	Och jag fyller i annonsuppgifter
 	Och ger annonsen rubriken "testannons123qwerty"
 	Och klickar på Spara annonsen
 	Så ska annonsen "testannons123qwerty" dyka upp under mina annonser
