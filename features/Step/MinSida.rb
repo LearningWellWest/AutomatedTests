@@ -1,12 +1,12 @@
 # encoding: utf-8
 
 
-När /^jag klickar på Min sida$/ do
+När /^jag klickar på min sida$/ do
 	@driver.find_element(:link, "Min sida").click
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
-Så /^ska jag komma till Min sida$/ do
+Så /^ska jag komma till min sida$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
@@ -21,12 +21,12 @@ Så /^ska efternamnet "(.*?)" uppdateras och sparas$/ do |arg1|
 end
 
 
-När /^jag ändrar Email\-adressen till "(.*?)"$/ do |arg1|
+När /^jag ändrar email\-adressen till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Email").clear
     @driver.find_element(:id, "Email").send_keys arg1
 end
 
-Så /^ska Email\-adressen "(.*?)" uppdateras och sparas$/ do |arg1|
+Så /^ska email\-adressen "(.*?)" uppdateras och sparas$/ do |arg1|
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
