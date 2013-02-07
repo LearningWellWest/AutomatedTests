@@ -4,15 +4,6 @@ När /^jag klickar på sök$/ do
   @driver.find_element(:link, "Sök").click
 end
 
-Så /^ska sidan visa texten "(.*?)"$/ do |arg1|
-	@driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/ 
-end
-
-
-Så /^ska sidan ge resultat i form av "(.*?)"$/ do |arg1|
-	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/ 
-end
-
 
 När /^jag skriver in "(.*?)"$/ do |arg1|
      @driver.find_element(:id, "FilterItemText").clear
