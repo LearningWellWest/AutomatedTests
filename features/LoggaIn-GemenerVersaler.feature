@@ -1,7 +1,7 @@
 # language: sv	
 @loggain
 
-Egenskap: Hemsidan ska hantera gemener och versaler
+Egenskap: Inloggningen på hemsidan ska hantera gemener och versaler
 	För att få ett unikt användarnamn och ett säkert lösenord
 	Som en utloggad användare
 	Vill jag att hemsidan ska hantera och kunna skilja på gemener och versaler när man loggar in
@@ -29,7 +29,13 @@ Scenario: Användaren ska kunna logga in med blandat gemener och versaler i anv�
 	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
 	
 Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda
-	När jag fyller i användarnamn med "TESTUSER"
-	Och jag fyller i lösenord med "learningwell"
+	När jag fyller i användarnamn med "Testuser"
+	Och jag fyller i lösenord med "Learningwell"
+	Och jag klickar på Logga in
+	Så ska texten "Fel användarnamn eller lösenord" visas
+	
+Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda
+	När jag fyller i användarnamn med "Testuser"
+	Och jag fyller i lösenord med "LEARNINGWELL"
 	Och jag klickar på Logga in
 	Så ska texten "Fel användarnamn eller lösenord" visas
