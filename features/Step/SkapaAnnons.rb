@@ -25,6 +25,6 @@ När /^jag fyller i Annonsuppgifter$/ do
     @driver.find_element(:id, "PriceWhenNew").send_keys "10"
 end
 
-När /^klickar på Spara annons$/ do
+När /^klickar på Spara annonsen$/ do
   @driver.find_element(:css, "input.save").click
 end
