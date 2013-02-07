@@ -4,7 +4,7 @@ När /^jag klickar på mina adresser$/ do
 	@driver.find_element(:link, "Mina adresser").click
 end
 
-Så /^ska jag komma till mina Adresser$/ do
+Så /^ska jag komma till mina adresser$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Adresser[\s\S]*$/
 end
 
