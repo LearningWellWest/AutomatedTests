@@ -11,8 +11,5 @@ Bakgrund: Användaren vill kunna logga ut
 	
 Scenario: Användaren ska kunna logga in korrekt
 	När jag klickar på logga ut
-<<<<<<< HEAD
 	Så ska användaren loggas ut och sidan visar inte "Hej, Testuser!"
-=======
 	Så ska sidan inte visa "Hej, Testuser!"
->>>>>>> adf3b3b1516d84e25989fa402f48df3b51fc18d0
