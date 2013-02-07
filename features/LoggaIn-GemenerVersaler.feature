@@ -28,19 +28,14 @@ Scenario: Användaren ska kunna logga in med blandade gemener och versaler i anv
 	Och jag klickar på logga in
 	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
 	
-Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda
-<<<<<<< HEAD
-	När jag fyller i användarnamn med "TESTUSER"
-	Och jag fyller i lösenord med "learningwell"
-=======
+Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda i lösenordet
 	När jag fyller i användarnamn med "Testuser"
 	Och jag fyller i lösenord med "Learningwell"
 	Och jag klickar på logga in
 	Så ska texten "Fel användarnamn eller lösenord" visas
 	
-Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda
+Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda i lösenordet
 	När jag fyller i användarnamn med "Testuser"
 	Och jag fyller i lösenord med "LEARNINGWELL"
->>>>>>> cda5fc33bcdd1d52e413b0b52fe6c8b70668f69d
 	Och jag klickar på logga in
 	Så ska texten "Fel användarnamn eller lösenord" visas
