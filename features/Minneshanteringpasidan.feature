@@ -12,7 +12,7 @@ Scenario: Velig användare
 	Och jag klickar på skapa annons
 	Och jag klickar på min sida
 	Och jag klickar på mina adresser
-	Och jag klickar min sida
+	Och jag klickar på min sida
 	Och jag klickar på off2off
 	Och jag trycker bakåt
 	Och jag trycker bakåt
