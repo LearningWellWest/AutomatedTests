@@ -8,10 +8,10 @@ Given /^I am logged in$/ do
     @driver.find_element(:css, "button.loginbutton.save").click
 end
 
-When /^I click on My page$/ do 
+When /^I click on my page$/ do 
 	@driver.find_element(:link, "Min sida").click
 end
 
-Then /^I should come to My page$/ do
+Then /^I should come to my page$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end

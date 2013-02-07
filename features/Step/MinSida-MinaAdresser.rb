@@ -1,15 +1,15 @@
 # encoding: utf-8
 
-När /^jag klickar på Mina adresser$/ do
+När /^jag klickar på mina adresser$/ do
 	@driver.find_element(:link, "Mina adresser").click
 end
 
-Så /^ska jag komma till Mina Adresser$/ do
+Så /^ska jag komma till mina Adresser$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Adresser[\s\S]*$/
 end
 
 
-När /^klickar på Ta bort$/ do
+När /^klickar på ta bort$/ do
 	@driver.find_element(:xpath, "(//input[@value='Ta bort'])[3]").click
 end
 
