@@ -32,4 +32,5 @@ Scenario: Velig användare
 	Och jag trycker framåt
 	Och jag trycker bakåt
 	Och jag trycker bakåt
+	Och jag klickar på logga ut
 	Så ska sidan inte krascha 

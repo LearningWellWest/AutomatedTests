@@ -18,5 +18,5 @@ När /^jag trycker framåt$/ do
 end
 
 Så /^ska sidan inte krascha$/ do
-  pending # express the regexp above with the code you wish you had
+    @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/
 end
