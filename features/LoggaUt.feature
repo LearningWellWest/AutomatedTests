@@ -10,5 +10,5 @@ Bakgrund: Användaren vill kunna logga ut
 	Givet att jag är inloggad
 	
 Scenario: Användaren ska kunna logga in korrekt
-	När jag klickar på Logga ut
-	Så ska användaren loggas ut och sidan visar inte "Hej, Testuser!"
+	När jag klickar på logga ut
+	Så ska sidan inte visa "Hej, Testuser!"

@@ -1,14 +1,19 @@
 # encoding: utf-8
 
-När /^jag klickar på Skapa annons$/ do
+När /^klickar på skapa annons$/ do
   @driver.find_element(:link, "Skapa annons").click
 end
+
 
 Givet /^är på Skapa annons sidan$/ do
   @driver.find_element(:link, "Skapa annons").click
 end
 
-# encoding: utf-8
+När /^ger annonsen rubriken "(.*?)"$/ do |arg1|
+    @driver.find_element(:id, "Title").clear
+    @driver.find_element(:id, "Title").send_keys arg1
+end
+
 
 När /^jag fyller i Annonsuppgifter$/ do
     @driver.find_element(:id, "Title").clear

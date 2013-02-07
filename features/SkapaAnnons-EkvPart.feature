@@ -8,7 +8,7 @@ Egenskap: Skapa annons ekvivalenspartionering
 
 Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
 	Givet att jag är inloggad
-	Och är på Skapa annons sidan
+	Och är på skapa annons sidan
 
 Scenario: Inloggad Skapa annons med många tecken
 	När jag fyller i beskrivningen med över 1000 tecken

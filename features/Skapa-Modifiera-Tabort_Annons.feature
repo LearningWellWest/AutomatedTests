@@ -7,14 +7,15 @@ Egenskap: Användaren ska kunna hantera annonser
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
 
-@not_ready
 Scenario: Användaren skapar en ny annons
-	När att jag är på Skapa annons sidan
+	När klickar på skapa annons
 	Och jag fyller i Annonsuppgifter
 	Och ger annonsen rubriken "testannons123qwerty"
 	Och klickar på Spara annonsen
-	Så ska annonsen "testannons123qwerty" finnas på sidan
+	Så ska annonsen "testannons123qwerty" dyka upp under mina annonser
+	Och ska annonsen "testannons123qwerty" dyka upp när man söker efter "testannons123qwerty"
 
+@not_ready
 Scenario: Användaren modifierar en annons	
 	När jag klickar på min sida
 	Och jag klickar på mina annonser
@@ -22,9 +23,12 @@ Scenario: Användaren modifierar en annons
 	Och klickar på "Redigera"
 	Och ger annonsen rubriken "testannons123modified"
         Och klickar på Spara annonsen
-	Så ska annonsen "testannons123qwerty" inte finnas kvar på sidan
-	Och ska annonsen "testannons123modified" finnas på sidan
+	Så ska annonsen "testannons123qwerty" inte dyka upp under mina annonser
+	Och ska annonsen "testannons123qwerty" inte dyka upp när man söker efter "testannons123qwerty"
+	Och ska annonsen "testannons123modified" dyka upp under mina annonser
+	Och ska annonsen "testannons123modified" dyka upp när man söker efter "testannons123qwerty"
 
+@not_ready
 Scenario: Användaren tar bort en annons
 	När jag klickar på min sida
 	Och jag klickar på mina annonser
