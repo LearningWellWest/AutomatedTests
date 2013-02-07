@@ -5,7 +5,7 @@ När /^jag klickar på skapa annons$/ do
 end
 
 
-Givet /^är på Skapa annons sidan$/ do
+Givet /^är på skapa annons sidan$/ do
   @driver.find_element(:link, "Skapa annons").click
 end
 
