@@ -1,0 +1,1 @@
+cucumber -p skipAll --format json -o ShowFeatures/allUndefined.json
