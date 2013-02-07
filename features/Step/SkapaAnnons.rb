@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-När /^jag klickar på Skapa annons$/ do
+När /^jag klickar på skapa annons$/ do
   @driver.find_element(:link, "Skapa annons").click
 end
 
@@ -10,7 +10,7 @@ end
 
 # encoding: utf-8
 
-När /^jag fyller i Annonsuppgifter$/ do
+När /^jag fyller i annonsuppgifter$/ do
     @driver.find_element(:id, "Title").clear
     @driver.find_element(:id, "Title").send_keys "En sak"
     @driver.find_element(:id, "Description").clear
@@ -25,6 +25,6 @@ När /^jag fyller i Annonsuppgifter$/ do
     @driver.find_element(:id, "PriceWhenNew").send_keys "10"
 end
 
-När /^klickar på Spara annonsen$/ do
+När /^klickar på spara annonsen$/ do
   @driver.find_element(:css, "input.save").click
 end
