@@ -30,7 +30,7 @@ end
 
 
 Så /^ska användaren loggas in och sidan visar "(.*?)"$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Hej, Testuser![\s\S]*$/
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
 
