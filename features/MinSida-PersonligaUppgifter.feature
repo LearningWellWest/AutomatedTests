@@ -8,7 +8,7 @@ Egenskap: Man ska kunna ändra sina personliga uppgifter
 	
 Bakgrund: Användaren är inloggad och klickar på Min sida
 	Givet att jag är inloggad
-	Och jag klickar på Min sida
+	Och jag klickar på min sida
 	
 Scenariomall: Användaren ska kunna ändra efternamnet
 	När jag ändrar förnamnet till <förnamn>
@@ -35,10 +35,10 @@ Scenario: Användaren ska kunna ändra telefonnummer
 	Och klickar på spara
 	Så ska telefonnumret uppdateras och sparas
 	
-Scenariomall: Användaren ska kunna ändra Email-adress
-	När jag ändrar Email-adressen till <email>
+Scenariomall: Användaren ska kunna ändra email-adress
+	När jag ändrar email-adressen till <email>
 	Och klickar på spara
-	Så ska Email-adressen <email> uppdateras och sparas
+	Så ska email-adressen <email> uppdateras och sparas
 	
 Exempel:	
 	| email 							|

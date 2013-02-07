@@ -1,14 +1,20 @@
 # language: sv	
 @loggain
 
-Egenskap: Man ska kunna logga in korrekt på hemsidan
-	För att kunna skapa annonser samt använda mina sidor
+Egenskap: Hemsidan ska hantera gemener och versaler
+	För att undvika att få liknande användarnamn
 	Som en utloggad användare
-	Vill jag kunna logga in på hemsidan
+	Vill jag kunna logga in med antingen gemener eller versaler i användarnamnet 
 	
 Bakgrund: Användaren är utloggad och klickar på logga in
 	Givet att jag är på förstasidan
 	Och jag klickar på logga in-länken
+	
+Scenario: Användaren ska kunna logga in korrekt
+	När jag fyller i användarnamn med "Testuser"
+	Och jag fyller i lösenord med "learningwell"
+	Och jag klickar på logga in
+	Så ska användaren loggas in och sidan visar "Hej, Testuser!"
 	
 Scenario: Användaren ska kunna logga in korrekt
 	När jag fyller i användarnamn med "Testuser"
