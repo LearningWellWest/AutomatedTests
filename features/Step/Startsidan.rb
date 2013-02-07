@@ -11,6 +11,6 @@ Givet /^att jag är på förstasidan$/ do
 end
 
 
-När /^jag klickar på Hem$/ do
+När /^jag klickar på hem$/ do
   @driver.find_element(:link, "Hem").click
 end
