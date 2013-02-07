@@ -10,6 +10,6 @@ end
 
 
 
-Så /^ska jag komma till Hemsidan$/ do
+Så /^ska jag komma till hemsidan$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Möbler[\s\S]*$/
 end
