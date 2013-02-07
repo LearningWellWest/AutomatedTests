@@ -15,7 +15,6 @@ Scenario: Användaren skapar en ny annons
 	Så ska annonsen "testannons123qwerty" dyka upp under mina annonser
 	Och ska annonsen "testannons123qwerty" dyka upp när man söker efter "testannons123qwerty"
 
-@not_ready
 Scenario: Användaren modifierar en annons	
 	När jag klickar på min sida
 	Och jag klickar på mina annonser
