@@ -8,23 +8,23 @@ Egenskap: Man ska kunna se sina personliga länkar
 	
 Bakgrund: Användaren är inloggad och klickar på Min sida
 	Givet att jag är inloggad
-	Och jag klickar på Min sida
+	Och jag klickar på min sida
 
 Scenario: Användaren vill kunna se sina ordrar
-	När jag klickar på Mina köp/min försäljning
-	Så ska jag komma till Mina ordrar
+	När jag klickar på mina köp/min försäljning
+	Så ska jag komma till mina ordrar
 
 Scenario: Användaren vill kunna se sina adresser
-	När jag klickar på Mina adresser
-	Så ska jag komma till Mina Adresser
+	När jag klickar på mina adresser
+	Så ska jag komma till mina Adresser
 	
 Scenario: Användaren vill kunna se sina annonser
-	När jag klickar på Mina annonser
-	Så ska jag komma till Mina annonser
+	När jag klickar på mina annonser
+	Så ska jag komma till mina annonser
 	
 Scenario: Användaren vill kunna se sina avtal
-	När jag klickar på Avtal
-	Så ska jag komma till Avtal
+	När jag klickar på avtal
+	Så ska jag komma till avtal
 	
 
 	

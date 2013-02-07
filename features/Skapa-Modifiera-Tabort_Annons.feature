@@ -9,10 +9,10 @@ Bakgrund: En användare är inloggad
 
 @not_ready
 Scenario: Användaren skapar en ny annons
-	När att jag är på Skapa annons sidan
-	Och jag fyller i Annonsuppgifter
+	När att jag är på skapa annons sidan
+	Och jag fyller i annonsuppgifter
 	Och ger annonsen rubriken "testannons123qwerty"
-	Och klickar på Spara annonsen
+	Och klickar på spara annonsen
 	Så ska annonsen "testannons123qwerty" finnas på sidan
 
 Scenario: Användaren modifierar en annons	
@@ -21,7 +21,7 @@ Scenario: Användaren modifierar en annons
 	Och klickar på annonsen "testannons123qwerty"
 	Och klickar på "Redigera"
 	Och ger annonsen rubriken "testannons123modified"
-        Och klickar på Spara annonsen
+    Och klickar på spara annonsen
 	Så ska annonsen "testannons123qwerty" inte finnas kvar på sidan
 	Och ska annonsen "testannons123modified" finnas på sidan
 

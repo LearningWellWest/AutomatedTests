@@ -8,7 +8,7 @@ Egenskap: Sök - KategoriFiltrering
 	
 Bakgrund:
 	Givet att jag är inloggad
-	Och jag klickar på Sök
+	Och jag klickar på sök
 	
 Scenario: Alla kategorier
 	När "alla" visas i kategorifönstret
