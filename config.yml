@@ -1,5 +1,5 @@
 defaults: &defaults
-  standard_uri: http://www.off2off.se
+  standard_uri: http://www.off2off.se:81
 
 development:
   <<: *defaults
