@@ -27,5 +27,4 @@ end
 
 När /^klickar på spara annonsen$/ do
   @driver.find_element(:css, "input.save").click
-	sleep(10)
 end
