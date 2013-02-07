@@ -1,4 +1,6 @@
 # language: sv
+@test
+
 Egenskap: Användaren ska kunna hantera annonser
 	För att kunna lägga ut och sälja sina produkter
 	Som en inloggad användare

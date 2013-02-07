@@ -20,9 +20,13 @@ När /^jag fyller i annonsuppgifter$/ do
     @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
     @driver.find_element(:id, "Description").clear
     @driver.find_element(:id, "Description").send_keys "En trevlig maskin sak för en billig penning"
-    @driver.find_element(:xpath,"//a[contains(text(),'Hjälpmedel')]").click
+    @driver.find_element(:class, "selectBox-label").click
+    @driver.find_element(:class, "selectBox-label").send_keys "Hjälpmedel"
+
+
     @driver.find_element(:id, "Price").clear
     @driver.find_element(:id, "Price").send_keys "10"
+	sleep(10)
 end
 
 När /^klickar på spara annonsen$/ do
