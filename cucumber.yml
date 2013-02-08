@@ -1,4 +1,4 @@
-default:  --no-source --format pretty --tags ~@not_ready -p localFF
+default:  --no-source --tags ~@not_ready -p localFF
 testjson: features/LoggaIn.feature  --format json -o cucumber.json
 
 localFF:  -r features/support/env.rb -r features/support/localFirefox.rb -r features/Step

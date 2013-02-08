@@ -20,13 +20,15 @@ När /^jag fyller i annonsuppgifter$/ do
     @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
     @driver.find_element(:id, "Description").clear
     @driver.find_element(:id, "Description").send_keys "En trevlig maskin sak för en billig penning"
-    @driver.find_element(:class, "selectBox-label").click
-	@driver.find_element(:class, "selectBox-label").send_keys "u"
-	@driver.find_element(:class, "selectBox-label").send_keys :return
-	@driver.find_element(:class, "selectBox-label").send_keys :tab
-    @driver.find_element(:class, "selectBox-label").click
-	@driver.find_element(:class, "selectBox-label").send_keys "H"
-	@driver.find_element(:class, "selectBox-label").send_keys :return
+
+	#element = @driver.find_elements(:xpath => "//tr[text()='Kategori']")
+	#element.find_element(:class, "selectBox").click
+	#element.find_element(:class, "selectBox").send_keys "H"
+	#element.find_element(:class, "selectBox").send_keys :return
+
+	#http://anahorny.blogspot.se/2011/08/selenium-webdriver-ruby-part-8.html
+	#@driver.find_element(:class, "selectBox-label").send_keys "H"
+	#@driver.find_element(:class, "selectBox-label").send_keys :return
     @driver.find_element(:id, "Price").clear
     @driver.find_element(:id, "Price").send_keys "10"
 	sleep(10)
