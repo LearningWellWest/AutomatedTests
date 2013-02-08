@@ -20,9 +20,13 @@ När /^jag fyller i annonsuppgifter$/ do
     @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
     @driver.find_element(:id, "Description").clear
     @driver.find_element(:id, "Description").send_keys "En trevlig maskin sak för en billig penning"
-    @driver.find_element(:class, "selectBox").click
-    @driver.find_element(:class, "selectBox").send_keys "h"
-    @driver.find_element(:class, "selectBox").send_keys :return
+    @driver.find_element(:class, "selectBox-label").click
+	@driver.find_element(:class, "selectBox-label").send_keys "u"
+	@driver.find_element(:class, "selectBox-label").send_keys :return
+	@driver.find_element(:class, "selectBox-label").send_keys :tab
+    @driver.find_element(:class, "selectBox-label").click
+	@driver.find_element(:class, "selectBox-label").send_keys "H"
+	@driver.find_element(:class, "selectBox-label").send_keys :return
     @driver.find_element(:id, "Price").clear
     @driver.find_element(:id, "Price").send_keys "10"
 	sleep(10)

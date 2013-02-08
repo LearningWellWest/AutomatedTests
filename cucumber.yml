@@ -1,5 +1,5 @@
 default:  --no-source --format pretty --tags ~@not_ready -p localFF
-ytubjson: features/youtube_search.feature  --format json -o cucumber.json
+testjson: features/LoggaIn.feature  --format json -o cucumber.json
 
 localFF:  -r features/support/env.rb -r features/support/localFirefox.rb -r features/Step
 
