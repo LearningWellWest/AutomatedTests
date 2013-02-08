@@ -14,4 +14,4 @@ Scenario: Användaren ska kunna logga in korrekt
 	När jag fyller i användarnamn med "Testuser"
 	Och jag fyller i lösenord med "learningwell"
 	Och jag klickar på logga in
-	Så ska användaren loggas in och sidan visar "Hej"
+	Så ska användaren loggas in och sidan visar "[Logga ut]"
