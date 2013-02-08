@@ -47,7 +47,7 @@ end
 
 När /^jag ändrar mobilnumret till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Cellphone").clear
-  @driver.find_element(:id, "Cellphone").send_keys "+46701234567"
+  @driver.find_element(:id, "Cellphone").send_keys arg1
 end
 
 Så /^ska mobilnumret "(.*?)" uppdateras och sparas$/ do |arg1|

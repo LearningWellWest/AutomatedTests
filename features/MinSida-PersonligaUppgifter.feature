@@ -28,12 +28,12 @@ Scenario: Användaren ska kunna ändra efternamn
 Scenario: Användaren ska kunna ändra mobilnummer
 	När jag ändrar mobilnumret till "+46701234567"
 	Och klickar på spara
-	Så ska mobilnumret uppdateras och sparas
+	Så ska mobilnumret "+46701234567" uppdateras och sparas
 	
 Scenario: Användaren ska kunna ändra telefonnummer
 	När jag ändrar telefonnumret till "0987654321"
 	Och klickar på spara
-	Så ska telefonnumret uppdateras och sparas
+	Så ska telefonnumret "0987654321" uppdateras och sparas
 	
 Scenariomall: Användaren ska kunna ändra email-adress
 	När jag ändrar email-adressen till <email>

@@ -43,7 +43,7 @@ Så /^ska adressen sparas och visas$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*admin Adminsson[\s\S]*$/
 end
 
-När /^ändrar telefonnumret till "(.*?)"$/ do |arg1|
+När /^jag ändrar telefonnumret till "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Phone").clear
   @driver.find_element(:id, "Phone").send_keys "0987654321"
 end

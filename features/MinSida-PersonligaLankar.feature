@@ -16,7 +16,7 @@ Scenario: Användaren vill kunna se sina ordrar
 
 Scenario: Användaren vill kunna se sina adresser
 	När jag klickar på mina adresser
-	Så ska jag komma till mina Adresser
+	Så ska jag komma till mina adresser
 	
 Scenario: Användaren vill kunna se sina annonser
 	När jag klickar på mina annonser
