@@ -6,10 +6,10 @@ Egenskap: Man ska kunna logga ut korrekt på hemsidan
 	Som en inloggad användare
 	Vill jag kunna logga ut från hemsidan
 	
-Bakgrund: Användaren vill kunna logga ut
+Bakgrund: Användaren är inloggad på hemsidan
 	Givet att jag är inloggad
 	
-Scenario: Användaren ska kunna logga in korrekt
+Scenario: Användaren ska kunna logga ut korrekt
 	När jag klickar på logga ut
-	Så ska användaren loggas ut och sidan visar inte "Hej, Testuser!"
-	Så ska sidan inte visa "Hej, Testuser!"
+	Så ska sidan inte visa "Logga ut"
+	
