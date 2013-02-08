@@ -8,7 +8,7 @@ Egenskap: Sök Ekvivalenspartionering
 	
 Bakgrund:
 	Givet att jag är inloggad
-	Och jag klickar på Sök
+	Och jag klickar på sök
 
 	
 Scenario: Off2off skall hantera 2^16

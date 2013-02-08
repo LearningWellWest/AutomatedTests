@@ -11,5 +11,5 @@ Scenario: Helst hela sidan
 	Och jag klickar på admin
 	Och jag klickar på gå till startsidan
 	Och jag klickar på logga ut
-	Och jag klickar på hem
-	Så ska jag komma till hemsidan
+	Och jag klickar på Off2Off-loggan
+	Så ska jag komma till startsidan
