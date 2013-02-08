@@ -10,7 +10,7 @@ end
 
 
 När /^klickar på ta bort$/ do
-	@driver.find_element(:xpath, "(//input[@value='Ta bort'])[3]").click
+	@driver.find_element(:xpath, "(//input[@value='Ta bort'])[2]").click
 end
 
 Så /^ska adressen raderas$/ do

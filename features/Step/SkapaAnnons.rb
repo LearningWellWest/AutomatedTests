@@ -29,6 +29,7 @@ När /^jag fyller i annonsuppgifter$/ do
 	#http://anahorny.blogspot.se/2011/08/selenium-webdriver-ruby-part-8.html
 	#@driver.find_element(:class, "selectBox-label").send_keys "H"
 	#@driver.find_element(:class, "selectBox-label").send_keys :return
+
     @driver.find_element(:id, "Price").clear
     @driver.find_element(:id, "Price").send_keys "10"
 	sleep(10)
