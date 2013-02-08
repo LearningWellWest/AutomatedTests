@@ -12,7 +12,7 @@ Scenario: Användaren skapar en ny annons
 	När jag klickar på skapa annons
 	Och jag fyller i annonsuppgifter
 	Och ger annonsen rubriken "testannons123qwerty"
-	Och klickar på Spara annonsen
+	Och klickar på spara annonsen
 	Så ska annonsen "testannons123qwerty" dyka upp under mina annonser
 	Och ska annonsen "testannons123qwerty" dyka upp när man söker efter "testannons123qwerty"
 
