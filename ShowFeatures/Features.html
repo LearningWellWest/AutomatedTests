@@ -5,7 +5,6 @@
  <link rel="stylesheet" type="text/css" href="main.css" />                                              
  <script type="text/javascript" src="jquery-1.9.0.js"></script>            
  <script type="text/javascript">     
-
           $.getJSON('allUndefined.json', function(feature) {
           
           var html = [''];	
@@ -55,7 +54,7 @@
          	
          	}
 
-		html.push("</div></div>");         	
+		html.push("</div></div>");       	
          	
          });
 		document.getElementById('cucumber').innerHTML = html.join('');
@@ -64,6 +63,9 @@
      <script type="text/javascript" src="utils.js"></script>   
 </head>
 <body>
+<script type="text/javascript">
+       collapseAll();
+    </script>
 <a href="javascript:expandAll()">Expand</a>
 <a href="javascript:collapseAll()">Collapse</a>
 

@@ -159,6 +159,11 @@ function collapseAll()
 	setUpPanels();sdfg
 }
 
+function provFunc()
+{
+alert("ghjkl");	
+	}
+
 /**
  * Takes data from the panelsStatus object, formats as key:value|key:value... and puts in cookie valid for 365 days
  * @param key	key name to save
