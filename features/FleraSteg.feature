@@ -1,5 +1,7 @@
 # language: sv
 
+@not_ready
+
 Egenskap: Många steg
 
 Scenario: Helst hela sidan

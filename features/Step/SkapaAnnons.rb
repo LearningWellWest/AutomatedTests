@@ -19,20 +19,27 @@ När /^jag fyller i annonsuppgifter$/ do
     @driver.find_element(:id, "Title").clear
     @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
     @driver.find_element(:id, "Description").clear
-    @driver.find_element(:id, "Description").send_keys "En trevlig maskin sak för en billig penning"
+    @driver.find_element(:id, "Description").send_keys "Lite gammal men bra för dig med lite pengar"
+	
+	#Gå igenom tabellen med alla kontroller
+	@driver.find_elements(:xpath => "//table[@class='grid_11 edit-table alpha double']/tbody/tr").each do |r|
+		
+		#Lokalisera raden med Status-fältet	   
+		if r.text =~ /^[\s\S]*Status[\s\S]*$/
+			r.find_element(:class, "selectBox-dropdown").click
+			r.find_element(:class, "selectBox-dropdown").send_keys "publicerad"
+		        r.find_element(:class, "selectBox-dropdown").send_keys :return
 
-	#element = @driver.find_elements(:xpath => "//tr[text()='Kategori']")
-	#element.find_element(:class, "selectBox").click
-	#element.find_element(:class, "selectBox").send_keys "H"
-	#element.find_element(:class, "selectBox").send_keys :return
-
-	#http://anahorny.blogspot.se/2011/08/selenium-webdriver-ruby-part-8.html
-	#@driver.find_element(:class, "selectBox-label").send_keys "H"
-	#@driver.find_element(:class, "selectBox-label").send_keys :return
-
+		#Lokalisera raden med Kategori-fältet	   
+		elsif r.text =~ /^[\s\S]*Kategori[\s\S]*$/
+			r.find_element(:class, "selectBox-dropdown").click
+			r.find_element(:class, "selectBox-dropdown").send_keys :arrow_down
+		        r.find_element(:class, "selectBox-dropdown").send_keys :return
+		end		
+	end
     @driver.find_element(:id, "Price").clear
     @driver.find_element(:id, "Price").send_keys "10"
-	sleep(10)
+	
 end
 
 När /^klickar på spara annonsen$/ do
