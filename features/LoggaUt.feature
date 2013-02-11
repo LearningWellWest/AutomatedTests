@@ -1,7 +1,7 @@
 # language: sv	
 @loggain
 
-Egenskap: Man ska kunna logga ut korrekt på hemsidan
+Egenskap: Man ska kunna logga ut från hemsidan
 	För att kunna skydda sina användaruppgifter
 	Som en inloggad användare
 	Vill jag kunna logga ut från hemsidan

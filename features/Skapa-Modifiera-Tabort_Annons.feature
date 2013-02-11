@@ -7,13 +7,15 @@ Egenskap: Användaren ska kunna hantera annonser
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
-@not_ready
+	Och att det inte finns några existerande annonser
+
 Scenario: Användaren skapar en ny annons
 	När jag klickar på skapa annons
 	Och jag fyller i annonsuppgifter
 	Och ger annonsen rubriken "Kokosboll"
 	Och klickar på spara annonsen
 	Så ska annonsen "Kokosboll" synas under mina annonser
+
 @not_ready
 Scenario: Användaren modifierar en annons	
 	När jag klickar på min sida

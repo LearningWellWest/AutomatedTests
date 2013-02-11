@@ -5,12 +5,12 @@ När /^jag klickar på logga in\-länken$/ do
 end
 
 När /^jag klickar på logga in$/ do
-  @driver.find_element(:css, "button.loginbutton.save").click
+  @driver.find_element(:link, "[Logga in]").click
 end
 
 Givet /^att jag är inloggad$/ do
-	@driver.get(@base_url + "/")
-	@driver.find_element(:link, "[Logga in]").click
+    @driver.get(@base_url + "/")
+    @driver.find_element(:link, "[Logga in]").click
     @driver.find_element(:id, "Username").clear
     @driver.find_element(:id, "Username").send_keys "Testuser"
     @driver.find_element(:id, "Password").clear

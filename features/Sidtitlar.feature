@@ -32,3 +32,8 @@ Scenario: Jag läser sidtiteln på Skapa annons
 Scenario: Jag läser sidtiteln på Admin
 	När jag klickar på admin
 	Så ska sidtiteln vara "Off2Off | Admin"
+
+Scenario: Jag läser sidtiteln på Logga In
+	När jag klickar på logga ut
+	Och jag klickar på logga in
+	Så ska sidtiteln vara "Off2Off | Logga in"
