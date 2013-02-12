@@ -23,24 +23,12 @@ Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65536"
 	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
-Scenario: Sökfunktionen skall hantera avslutande mellanslag
-	Och jag skriver in "stol "
-	Så ska sidan ge resultat i form av "Inga annonser hittades"
-	
 Scenario: Off2off skall hantera enkel unicode
-	Och jag skriver in "äåö"
+	Och jag skriver in "äåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåö"
 	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera Extremt många tecken
 	Och jag skriver in "extremt många tecken"
-	Så ska sidan ge resultat i form av "Inga annonser hittades"
-	
-Scenario: Off2off skall hantera giltliga värden
-	Och jag skriver in "stol"
-	Så ska sidan ge resultat i form av "Inga annonser hittades"	
-	
-Scenario: Off2off skall hantera inledande mellanslag
-	Och jag skriver in " stol"
 	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera ovanligt många tecken

@@ -1,5 +1,5 @@
 # language: sv
-@velig
+@not_ready
 
 Egenskap: Hemsidan skall behålla minnet vid navigering
 	För att undvika återupprepning

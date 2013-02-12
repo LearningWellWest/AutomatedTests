@@ -2,9 +2,9 @@
 @sokfilt
 
 Egenskap: Sök - KategoriFiltrering
-	För att underlätta i sökfunktionen
+	För att underlätta vid annonssökandet
 	Som vilken användare som helst
-	Vill jag filtrera all skit på söksidan
+	Vill jag filtrera alla annonserna på söksidan
 	
 Bakgrund:
 	Givet att jag är inloggad
