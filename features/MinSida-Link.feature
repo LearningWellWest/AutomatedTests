@@ -1,4 +1,3 @@
-@not_ready
 Feature: The link to My page should work
 
 Background: A user is logged in

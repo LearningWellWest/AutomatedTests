@@ -100,5 +100,9 @@ Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
     #Övrig info
     @driver.find_element(:id, "LocationAddress_OtherInfo").clear
     @driver.find_element(:id, "LocationAddress_OtherInfo").send_keys "Trappa 3"	
+
+    #@driver.find_element(:id,"value").click
+    #@driver.find_element(:id,"value").send_keys "/home/learningwell/Skrivbord/AutomatedTests/features/Step/kokosboll.jpg"
+
 end
 
