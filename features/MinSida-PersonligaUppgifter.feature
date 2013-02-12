@@ -10,41 +10,24 @@ Bakgrund: Användaren är inloggad och klickar på Min sida
 	Givet att jag är inloggad
 	Och jag klickar på min sida
 	
-Scenariomall: Användaren ska kunna ändra efternamnet
-	När jag ändrar förnamnet till <förnamn>
-	Och klickar på spara
-	Så ska förnamnet <förnamn> uppdateras och sparas
-	
-Exempel:	
-	| förnamn 	|
-    | "test1" 	|
-    | "testar1" |
-	
-Scenario: Användaren ska kunna ändra efternamn
-	När jag ändrar efternamnet till "Testarsson"
-	Och klickar på spara
-	Så ska efternamnet "Testarsson" uppdateras och sparas
-	
-Scenario: Användaren ska kunna ändra mobilnummer
-	När jag ändrar mobilnumret till "+46701234567"
-	Och klickar på spara
-	Så ska mobilnumret "+46701234567" uppdateras och sparas
-	
-Scenario: Användaren ska kunna ändra telefonnummer
-	När jag ändrar telefonnumret till "0987654321"
-	Och klickar på spara
-	Så ska telefonnumret "0987654321" uppdateras och sparas
-	
-Scenariomall: Användaren ska kunna ändra email-adress
-	När jag ändrar email-adressen till <email>
-	Och klickar på spara
-	Så ska email-adressen <email> uppdateras och sparas
-	
-Exempel:	
-	| email 							|
-    | "patrikjohansson87@hotmail.com" 	|
-    | "bloondie87@gmail.com" 			|
-	
+Scenario: Användaren ska kunna ändra sina uppgifter på min sida
 
+	När jag ändrar förnamnet till 			"Ture"
+	Och jag ändrar efternamnet till 		"Sventon"
+        Och jag ändrar mobilnumret till 		"0738365699"
+	Och jag ändrar telefonnummret till 		"054574375"
+	Och jag ändrar epost-adressen till 		"ture@epost.se"
+	Och jag ändrar förvaltning till 		"Testförvaltningen"
+	Och jag ändrar avdelning till 			"Testavdelningen"
+	Och klickar på spara
+	Och jag klickar på skapa annons
+	Och jag klickar på min sida
+	Så ska texten i förnamns-fältet vara 		"Ture"
+	Och ska texten i efternamns-fältet vara 	"Sventon"
+	Och ska texten i mobilnummer-fältet vara 	"0738365699"
+	Och ska texten i telefon-fältet vara vara 	"054574375"
+        Och ska texten i epost-fältet vara 		"ture@epost.se"
+	Och ska texten i förvaltnings-fältet vara 	"Testförvaltningen"
+	Och ska texten i avdelnings-fältet vara 	"Testavdelningen"
 
 	

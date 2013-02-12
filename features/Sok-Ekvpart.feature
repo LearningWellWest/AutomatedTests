@@ -13,23 +13,23 @@ Bakgrund:
 	
 Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65534"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65535"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65536"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Sökfunktionen skall hantera avslutande mellanslag
 	Och jag skriver in "stol "
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera enkel unicode
 	Och jag skriver in "äåö"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera Extremt många tecken
 	Och jag skriver in "extremt många tecken"
@@ -37,11 +37,11 @@ Scenario: Off2off skall hantera Extremt många tecken
 	
 Scenario: Off2off skall hantera giltliga värden
 	Och jag skriver in "stol"
-	Så ska sidan ge resultat i form av "poster"	
+	Så ska sidan ge resultat i form av "Inga annonser hittades"	
 	
 Scenario: Off2off skall hantera inledande mellanslag
 	Och jag skriver in " stol"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera ovanligt många tecken
 	Och jag skriver in "Jdjdhdhdj dnchdweowowu shsnalksd iuigdfsdmn fslkdfjdhfuuye ruywjsj sksjdfhf dhjsios dhgdfjshdfd dhfgsjhfgsdguywhdb dgfisdbfkjsdf sdjfhsjkdf sjkfhskdfhsdjkfh sfh dhflkwioerhsdj f huidf idhf jkdfhsdgf jkhfiojhwiefgb sdkjho f"
@@ -49,15 +49,15 @@ Scenario: Off2off skall hantera ovanligt många tecken
 	
 Scenario: Off2off skall hantera negativt värde
 	Och jag skriver in "-1"
-	Så ska sidan ge resultat i form av "poster"
+	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera max integer
 	Och jag skriver in "2147483647"
-	Så ska sidan ge resultat i form av "poster"	
+	Så ska sidan ge resultat i form av "Inga annonser hittades"	
 	
 Scenario: Off2off skall hantera max integer plus 1
 	Och jag skriver in "2147483648"
-	Så ska sidan ge resultat i form av "poster"	
+	Så ska sidan ge resultat i form av "Inga annonser hittades"	
 	
 Scenario: Off2off skall hantera minst integer
 	Och jag skriver in "-2147483648"

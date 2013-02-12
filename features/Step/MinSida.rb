@@ -10,47 +10,86 @@ Så /^ska jag komma till min sida$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
-
-När /^jag ändrar efternamnet till "(.*?)"$/ do |arg1|
-  @driver.find_element(:id, "LastName").clear
-  @driver.find_element(:id, "LastName").send_keys arg1
-end
-
-Så /^ska efternamnet "(.*?)" uppdateras och sparas$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
-end
-
-
-När /^jag ändrar email\-adressen till "(.*?)"$/ do |arg1|
-  @driver.find_element(:id, "Email").clear
-    @driver.find_element(:id, "Email").send_keys arg1
-end
-
-Så /^ska email\-adressen "(.*?)" uppdateras och sparas$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
-end
-
-När /^jag ändrar förnamnet till "(.*?)"$/ do |arg1|
-  @driver.find_element(:id, "FirstName").clear
-  @driver.find_element(:id, "FirstName").send_keys arg1
-end
-
-Så /^ska förnamnet "(.*?)" uppdateras och sparas$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
-end
-
-
 När /^klickar på spara$/ do
   @driver.find_element(:css, "input.save").click
 end
 
 
-När /^jag ändrar mobilnumret till "(.*?)"$/ do |arg1|
+#Förnamn
+När /^jag ändrar förnamnet till \t\t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "FirstName").clear
+  @driver.find_element(:id, "FirstName").send_keys arg1
+end
+
+Så /^ska texten i förnamns\-fältet vara \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "FirstName").attribute("value").should == arg1 
+end
+
+#Efternamn
+När /^jag ändrar efternamnet till \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "LastName").clear
+  @driver.find_element(:id, "LastName").send_keys arg1
+end
+
+Så /^ska texten i efternamns\-fältet vara \t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "LastName").attribute("value").should == arg1 
+end
+
+
+#E-post
+När /^jag ändrar epost\-adressen till \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Email").clear
+  @driver.find_element(:id, "Email").send_keys arg1
+end
+
+Så /^ska texten i epost\-fältet vara \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Email").attribute("value").should == arg1 
+end
+
+
+#Telefon
+När /^jag ändrar telefonnummret till \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Phone").clear
+  @driver.find_element(:id, "Phone").send_keys arg1
+end
+
+Så /^ska texten i telefon\-fältet vara vara \t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Phone").attribute("value").should == arg1 
+end
+
+
+#Mobiltelefon
+När /^jag ändrar mobilnumret till \t\t"(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Cellphone").clear
   @driver.find_element(:id, "Cellphone").send_keys arg1
 end
 
-Så /^ska mobilnumret "(.*?)" uppdateras och sparas$/ do |arg1|
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+Så /^ska texten i mobilnummer\-fältet vara \t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Cellphone").attribute("value").should == arg1 
 end
+
+
+#Förvaltning
+När /^jag ändrar förvaltning till \t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "AdministrationUnit").clear
+  @driver.find_element(:id, "AdministrationUnit").send_keys arg1
+end
+
+Så /^ska texten i förvaltnings\-fältet vara \t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "AdministrationUnit").attribute("value").should == arg1 
+end
+
+
+#Avdelning
+När /^jag ändrar avdelning till \t\t\t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Department").clear
+  @driver.find_element(:id, "Department").send_keys arg1
+end
+
+Så /^ska texten i avdelnings\-fältet vara \t"(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Department").attribute("value").should == arg1 
+end
+
+
+
 
