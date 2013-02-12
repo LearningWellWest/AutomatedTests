@@ -1,7 +1,7 @@
 # language: sv	
 @loggain
 
-Egenskap: Man ska kunna logga in korrekt på hemsidan
+Egenskap: Sidan ska ha en login-funktion
 	För att kunna skapa annonser samt använda mina sidor
 	Som en användare
 	Vill jag kunna logga in på hemsidan
