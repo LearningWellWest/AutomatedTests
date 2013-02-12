@@ -1,16 +1,16 @@
 # language: sv
 
 Egenskap: Skapa annons ekvivalenspartionering
-	För att man inte ska kunna skapa annonser utan data eller med för mycket data
+	För jag inte ska kunna skapa en annons med orimliga värden
     	Som en inloggad användare
-	Vill jag att det ska visas varningsmeddelanden vid orimlig inmatning
+	Vill förhindra orimliga värden vid annonsskapandet
 
-Bakgrund: En användare är inloggad och befinner sig på Skapa annons sidan
+Bakgrund: En inloggad användare skapar en annons
 	Givet att jag är inloggad
 	Och är på skapa annons sidan
 	Och jag fyller i korrekta värden för alla fält när annonsen skapas
 
-Scenario: Rubrikfältet får innehålla max 50 tecken
+Scenario: Skriv in fler än 50 tecken i rubriken
 	När jag ger annonsen rubriken "anbsgsgehsgsgsiodfyhiuokgbvuhbijnsdifvbohjnkiduhpcvbnjodhifcxuifd"
 	Så ska fältet rubrikfältet innehålla "anbsgsgehsgsgsiodfyhiuokgbvuhbijnsdifvbohjnkiduhpc"
 
@@ -19,58 +19,16 @@ Scenario: Skapa annons utan rubrik
 	Och klickar på spara annonsen
 	Så ska sidan visa texten "Rubriken får inte vara tom"
 
-@not_ready
 Scenario: Skapa annons med rubrik som består av endast mellanslag
 	När jag ger annonsen rubriken "   "
 	Och klickar på spara annonsen
 	Så ska sidan visa texten "Rubriken får inte vara tom"
 
+Scenario: Skriv in fler än 500 tecken i beskrivningen
+	När jag skriver in 3000 tecken i beskrivningen
+	Så ska fältet beskrivningsfältet innehålla högst 500 tecken
 
-@not_ready	
-Scenario: Inloggad Skapa annons med bokstäver
+Scenario: Skriv in bokstäver i prisfältet
 	När jag fyller i prisfältet med "aswdefrgthjk"
-	Och fyller i resten av uppgifterna
 	Och klickar på spara annonsen
-	Så ska felmedelandet "fältet måste innehålla siffror" visas
-
-@not_ready	
-Scenario: Skapa annons med många siffror
-	När jag fyller i beskrivningen med över x antal siffror
-	Och fyller i resten av uppgifterna
-	Och klickar på spara annonsen
-	Så ska felmedelandet "Fältet innehåller för många tecken, max:" visas
-
-@not_ready
-Scenario: Skapa annons med ogiltiga tecken
-	När jag fyller i prisfältet med "          "
-	Och fyller i resten av uppgifterna
-	Och klickar på spara annonsen
-	Så ska felmedelandet "fältet måste innehålla siffror" visas
-
-@not_ready	
-Scenario: Skapa annons med specialtecken
-	När jag fyller i prisfältet med flera specialtecken
-	Och fyller i resten av uppgifterna
-	Och klickar på spara annonsen
-	Så ska felmedelandet "fältet måste innehålla siffror" visas
-
-@not_ready
-Scenario: Inloggad Skapa annons med många tecken
-	När jag fyller i rubriken med över 100 tecken
-	Och fyller i resten av uppgifterna
-	Och klickar på spara annonsen
-	Så ska felmedelandet "Fältet innehåller för många tecken, max:" visas
-
-@not_ready	
-Scenario: Skapa annons med ogiltiga tecken
-	När jag fyller i rubriken med flera mellanslag
-	Och fyller i resten av uppgifterna
-	Och klickar på spara annonsen
-	Så ska felmedelandet "Fältet måste innehålla siffror eller bokstäver" visas
-
-@not_ready
-Scenario: Skapa annons med tomt fält
-	När jag fyller i Annonsuppgifter
-	Och ger annonsen rubriken ""
-	Och klickar på spara annonsen
-	Så ska felmedelandet "Fältet innehåller för få tecken, minst:" visas
+	Så ska sidan visa texten "Priset måste bestå av siffror"
