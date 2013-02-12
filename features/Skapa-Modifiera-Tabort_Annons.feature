@@ -5,13 +5,13 @@ Egenskap: Användaren ska kunna hantera annonser
 	Som en inloggad användare
 	Vill jag ha möjligheten att skapa, modifiera och ta bort annonser
 
-Bakgrund: En användare är inloggad
+Bakgrund: En användare är inloggad och det det finns inga annonser under mina annonser
 	Givet att jag är inloggad
 	Och att det inte finns några existerande annonser
 
 Scenario: Användaren skapar en ny annons
 	När jag klickar på skapa annons
-	Och jag fyller i annonsuppgifter
+	Och jag fyller i korrekta värden för alla fält när annonsen skapas
 	Och ger annonsen rubriken "Kokosboll"
 	Och klickar på spara annonsen
 	Så ska annonsen "Kokosboll" synas under mina annonser

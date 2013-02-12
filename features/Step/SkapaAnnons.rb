@@ -9,13 +9,30 @@ Givet /^är på skapa annons sidan$/ do
   @driver.find_element(:link, "Skapa annons").click
 end
 
+
+När /^klickar på spara annonsen$/ do
+  @driver.find_element(:css, "input.save").click
+end
+
+
+#Rubrik
 När /^ger annonsen rubriken "(.*?)"$/ do |arg1|
     @driver.find_element(:id, "Title").clear
     @driver.find_element(:id, "Title").send_keys arg1
 end
 
+När /^jag ger annonsen rubriken "(.*?)"$/ do |arg1|
+    @driver.find_element(:id, "Title").clear
+    @driver.find_element(:id, "Title").send_keys arg1
+end
 
-När /^jag fyller i annonsuppgifter$/ do
+Så /^ska fältet rubrikfältet innehålla "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "Title").attribute("value").should == arg1 
+end
+
+
+
+Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
     @driver.find_element(:id, "Title").clear
     @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
     @driver.find_element(:id, "Description").clear
@@ -23,7 +40,6 @@ När /^jag fyller i annonsuppgifter$/ do
 	
 	#Gå igenom tabellen med alla kontroller
 	@driver.find_elements(:xpath => "//table[@class='grid_11 edit-table alpha double']/tbody/tr").each do |r|
-		
 		#Lokalisera raden med Status-fältet	   
 		if r.text =~ /^[\s\S]*Status[\s\S]*$/
 			r.find_element(:class, "selectBox-dropdown").click
@@ -42,6 +58,3 @@ När /^jag fyller i annonsuppgifter$/ do
 	
 end
 
-När /^klickar på spara annonsen$/ do
-  @driver.find_element(:css, "input.save").click
-end
