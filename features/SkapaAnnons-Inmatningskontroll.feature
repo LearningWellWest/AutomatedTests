@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Skapa annons ekvivalenspartionering
+Egenskap: Skapa annons - Inmatningskontroll
 	För jag inte ska kunna skapa en annons med orimliga värden
     	Som en inloggad användare
 	Vill förhindra orimliga värden vid annonsskapandet

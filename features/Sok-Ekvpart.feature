@@ -1,7 +1,7 @@
 # language: sv
 @sok
 
-Egenskap: Sök Ekvivalenspartionering
+Egenskap: Sök - Inmatningskontroll
 	För att sidan skall vara stabil
 	Som en inloggad användare
 	Vill jag inte krasha sidan vid en vanlig/ofrivillig sifferinmatning
