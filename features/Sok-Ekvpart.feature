@@ -2,14 +2,13 @@
 @sok
 
 Egenskap: Sök - Inmatningskontroll
-	För att sidan skall vara stabil
+	För att jag ska kunna hitta de annonser jag letar efter
 	Som en inloggad användare
-	Vill jag inte krasha sidan vid en vanlig/ofrivillig sifferinmatning
+	Vill jag hitta det jag söker efter och att sidan inte krashar
 	
 Bakgrund:
 	Givet att jag är inloggad
 	Och jag klickar på sök
-
 	
 Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65534"

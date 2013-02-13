@@ -1,9 +1,9 @@
 # language: sv
 
 Egenskap: Skapa annons - Inmatningskontroll
-	För jag inte ska kunna skapa en annons med orimliga värden
+	För att jag inte ska kunna skapa en annons med orimliga värden
     	Som en inloggad användare
-	Vill förhindra orimliga värden vid annonsskapandet
+	Vill jag förhindra orimliga värden vid annonsskapandet
 
 Bakgrund: En inloggad användare skapar en annons
 	Givet att jag är inloggad
