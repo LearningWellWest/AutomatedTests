@@ -12,7 +12,6 @@ end
 
 #Ta bort alla inlagda adresser
 Givet /^jag inte har några adresser inlagda$/ do
-  element = @driver.find_element(:class,"deleteaddressbutton")
   i =0;
   @driver.find_elements(:class,"deleteaddressbutton").each do |r|
     i=i+1
