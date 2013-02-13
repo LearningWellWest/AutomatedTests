@@ -1,5 +1,5 @@
 # language: sv
-@sokfilt
+@sokfilt @not_ready
 
 Egenskap: Sök - KategoriFiltrering
 	För att underlätta vid annonssökandet
