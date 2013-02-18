@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 När /^jag klickar på logga in\-länken$/ do
-@driver.get(@base_url + "/Customer/Login")
+@driver.find_element(:link, "[Logga in]").click
 end
 
 När /^jag klickar på logga in$/ do
-  @driver.find_element(:link, "[Logga in]").click
+  @driver.find_element(:css, "button.loginbutton.save").click
 end
 
 Givet /^att jag är inloggad$/ do
