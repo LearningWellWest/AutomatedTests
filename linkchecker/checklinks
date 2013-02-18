@@ -1,1 +1,1 @@
-linkchecker http://www.off2off.se:81 --file-output=xml/linkchecker/linkcheck.xml
+linkchecker http://malvin.off2off.se --file-output=xml/linkchecker/linkcheck.xml
