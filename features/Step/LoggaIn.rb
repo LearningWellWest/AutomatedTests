@@ -8,6 +8,11 @@ När /^jag klickar på logga in$/ do
   @driver.find_element(:css, "button.loginbutton.save").click
 end
 
+När /^klickar på knappen Publicera$/ do
+  @driver.find_element(:xpath, "(//button[@name='save'])[2]").click
+end
+
+
 Givet /^att jag är inloggad$/ do
     @driver.get(@base_url + "/")
     @driver.find_element(:link, "[Logga in]").click
