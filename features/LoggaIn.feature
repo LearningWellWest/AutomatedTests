@@ -9,6 +9,11 @@ Egenskap: Sidan ska ha en login-funktion
 Bakgrund: Användaren är utloggad och klickar på logga in
 	Givet att jag är på förstasidan
 	Och jag klickar på logga in-länken
+
+@malvin
+Scenario: Vid inloggning via Malvin ska @malmo.se var förifyllt och ej redigerbart.
+	När jag rensar användarnamn-fältet
+	Så ska "@malmo.se" fortfarande visas någonstans på sidan
 	
 Scenario: Användaren ska kunna logga in med korrekta uppgifter
 	När jag fyller i användarnamn med "Testuser"

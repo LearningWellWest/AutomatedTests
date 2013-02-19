@@ -13,6 +13,23 @@ När /^klickar på knappen Publicera$/ do
 end
 
 
+
+#Malvin
+
+När /^jag rensar användarnamn\-fältet$/ do
+    @driver.find_element(:id, "Username").clear
+end
+
+Så /^ska "(.*?)" fortfarande visas någonstans på sidan$/ do |arg1|
+
+wholepageString =    @driver.find_element(:css, "BODY").text
+wholepageString <<   @driver.find_element(:id, "Username").attribute("value")
+wholepageString.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+      
+end
+
+
+
 Givet /^att jag är inloggad$/ do
     @driver.get(@base_url + "/")
     @driver.find_element(:link, "[Logga in]").click
