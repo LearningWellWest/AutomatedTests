@@ -1,5 +1,5 @@
 # language: sv
-@Utseende
+@sidtitlar
 
 Egenskap: Varje sida ska ha en anpassad sidtitel
 	För att förstå vart jag befinner mig på sidan
@@ -21,13 +21,14 @@ Scenario: Jag läser sidtiteln på söksidan
 	När jag klickar på sök
 	Så ska sidtiteln vara "Off2Off | Sök"
 
-Scenario: Jag läser sidtiteln på Läs mer
-	När jag klickar på läs mer
-	Så ska sidtiteln vara "Off2Off | Läs mer"
+@not_ready
+Scenario: Jag läser sidtiteln på tjänster
+	När jag klickar på tjänster
+	Så ska sidtiteln vara "Off2Off | Tjänster"
 	
-Scenario: Jag läser sidtiteln på Skapa annons
-	När jag klickar på skapa annons
-	Så ska sidtiteln vara "Off2Off | Skapa annons"
+Scenario: Jag läser sidtiteln på annonsera
+	När jag klickar på annonsera
+	Så ska sidtiteln vara "Off2Off | Annonsera"
 
 Scenario: Jag läser sidtiteln på Admin
 	När jag klickar på admin

@@ -30,7 +30,7 @@ Scenario: Användaren ska kunna ändra sina uppgifter på min sida
 	Och jag ändrar förvaltning till 		"Testförvaltningen"
 	Och jag ändrar avdelning till 			"Testavdelningen"
 	Och klickar på spara
-	Och jag klickar på skapa annons
+	Och jag klickar på annonsera
 	Och jag klickar på min sida
 	Så ska texten i förnamns-fältet vara 		"Ture"
 	Och ska texten i efternamns-fältet vara 	"Sventon"
