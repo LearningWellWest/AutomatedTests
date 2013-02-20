@@ -49,6 +49,17 @@ När /^jag fyller i prisfältet med "(.*?)"$/ do |arg1|
  @driver.find_element(:id, "Price").send_keys arg1
 end
 
+#Postnr
+När /^jag fyller i Postnr med "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "LocationAddress_ZipPostalCode").clear
+  @driver.find_element(:id, "LocationAddress_ZipPostalCode").send_keys arg1
+end
+
+#Publiceringsstart
+När /^jag fyller i Publiceringsstart med "(.*?)"$/ do |arg1|
+  @driver.find_element(:id, "PublishedStartDate").clear
+  @driver.find_element(:id, "PublishedStartDate").send_keys arg1
+end
 
 
 

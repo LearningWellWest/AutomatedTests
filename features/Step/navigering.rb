@@ -11,12 +11,11 @@ När /^jag trycker bakåt$/ do
   @driver.navigate.back
 end
 
-När /^jag trycker framåt$/ do
-	def forward
-	@bridge.goForward
-	end
-end
-
 Så /^ska sidan inte krascha$/ do
     @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/
+end
+
+När /^jag klickar framåt och bakåt många gånger$/ do
+@driver.navigate.back
+@driver.navigate.forward
 end
