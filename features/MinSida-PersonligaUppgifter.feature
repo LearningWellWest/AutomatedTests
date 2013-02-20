@@ -9,10 +9,20 @@ Egenskap: Man ska kunna ändra sina personliga uppgifter
 Bakgrund: Användaren är inloggad och klickar på Min sida
 	Givet att jag är inloggad
 	Och jag klickar på min sida
-	
-Scenario: Användaren ska kunna ändra sina uppgifter på min sida
 
-	När jag ändrar förnamnet till 			"Ture"
+
+Scenario: Användaren ska kunna ändra sina uppgifter på min sida
+  
+        När jag ändrar förnamnet till 			"Anders"
+	Och jag ändrar efternamnet till 		"Andersson"
+        Och jag ändrar mobilnumret till 		"0738365699"
+	Och jag ändrar telefonnummret till 		"055488756"
+	Och jag ändrar epost-adressen till 		"anders@andersson.se"
+	Och jag ändrar förvaltning till 		"Superförvaltningen"
+	Och jag ändrar avdelning till 			"Superavdelningen"
+	Och klickar på spara
+
+	Och jag ändrar förnamnet till 			"Ture"
 	Och jag ändrar efternamnet till 		"Sventon"
         Och jag ändrar mobilnumret till 		"0738365699"
 	Och jag ändrar telefonnummret till 		"054574375"

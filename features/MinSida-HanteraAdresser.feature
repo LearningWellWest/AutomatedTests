@@ -1,10 +1,10 @@
 # language: sv
 @minsida
 
-Egenskap: Lägga till och ta bort adress
+Egenskap: Hantera adresser
 	För att kunna ha fler eller färre adresser registrerade 
 	Som en inloggad användare
-	Vill jag ha möjligheten att gå in och lägga till eller ta bort en adress
+	Vill jag ha möjligheten att gå in och lägga till eller ta bort adressuppgifter
 	
 Bakgrund: Användaren är inloggad och klickar på min sida
 	Givet att jag är inloggad

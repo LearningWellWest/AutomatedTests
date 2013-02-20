@@ -13,7 +13,7 @@ Scenario: Användaren skapar en ny annons
 	När jag klickar på skapa annons
 	Och jag fyller i korrekta värden för alla fält när annonsen skapas
 	Och ger annonsen rubriken "Kokosboll"
-	Och klickar på spara annonsen
+	Och klickar på knappen Publicera
 	Så ska annonsen "Kokosboll" synas under mina annonser
 
 Scenario: Användaren modifierar en annons	
@@ -22,6 +22,7 @@ Scenario: Användaren modifierar en annons
 	Och klickar på annonsen "Kokosboll"
 	Och klickar på "Ändra"
 	Och ger annonsen rubriken "Chokladboll"
+	Och klickar på knappen Publicera
 	Så ska annonsen "Chokladboll" synas under mina annonser
 	Så ska annonsen "Kokosboll" inte synas under mina annonser
 

@@ -1,12 +1,34 @@
 # encoding: utf-8
 
 När /^jag klickar på logga in\-länken$/ do
-@driver.get(@base_url + "/Customer/Login")
+@driver.find_element(:link, "[Logga in]").click
 end
 
 När /^jag klickar på logga in$/ do
-  @driver.find_element(:link, "[Logga in]").click
+  @driver.find_element(:css, "button.loginbutton.save").click
 end
+
+När /^klickar på knappen Publicera$/ do
+  @driver.find_element(:xpath, "(//button[@name='save'])[2]").click
+end
+
+
+
+#Malvin
+
+När /^jag rensar användarnamn\-fältet$/ do
+    @driver.find_element(:id, "Username").clear
+end
+
+Så /^ska "(.*?)" fortfarande visas någonstans på sidan$/ do |arg1|
+
+wholepageString =    @driver.find_element(:css, "BODY").text
+wholepageString <<   @driver.find_element(:id, "Username").attribute("value")
+wholepageString.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+      
+end
+
+
 
 Givet /^att jag är inloggad$/ do
     @driver.get(@base_url + "/")

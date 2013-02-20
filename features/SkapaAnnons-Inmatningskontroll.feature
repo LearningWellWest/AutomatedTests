@@ -16,12 +16,12 @@ Scenario: Skriv in fler än 50 tecken i rubriken
 
 Scenario: Skapa annons utan rubrik
 	När jag ger annonsen rubriken ""
-	Och klickar på spara annonsen
+	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Rubriken får inte vara tom"
 
 Scenario: Skapa annons med rubrik som består av endast mellanslag
 	När jag ger annonsen rubriken "   "
-	Och klickar på spara annonsen
+	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Rubriken får inte vara tom"
 
 Scenario: Skriv in fler än 500 tecken i beskrivningen
@@ -30,5 +30,5 @@ Scenario: Skriv in fler än 500 tecken i beskrivningen
 
 Scenario: Skriv in bokstäver i prisfältet
 	När jag fyller i prisfältet med "aswdefrgthjk"
-	Och klickar på spara annonsen
+	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Priset måste bestå av siffror"
