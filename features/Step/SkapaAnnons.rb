@@ -1,7 +1,7 @@
 # encoding: utf-8
 
-När /^jag klickar på skapa annons$/ do
-  @driver.find_element(:link, "Skapa annons").click
+När /^jag klickar på annonsera$/ do
+  @driver.find_element(:link, "Annonsera").click
 end
 
 Givet /^är på skapa annons sidan$/ do
@@ -61,59 +61,59 @@ När /^jag fyller i Publiceringsstart med "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "PublishedStartDate").send_keys arg1
 end
 
+När /^jag skapar en annons med rubriken "(.*?)" samt kategorin "(.*?)"$/ do |arg1, arg2|
+  fill_CreateAd(arg1,"Har tröttnat på den",arg2,"10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+sleep 10
+end
 
 
 Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
-    
+
+fill_CreateAd("Popcornmaskin","Har tröttnat på den","Hjälpmedel","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+
+end
+
+def fill_CreateAd(title,description,category,price,unit,department,adressOne,adressTwo,postalCode,city,otherInfo)
+       
     #Rubrik
     @driver.find_element(:id, "Title").clear
-    @driver.find_element(:id, "Title").send_keys "Popcornmaskin"
+    @driver.find_element(:id, "Title").send_keys title
     #Beskrivning
     @driver.find_element(:id, "Description").clear
-    @driver.find_element(:id, "Description").send_keys "Lite gammal men bra för dig med lite pengar"
+    @driver.find_element(:id, "Description").send_keys description
 	
 	#Gå igenom tabellen med alla kontroller
 	@driver.find_elements(:xpath => "//table[@class='grid_11 edit-table alpha double']/tbody/tr").each do |r|
-		#Lokalisera raden med Status-fältet	   
-		if r.text =~ /^[\s\S]*Status[\s\S]*$/
-			r.find_element(:class, "selectBox-dropdown").click
-			r.find_element(:class, "selectBox-dropdown").send_keys "publicerad"
-		        r.find_element(:class, "selectBox-dropdown").send_keys :return
-
 		#Lokalisera raden med Kategori-fältet	   
-		elsif r.text =~ /^[\s\S]*Kategori[\s\S]*$/
+		if r.text =~ /^[\s\S]*Kategori[\s\S]*$/
 			r.find_element(:class, "selectBox-dropdown").click
-			r.find_element(:class, "selectBox-dropdown").send_keys :arrow_down
+			r.find_element(:class, "selectBox-dropdown").send_keys category
 		        r.find_element(:class, "selectBox-dropdown").send_keys :return
 		end		
 	end
     #Pris
     @driver.find_element(:id, "Price").clear
-    @driver.find_element(:id, "Price").send_keys "100"
+    @driver.find_element(:id, "Price").send_keys price
     #Förvaltning
     @driver.find_element(:id, "LocationAddress_AdministrationUnit").clear
-    @driver.find_element(:id, "LocationAddress_AdministrationUnit").send_keys "Popcornförvaltningen"
+    @driver.find_element(:id, "LocationAddress_AdministrationUnit").send_keys unit
     #Avdelning
     @driver.find_element(:id, "LocationAddress_Department").clear
-    @driver.find_element(:id, "LocationAddress_Department").send_keys "Majsavdelningen"
+    @driver.find_element(:id, "LocationAddress_Department").send_keys department
     #Adress1
     @driver.find_element(:id, "LocationAddress_Address1").clear
-    @driver.find_element(:id, "LocationAddress_Address1").send_keys "Popcorngatan 1"
+    @driver.find_element(:id, "LocationAddress_Address1").send_keys adressOne
     #Adress2
     @driver.find_element(:id, "LocationAddress_Address2").clear
-    @driver.find_element(:id, "LocationAddress_Address2").send_keys "Popcornvägen 2"
+    @driver.find_element(:id, "LocationAddress_Address2").send_keys adressTwo
     #Postnr
     @driver.find_element(:id, "LocationAddress_ZipPostalCode").clear
-    @driver.find_element(:id, "LocationAddress_ZipPostalCode").send_keys "65338"
+    @driver.find_element(:id, "LocationAddress_ZipPostalCode").send_keys postalCode
     #Stad
     @driver.find_element(:id, "LocationAddress_City").clear
-    @driver.find_element(:id, "LocationAddress_City").send_keys "Karlstad"
+    @driver.find_element(:id, "LocationAddress_City").send_keys city
     #Övrig info
     @driver.find_element(:id, "LocationAddress_OtherInfo").clear
-    @driver.find_element(:id, "LocationAddress_OtherInfo").send_keys "Trappa 3"	
-
-    #@driver.find_element(:id,"value").click
-    #@driver.find_element(:id,"value").send_keys "/home/learningwell/Skrivbord/AutomatedTests/features/Step/kokosboll.jpg"
-
+    @driver.find_element(:id, "LocationAddress_OtherInfo").send_keys otherInfo	
 end
 
