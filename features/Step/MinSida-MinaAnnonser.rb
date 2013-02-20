@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 När /^jag klickar på mina annonser$/ do
-	@driver.find_element(:link, "Mina annonser").click
+	@driver.find_element(:link, "Mina utkast/publicerade annonser").click
 end
 
 Så /^ska jag komma till mina annonser$/ do
@@ -18,7 +18,7 @@ end
 
 Givet /^att det inte finns några existerande annonser$/ do
 	@driver.find_element(:link, "Min sida").click
-	@driver.find_element(:link, "Mina annonser").click
+	@driver.find_element(:link, "Mina utkast/publicerade annonser").click
 	
 	#Kommer åt Hjälpmedel kategorin
 	@driver.find_element(:xpath => "html/body/div[1]/div[4]/form/div[1]/a").click
@@ -40,7 +40,7 @@ Givet /^att det inte finns några existerande annonser$/ do
 		@driver.find_element(:link, r).click
 		@driver.find_element(:link, "Ta bort").click
 		@driver.find_element(:link, "Min sida").click
-		@driver.find_element(:link, "Mina annonser").click
+		@driver.find_element(:link, "Mina utkast/publicerade annonser").click
 		@driver.find_element(:xpath => "html/body/div[1]/div[4]/form/div[1]/a").click
 		@driver.find_element(:xpath => "html/body/ul/li[2]/a").click 
 		

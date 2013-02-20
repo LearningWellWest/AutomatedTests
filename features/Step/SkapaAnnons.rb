@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 När /^jag klickar på skapa annons$/ do
-  @driver.find_element(:link, "Skapa annons").click
+  @driver.find_element(:link, "Annonsera").click
 end
 
 Givet /^är på skapa annons sidan$/ do
-  @driver.find_element(:link, "Skapa annons").click
+  @driver.find_element(:link, "Annonsera").click
 end
 
 
