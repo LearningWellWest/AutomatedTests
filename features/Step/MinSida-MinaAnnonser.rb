@@ -16,6 +16,11 @@ När /^klickar på "(.*?)"$/ do |arg1|
   @driver.find_element(:link, arg1).click
 end
 
+#Malvin url Annonsera
+När /^jag går till annonsera$/ do
+  @driver.get("http://malvin.off2off.se/Catalog/Create");
+end
+
 Givet /^att det inte finns några existerande annonser$/ do
 	@driver.find_element(:link, "Min sida").click
 	@driver.find_element(:link, "Mina utkast/publicerade annonser").click

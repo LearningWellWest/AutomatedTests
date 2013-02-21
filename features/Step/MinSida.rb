@@ -10,6 +10,11 @@ Så /^ska jag komma till min sida$/ do
 	@driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Min sida[\s\S]*$/
 end
 
+#Malvin url Min Sida
+När /^jag går till min sida$/ do
+  @driver.get("http://malvin.off2off.se/Customer/Info");
+end
+
 När /^klickar på spara$/ do
   @driver.find_element(:css, "input.save").click
 end
