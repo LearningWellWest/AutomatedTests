@@ -10,7 +10,7 @@ Bakgrund: En användare är inloggad
 
 Scenario: Användaren skapar en ny annons
 	Givet att det inte finns några existerande annonser
-	När jag klickar på skapa annons
+	När jag klickar på annonsera
 	Och jag fyller i korrekta värden för alla fält när annonsen skapas
 	Och ger annonsen rubriken "Kokosboll"
 	Och klickar på knappen Publicera
