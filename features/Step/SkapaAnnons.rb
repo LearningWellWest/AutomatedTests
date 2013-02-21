@@ -1,11 +1,13 @@
 # encoding: utf-8
 
+
 När /^jag klickar på annonsera$/ do
   @driver.find_element(:link, "Annonsera").click
 end
 
+#vet inte om denna används. undersök!
 Givet /^är på skapa annons sidan$/ do
-  @driver.find_element(:link, "Skapa annons").click
+  @driver.find_element(:link, "Annonsera").click
 end
 
 
@@ -92,8 +94,8 @@ def fill_CreateAd(title,description,category,price,unit,department,adressOne,adr
 		end		
 	end
     #Pris
-    @driver.find_element(:id, "Price").clear
-    @driver.find_element(:id, "Price").send_keys price
+    #@driver.find_element(:id, "Price").clear
+    #@driver.find_element(:id, "Price").send_keys price
     #Förvaltning
     @driver.find_element(:id, "LocationAddress_AdministrationUnit").clear
     @driver.find_element(:id, "LocationAddress_AdministrationUnit").send_keys unit
