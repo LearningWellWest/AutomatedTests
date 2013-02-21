@@ -94,8 +94,8 @@ def fill_CreateAd(title,description,category,price,unit,department,adressOne,adr
 		end		
 	end
     #Pris
-    @driver.find_element(:id, "Price").clear
-    @driver.find_element(:id, "Price").send_keys price
+    #@driver.find_element(:id, "Price").clear
+    #@driver.find_element(:id, "Price").send_keys price
     #Förvaltning
     @driver.find_element(:id, "LocationAddress_AdministrationUnit").clear
     @driver.find_element(:id, "LocationAddress_AdministrationUnit").send_keys unit

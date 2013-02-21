@@ -28,11 +28,13 @@ Scenario: Skriv in fler än 500 tecken i beskrivningen
 	När jag skriver in 3000 tecken i beskrivningen
 	Så ska fältet beskrivningsfältet innehålla högst 500 tecken
 
+@standardSida
 Scenario: Skriv in bokstäver i prisfältet
 	När jag fyller i prisfältet med "aswdefrgthjk"
 	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Priset måste bestå av siffror"
 
+@standardSida
 Scenario: Skriv in negativt värde i prisfältet
 	När jag fyller i prisfältet med "-100"
 	Och klickar på knappen Publicera
@@ -43,6 +45,7 @@ Scenario: Skriv in bokstäver i Postnr
 	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Postnr måste bestå av siffror"
 
+@not_ready
 Scenario: Skriv in gårdagens datum i Publiceringsstart
 	När jag fyller i Publiceringsstart med "2012-12-12 12:12:12"
 	Så ska sidan visa texten "Publiceringsstart måste utgå från dagens datum"
