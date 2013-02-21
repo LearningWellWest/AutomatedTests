@@ -8,9 +8,6 @@ När /^jag klickar på logga in$/ do
   @driver.find_element(:css, "button.loginbutton.save").click
 end
 
-När /^klickar på knappen Publicera$/ do
-  @driver.find_element(:xpath, "(//button[@name='save'])[2]").click
-end
 
 Så /^ska jag komma till logga\-in sidan$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/

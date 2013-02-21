@@ -27,8 +27,3 @@ def deleteAllAdsInCategory(catString)
 	end
 end
 
-def pickCategoryOnSearchPage(catString)
-	@driver.find_element(:class, "selectBox-dropdown").click
-	@driver.find_element(:class, "selectBox-dropdown").send_keys catString
-	@driver.find_element(:class, "selectBox-dropdown").send_keys :return
-end

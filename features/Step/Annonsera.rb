@@ -1,5 +1,8 @@
 # encoding: utf-8
 
+När /^klickar på knappen Publicera$/ do
+  @driver.find_element(:xpath, "//button[contains(text(),'Publicera')]").click
+end
 
 När /^jag klickar på annonsera$/ do
   @driver.find_element(:link, "Annonsera").click
@@ -71,7 +74,7 @@ end
 
 Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
 
-fill_CreateAd("Popcornmaskin","Har tröttnat på den","Hjälpmedel","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+fill_CreateAd("Popcornmaskin","Har tröttnat på den","Möbler","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
 
 end
 

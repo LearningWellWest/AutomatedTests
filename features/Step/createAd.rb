@@ -1,6 +1,7 @@
 
 def fill_CreateAd(title,description,category,price,unit,department,adressOne,adressTwo,postalCode,city,otherInfo)
-       
+
+    @driver.find_element(:link, "Annonsera").click
     #Rubrik
     @driver.find_element(:id, "Title").clear
     @driver.find_element(:id, "Title").send_keys title

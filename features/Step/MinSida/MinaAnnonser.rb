@@ -18,7 +18,12 @@ end
 
 
 Givet /^att det inte finns några existerande annonser$/ do
- deleteAllAdsInCategory("Hjälpmedel")
+ deleteAllAdsInCategory("Möbler")
+end
+
+När /^jag går till mina annonser$/ do
+  @driver.find_element(:link, "Min sida").click
+  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
 end
 
 
