@@ -22,3 +22,13 @@ string  =  (0...9999).map{ o[rand(o.length)] }.join
     @driver.find_element(:id, "search-button").click
 end
 
+Så /^ska annonsen "(.*?)" dyka upp under kategorin "(.*?)"$/ do |arg1, arg2|
+   catDropdown = @driver.find_element(:xpath => "html/body/div[1]/div[4]/form/div[1]/a")
+   catDropdown.click
+   catDropdown.send_keys arg2
+   
+   #@driver.find_element(:xpath => "html/body/ul/li[2]/a").click 
+
+
+
+end

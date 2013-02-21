@@ -1,60 +1,20 @@
 # language: sv
-@sokfilt @not_ready
+@not_ready @sok
 
-Egenskap: Sök - KategoriFiltrering
+Egenskap: Sök - Kategorifiltrering
 	För att underlätta vid annonssökandet
 	Som vilken användare som helst
 	Vill jag filtrera alla annonserna på söksidan
 	
 Bakgrund:
 	Givet att jag är inloggad
-	Och jag klickar på sök
-	
-Scenario: Alla kategorier
-	När "alla" visas i kategorifönstret
-	Så ska alla annonser visas i filtreringen
-	
-Scenario: Hjälpmedel
-	När "Hjälpmedel" visas i kategorifönstret
-	Så ska Hjälpmedel annonser visas i filtreringen	
-	
-Scenario: Hjälpmedel - Tillbehör
-	När "Tillbehör" visas i kategorifönstret
-	Så ska Hjälpmedel - Tillbehör annonser visas i filtreringen	
-	
-Scenario: Hjälpmedel - Reservdelar
-	När "Reservdelar" visas i kategorifönstret
-	Så ska Hjälpmedel - Reservdelar annonser visas i filtreringen	
-	
-Scenario: Medicinteknik
-	När "Medicinteknik" visas i kategorifönstret
-	Så ska Medicinteknik annonser visas i filtreringen	
-	
-Scenario: Kontorsmöbler
-	När "Kontorsmöbler" visas i kategorifönstret
-	Så ska Kontorsmöbler annonser visas i filtreringen		
-	
-Scenario: Kontorsutrustning
-	När "Kontorsutrustning" visas i kategorifönstret
-	Så ska Kontorsutrustning annonser visas i filtreringen	
-	
-Scenario: Kontorsutrustning - Datorer
-	När "Datorer" visas i kategorifönstret
-	Så ska Kontorsutrustning - Datorer annonser visas i filtreringen		
-	
-	
-Scenario: Offentliga miljöer
-	När "Offentliga miljöer" visas i kategorifönstret
-	Så ska Offentliga miljöer annonser visas i filtreringen
 
-Scenario: Offentliga miljöer - Konst
-	När "Konst" visas i kategorifönstret
-	Så ska Offentliga miljöer - Konst annonser visas i filtreringen	
+@cattest
+Scenario: Kontrollera att en hjälpmedel-annons när jag väljer kategorin Hjälpmedel
+	När jag skapar en annons med rubriken "Dammsugare" samt kategorin "Hjälpmedel"
+        Och jag klickar på sök
+        Och väljer kategorin "Hjälpmedel"
+        Så ska annonsen "Dammsugare" visas
+	
+	
 
-Scenario: Offentliga miljöer - Möbler
-	När "Möbler" visas i kategorifönstret
-	Så ska Offentliga miljöer - Möbler annonser visas i filtreringen	
-
-Scenario: Forskningsutrustning
-	När "Forskningsutrustning" visas i kategorifönstret
-	Så ska Forskningsutrustning annonser visas i filtreringen	
