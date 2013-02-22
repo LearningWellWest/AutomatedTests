@@ -9,7 +9,7 @@ Egenskap: Sök - Kategorifiltrering
 Bakgrund:
 	Givet att jag är inloggad
 
-Scenario: Kontrollera att en Möbel-annons när jag väljer kategorin Möbler
+Scenario: Kontrollera att en Möbel-annons visas när jag väljer kategorin Möbler
 	När jag skapar en annons med rubriken "Kökssoffa" samt kategorin "Möbler"
 	Och klickar på knappen Publicera
         Och jag klickar på sök
