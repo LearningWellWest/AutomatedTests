@@ -2,11 +2,7 @@
 
 
 När /^jag skriver in felaktig adress i adressfältet$/ do
-  @driver.get("http://malvin.off2off.se/Catfiske");
-end
-
-Så /^ska jag få ett informativt felmeddelande$/ do
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Sidan kunde inte hittas[\s\S]*$/
+  @driver.get("http://malvin.off2off.se/Catfiske")
 end
 
 Så /^ge mig möjlighet att gå till förstasidan$/ do

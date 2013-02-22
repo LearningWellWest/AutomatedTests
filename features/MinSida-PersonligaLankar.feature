@@ -27,10 +27,10 @@ Scenario: Användaren vill kunna se sina annonser
 Scenario: Användaren vill kunna se sina avtal
 	När jag klickar på avtal
 	Så ska jag komma till avtal
-	
-Scenario: När vi går till en felaktig länk så ska det vissas ett korrekt 404 meddelande 
+@404
+Scenario: När jag går till en felaktig länk så ska det visas ett korrekt 404 meddelande 
 	När jag skriver in felaktig adress i adressfältet
-	Så ska jag få ett informativt felmeddelande
+	Så ska sidan visa "Sidan kunde inte hittas"
 	Och ge mig möjlighet att gå till förstasidan
 	
 
