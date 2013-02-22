@@ -11,7 +11,7 @@ Scenario: Användaren ska kunna logga ut korrekt
 	När jag klickar på logga ut
 	Så ska sidan inte visa "Logga ut"
 	
-Scenario:
+Scenario: Användaren ska inte komma åt min sida och annonsera när man är utloggad
 	Givet att jag är på förstasidan
 	När jag går till min sida
 	Så ska jag komma till logga-in sidan
