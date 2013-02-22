@@ -13,6 +13,7 @@ Scenario: Användaren ska kunna logga ut korrekt
 	
 Scenario: Användaren ska inte komma åt min sida och annonsera när man är utloggad
 	Givet att jag är på förstasidan
+	Och jag är utloggad
 	När jag går till min sida
 	Så ska jag komma till logga-in sidan
 	När jag går till annonsera

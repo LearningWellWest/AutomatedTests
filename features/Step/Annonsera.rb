@@ -8,6 +8,10 @@ När /^jag klickar på annonsera$/ do
   @driver.find_element(:link, "Annonsera").click
 end
 
+När /^jag går till annonsera$/ do
+  @driver.get("http://malvin.off2off.se/Catalog/Create");
+end
+
 #vet inte om denna används. undersök!
 Givet /^är på skapa annons sidan$/ do
   @driver.find_element(:link, "Annonsera").click

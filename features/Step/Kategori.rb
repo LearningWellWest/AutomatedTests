@@ -1,3 +1,4 @@
+# encoding: utf-8
 
 def pickCategoryOnSearchPage(catString)
 	@driver.find_element(:class, "selectBox-dropdown").click
