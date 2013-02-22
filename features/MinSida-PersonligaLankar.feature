@@ -30,7 +30,7 @@ Scenario: Användaren vill kunna se sina avtal
 @404
 Scenario: När jag går till en felaktig länk så ska det visas ett korrekt 404 meddelande 
 	När jag skriver in felaktig adress i adressfältet
-	Så ska sidan visa "Sidan kunde inte hittas"
+	Så ska texten "Sidan kunde inte hittas" visas
 	Och ge mig möjlighet att gå till förstasidan
 	
 
