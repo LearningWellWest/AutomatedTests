@@ -13,6 +13,10 @@ Så /^ska jag komma till logga\-in sidan$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/
 end
 
+Givet /^jag är utloggad$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/
+end
+
 #Malvin
 
 När /^jag rensar användarnamn\-fältet$/ do
