@@ -13,13 +13,20 @@ end
 
 Så /^ska annonsen "(.*?)" synas under mina annonser$/ do |arg1|
   @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina annonser").click
+  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  pickCategoryOnSearchPage("Möbler")
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
 Så /^ska annonsen "(.*?)" inte synas under mina annonser$/ do |arg1|
   @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina annonser").click
+  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  pickCategoryOnSearchPage("Möbler")
   @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+Så /^ska annonsen "(.*?)" visas$/ do |arg1|
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 

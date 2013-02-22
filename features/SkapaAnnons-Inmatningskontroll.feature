@@ -24,9 +24,9 @@ Scenario: Skapa annons med rubrik som består av endast mellanslag
 	Och klickar på knappen Publicera
 	Så ska sidan visa texten "Rubriken får inte vara tom"
 
-Scenario: Skriv in fler än 500 tecken i beskrivningen
-	När jag skriver in 3000 tecken i beskrivningen
-	Så ska fältet beskrivningsfältet innehålla högst 500 tecken
+Scenario: Skriv in fler än 1000 tecken i beskrivningen
+	När jag skriver in 4000 tecken i beskrivningen
+	Så ska fältet beskrivningsfältet innehålla högst 1000 tecken
 
 @standardSida
 Scenario: Skriv in bokstäver i prisfältet

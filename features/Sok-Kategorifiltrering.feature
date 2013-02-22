@@ -1,5 +1,5 @@
 # language: sv
-@not_ready @sok
+@sok
 
 Egenskap: Sök - Kategorifiltrering
 	För att underlätta vid annonssökandet
@@ -9,12 +9,13 @@ Egenskap: Sök - Kategorifiltrering
 Bakgrund:
 	Givet att jag är inloggad
 
-@cattest
-Scenario: Kontrollera att en hjälpmedel-annons när jag väljer kategorin Hjälpmedel
-	När jag skapar en annons med rubriken "Dammsugare" samt kategorin "Hjälpmedel"
+Scenario: Kontrollera att en Möbel-annons visas när jag väljer kategorin Möbler
+	När jag skapar en annons med rubriken "Kökssoffa" samt kategorin "Möbler"
+	Och klickar på knappen Publicera
         Och jag klickar på sök
-        Och väljer kategorin "Hjälpmedel"
-        Så ska annonsen "Dammsugare" visas
+	Och söker efter "Kökssoffa"
+        Och väljer kategorin "Möbler"
+        Så ska annonsen "Kökssoffa" visas
 	
 	
 
