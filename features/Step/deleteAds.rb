@@ -3,7 +3,7 @@ def deleteAllAdsInCategory(catString)
 	@driver.find_element(:link, "Min sida").click
 	@driver.find_element(:link, "Mina utkast/publicerade annonser").click
 	
-	pickCategoryOnSearchPage(catString)
+	pick_category_searchpage(catString)
 	
 	while @driver.find_element(:css, "BODY").text =~ /^[\s\S]*poster[\s\S]*$/ do
 		#Gå igenom tabellen med alla annonser
@@ -22,7 +22,7 @@ def deleteAllAdsInCategory(catString)
 		@driver.find_element(:link, "Ta bort").click
 		@driver.find_element(:link, "Min sida").click
 		@driver.find_element(:link, "Mina utkast/publicerade annonser").click
-		pickCategoryOnSearchPage(catString)
+		pick_category_searchpage(catString)
 		end
 	end
 end
