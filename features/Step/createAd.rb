@@ -8,16 +8,8 @@ def fill_CreateAd(title,description,category,price,unit,department,adressOne,adr
     #Beskrivning
     @driver.find_element(:id, "Description").clear
     @driver.find_element(:id, "Description").send_keys description
-	
-	#Gå igenom tabellen med alla kontroller
-	@driver.find_elements(:xpath => "//table[@class='grid_11 edit-table alpha double']/tbody/tr").each do |r|
-		#Lokalisera raden med Kategori-fältet	   
-		if r.text =~ /^[\s\S]*Kategori[\s\S]*$/
-			r.find_element(:class, "selectBox-dropdown").click
-			r.find_element(:class, "selectBox-dropdown").send_keys category
-		        r.find_element(:class, "selectBox-dropdown").send_keys :return
-		end		
-	end
+    #Kategori
+    pick_category_createpage(category)
     #Pris
     #@driver.find_element(:id, "Price").clear
     #@driver.find_element(:id, "Price").send_keys price

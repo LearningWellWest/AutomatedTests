@@ -20,7 +20,6 @@ end
 
 När /^klickar på spara annonsen$/ do
   @driver.find_element(:css, "input.save").click
-sleep(10)
 end
 
 #Rubrik
@@ -38,14 +37,13 @@ Så /^ska fältet rubrikfältet innehålla "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Title").attribute("value").should == arg1
 end
 
-#Beskrivning
+#Beskrivningffa" samt kategorin "Möbler"
 När /^jag skriver in (\d+) tecken i beskrivningen$/ do |arg1|
  o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten
  string  =  (0...arg1.to_i).map{ o[rand(o.length)] }.join
 
  @driver.find_element(:id, "Description").clear
  @driver.find_element(:id, "Description").send_keys string
- sleep (1)
 end
 
 Så /^ska fältet beskrivningsfältet innehålla högst (\d+) tecken$/ do |arg1|
