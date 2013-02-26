@@ -23,7 +23,7 @@ Scenario: Off2off skall hantera 2^16
 	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera enkel unicode
-	Och jag skriver in "äåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåöäåö"
+	Och jag skriver in "åäöüÿ"
 	Så ska sidan ge resultat i form av "Inga annonser hittades"
 	
 Scenario: Off2off skall hantera Extremt många tecken
