@@ -32,7 +32,6 @@ wholepageString.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
 
-
 Givet /^att jag är inloggad$/ do
     @driver.get(@base_url + "/")
     @driver.find_element(:link, "[Logga in]").click
@@ -51,6 +50,25 @@ end
 När /^jag fyller i användarnamn med "(.*?)"$/ do |arg1|
   @driver.find_element(:id, "Username").clear
   @driver.find_element(:id, "Username").send_keys arg1
+end
+
+När /^jag försöker logga in (\d+) gånger med fel lösenord$/ do |arg1|
+  
+ i=0
+max_attempts = arg1.to_i
+
+while i<max_attempts do
+  @driver.find_element(:id, "Username").clear
+  @driver.find_element(:id, "Username").send_keys "Testuser"
+
+  @driver.find_element(:id, "Password").clear
+  @driver.find_element(:id, "Password").send_keys "rdftgyuhjiko"
+
+  @driver.find_element(:css, "button.loginbutton.save").click
+  i=i+1
+
+end
+
 end
 
 

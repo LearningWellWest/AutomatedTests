@@ -10,6 +10,12 @@ Bakgrund: Användaren är utloggad och klickar på logga in
 	Givet att jag är på förstasidan
 	Och jag klickar på logga in-länken
 
+@seq
+Scenario: Efter 3 misslyckade inloggningsförsök så måste användaren bevisa att den inte är en robot
+	När jag försöker logga in 3 gånger med fel lösenord
+	Så ska texten "Ange de tecken du ser" visas
+
+
 Scenario: Login-funktionen skall hantera ÅÄÖ samt mellanslag
 	När jag fyller i användarnamn med "          "
 	Och jag fyller i lösenord med "ä Ö  öå ÄÅ"
