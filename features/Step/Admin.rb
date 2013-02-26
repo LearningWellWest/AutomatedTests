@@ -1,9 +1,9 @@
 # encoding: utf-8
 
 När /^jag klickar på admin$/ do
-  @driver.find_element(:link, "Admin").click
+  element_admin_adminlink.click
 end
 
 När /^jag klickar på gå till startsidan$/ do
-  @driver.find_element(:link, "Gå till startsidan").click
+  element_admin_startpagelink.click
 end
