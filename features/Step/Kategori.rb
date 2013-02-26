@@ -9,7 +9,6 @@ def pick_category_searchpage(catString)
 	 
 	  @driver.find_element(:class,"selectBox-dropdown").click
     @driver.find_element(:class,"selectBox-dropdown").send_keys :arrow_down
-    @driver.find_element(:class,"selectBox-dropdown").send_keys :return
    
     if @driver.find_element(:class,"selectBox-dropdown").text =~ /^[\s\S]*#{catString}[\s\S]*$/
       break

@@ -17,9 +17,9 @@ När /^klickar på "(.*?)"$/ do |arg1|
 end
 
 
-Givet /^att det inte finns några existerande annonser$/ do
- deleteAllAdsInCategory("Möbler")
-end
+#Givet /^att det inte finns några existerande annonser$/ do
+# deleteAllAdsInCategory("Möbler")
+#end
 
 När /^jag går till mina annonser$/ do
   @driver.find_element(:link, "Min sida").click
@@ -27,4 +27,7 @@ När /^jag går till mina annonser$/ do
 end
 
 
+Givet /^att det inte finns några existerande annonser under "(.*?)"$/ do |arg1|
+  deleteAllAdsInCategory(arg1)
+end
 

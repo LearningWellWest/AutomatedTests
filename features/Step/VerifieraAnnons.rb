@@ -11,22 +11,23 @@ Så /^ska annonsen "(.*?)" existera$/ do |arg1|
 end
 
 
-Så /^ska annonsen "(.*?)" synas under mina annonser$/ do |arg1|
-  @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
-  pickCategoryOnSearchPage("Möbler")
+Så /^ska annonsen "(.*?)" visas$/ do |arg1|
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
-Så /^ska annonsen "(.*?)" inte synas under mina annonser$/ do |arg1|
-  @driver.find_element(:link, "Min sida").click
+
+Så /^ska annonsen "(.*?)" inte synas under kategorin "(.*?)"$/ do |arg1, arg2|
+    @driver.find_element(:link, "Min sida").click
   @driver.find_element(:link, "Mina utkast/publicerade annonser").click
-  pickCategoryOnSearchPage("Möbler")
+  pick_category_searchpage(arg2)
   @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
 
-Så /^ska annonsen "(.*?)" visas$/ do |arg1|
+Så /^ska annonsen "(.*?)" synas under kategorin "(.*?)"$/ do |arg1, arg2|
+  @driver.find_element(:link, "Min sida").click
+  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  pick_category_searchpage(arg2)
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
