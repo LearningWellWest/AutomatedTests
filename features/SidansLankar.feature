@@ -15,6 +15,7 @@ Scenario: Användaren vill kunna se sina ordrar
 	När jag klickar på mina köp/min försäljning
 	Så ska jag komma till mina ordrar
 
+@not_ready
 Scenario: Användaren vill kunna se sina adresser
 	När jag klickar på mina adresser
 	Så ska jag komma till mina adresser

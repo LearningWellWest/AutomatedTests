@@ -1,5 +1,5 @@
 # language: sv
-@minsida
+@minsida @not_ready
 
 Egenskap: Hantera adresser
 	För att kunna ha fler eller färre adresser registrerade 

@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 När /^jag klickar på mina annonser$/ do
-	@driver.find_element(:link, "Mina utkast/publicerade annonser").click
+	@driver.find_element(:link, "Mina publicerade annonser/utkast").click
 end
 
 Så /^ska jag komma till mina annonser$/ do
@@ -23,7 +23,7 @@ end
 
 När /^jag går till mina annonser$/ do
   @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  @driver.find_element(:link, "Mina publicerade annonser/utkast").click
 end
 
 
