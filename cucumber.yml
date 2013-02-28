@@ -1,4 +1,4 @@
-default: driver=local --format pretty --no-source --tags ~@not_ready --tags ~@standardSida
+default: driver=local --format pretty --no-source --tags ~@not_ready --tags ~@standardSida -f html -o results.html
 skipAll: -dry-run
 linuxFirefox: driver=linux_firefox --tags ~@not_ready --tags ~@standardSida
 winXPChrome: driver=xp_chrome --tags ~@not_ready --tags ~@standardSida
