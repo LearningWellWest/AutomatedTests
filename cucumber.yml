@@ -1,10 +1,4 @@
-default:  --no-source --tags ~@not_ready --tags ~@standardSida -p localFF
-testjson: features/LoggaIn.feature  --format json -o cucumber.json
-
-localFF:  -r features/support/env.rb -r features/support/localFirefox.rb -r features/Step
-
-linuxFirefox: -r features/support/env.rb -r features/support/linuxFirefox-SauceLabs.rb -r features/Step
-winXPChrome: -r features/support/env.rb -r features/support/chromeWinXP-SauceLabs.rb -r features/Step
-
-
-skipAll: -r features/support/env.rb -r features/support/skipAll.rb
+default: driver=local --format pretty --no-source --tags ~@not_ready --tags ~@standardSida
+skipAll: -dry-run
+linuxFirefox: driver=linux_firefox --tags ~@not_ready --tags ~@standardSida
+winXPChrome: driver=xp_chrome --tags ~@not_ready --tags ~@standardSida

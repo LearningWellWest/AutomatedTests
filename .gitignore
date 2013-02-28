@@ -1,5 +1,8 @@
 *~
 all_features.txt
 *.json
+results.html
 linkcheck.xml
-all_features.html
+all_features.html--tags ~@not_ready --tags ~@standardSida
+screenshots
+
