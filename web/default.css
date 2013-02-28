@@ -1,0 +1,73 @@
+html {
+	background: url(images/wood_wall.jpg)
+}
+
+#header
+{
+	height: 300px;
+	text-align: center;
+	vertical-align:bottom;
+}
+
+#content
+{
+	width: 400px;
+	height: 200px;
+	
+	margin: 0 auto;
+	
+	
+	}
+	
+td
+{
+		text-align: center;	
+		
+}	
+
+    td> div 
+    {
+        float:left;
+        background-image: url(images/side.png);
+        background-repeat: no-repeat;
+        height:80px;
+        #text-align: center;
+    }
+	
+    #td_left
+    {
+        background-position:left top;
+        width:10px;
+    }
+    
+       #td_right
+    {
+        background-position:right top;
+        width:10px;
+    }
+    
+    	#td_center
+	{
+		background-image: url(images/center.png);
+		background-repeat: repeat-x;
+		background-position:left top;
+		width: 400px;
+		line-height: 80px;
+	}
+	
+	td a
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+  	 text-decoration: none;
+    font-weight:normal;
+    font-family: 'Arial';
+    font-size: 30px
+}
+
+a:hover {
+    #text-decoration: underline;
+    color: grey;
+}

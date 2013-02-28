@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 När /^jag klickar på logga ut$/ do
-  @driver.find_element(:link, "[Logga ut]").click
+  @driver.find_element(:link, "Logga ut").click
 end
 
 Så /^ska sidan inte visa "(.*?)"$/ do |arg1|
