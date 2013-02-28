@@ -17,7 +17,7 @@ def element_login_loginbutton
 end
 #Loginlink
 def element_login_loginlink
-   @driver.find_element(:link, "[Logga in]")
+   @driver.find_element(:link, "Logga in")
 end
 
 
