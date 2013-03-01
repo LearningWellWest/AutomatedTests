@@ -45,11 +45,11 @@ end
 
   #taking screenshots for each failed scenario and embed in html report
 After do |scenario|
-  Dir::mkdir('screenshots') if not File.directory?('screenshots')
-  screenshot = "./screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
+  Dir::mkdir('html/screenshots') if not File.directory?('html/screenshots')
+  screenshot = "./html/screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
   if scenario.failed?
     @driver.save_screenshot(screenshot)
-    embed screenshot, 'image/png'
+    embed "./screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png", 'image/png'
   end
     @driver.quit
     @verification_errors.should == []
@@ -58,7 +58,7 @@ end
 #running a meta tag fix for the html report, fix utf-8 encoding enabling åäö to show properly
 at_exit do
   #require '../../support/html_report_meta_tag_fix'
-  html_report_meta_tag_fix 'results.html'
+  html_report_meta_tag_fix 'html/results.html'
 	
 end
 
