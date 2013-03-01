@@ -17,16 +17,16 @@ Scenario: Skriv in fler än 50 tecken i rubriken
 Scenario: Skapa annons utan rubrik
 	När jag ger annonsen rubriken ""
 	Och klickar på knappen Publicera
-	Så ska sidan visa texten "Rubriken får inte vara tom"
+	Så ska sidan visa texten "Ange en rubrik"
 
 Scenario: Skapa annons med rubrik som består av endast mellanslag
 	När jag ger annonsen rubriken "   "
 	Och klickar på knappen Publicera
-	Så ska sidan visa texten "Rubriken får inte vara tom"
+	Så ska sidan visa texten "Ange en rubrik"
 
-Scenario: Skriv in fler än 3000 tecken i beskrivningen
-	När jag skriver in 4000 tecken i beskrivningen
-	Så ska fältet beskrivningsfältet innehålla högst 3000 tecken
+Scenario: Skriv in fler än 7000 tecken i beskrivningen
+	När jag skriver in 8000 tecken i beskrivningen
+	Så ska fältet beskrivningsfältet innehålla högst 7000 tecken
 
 @standardSida
 Scenario: Skriv in bokstäver i prisfältet

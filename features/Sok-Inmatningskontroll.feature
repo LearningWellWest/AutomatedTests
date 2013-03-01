@@ -31,7 +31,7 @@ Scenario: Off2off skall hantera Extremt många tecken
 	Så ska sidan ge resultat i form av "Din sökning gav tyvärr inga resultat."
 	
 Scenario: Off2off skall hantera ovanligt många tecken
-	Och jag skriver in "Jdjdhdhdj dnchdweowowu shsnalksd iuigdfsdmn fslkdfjdhfuuye ruywjsj sksjdfhf dhjsios dhgdfjshdfd dhfgsjhfgsdguywhdb dgfisdbfkjsdf sdjfhsjkdf sjkfhskdfhsdjkfh sfh dhflkwioerhsdj f huidf idhf jkdfhsdgf jkhfiojhwiefgb sdkjho f"
+	Och jag skriver in "Jdjdhdhdjdnchdweowowushsnalksdiuigdfsdmnfslkdfjdhfuuyeruywjsjsksjdfhfdhjsiosdhgdfjshdfddhfgsjhfgsdguywhdbdgfisdbfkjsdf sdjfhsjkdfsjkfhskdfhsdjkfhsfhdhflkwioerhsdjfhuidfidhfjkdfhsdgfjkhfiojhwiefgbsdkjhof"
 	Så ska sidan ge resultat i form av "Din sökning gav tyvärr inga resultat."
 	
 Scenario: Off2off skall hantera negativt värde
