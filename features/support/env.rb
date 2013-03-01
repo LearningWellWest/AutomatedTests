@@ -48,18 +48,17 @@ After do |scenario|
   Dir::mkdir('screenshots') if not File.directory?('screenshots')
   screenshot = "./screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
   if scenario.failed?
-    page.save_screenshot(screenshot)
+    @driver.save_screenshot(screenshot)
     embed screenshot, 'image/png'
   end
+    @driver.quit
+    @verification_errors.should == []
 end
 
 #running a meta tag fix for the html report, fix utf-8 encoding enabling åäö to show properly
 at_exit do
   #require '../../support/html_report_meta_tag_fix'
   html_report_meta_tag_fix 'results.html'
-  
-    @driver.quit
-    @verification_errors.should == []
 	
 end
 
