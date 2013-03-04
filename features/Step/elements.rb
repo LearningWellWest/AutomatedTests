@@ -84,6 +84,12 @@ def element_annonsera_otherinfo
 end
 
 
+#Sök
+def element_sok_category_dropdown
+cont12 = @driver.find_element(:class,"container_12")
+cont12.find_element(:class,"selectBox-dropdown")
+end
+
 
 
 

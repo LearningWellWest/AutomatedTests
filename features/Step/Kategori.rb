@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 Så /^ska det stå "(.*?)" i kategorilisten$/ do |arg1|
-  @driver.find_element(:class,"selectBox-dropdown").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+  element_sok_category_dropdown.text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
 
 
