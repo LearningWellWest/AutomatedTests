@@ -30,3 +30,9 @@ När /^jag klickar på malvin\-loggan$/ do
   @driver.find_element(:id, "logo").click
 end
 
+När /^jag klickar på start i topmenyn$/ do
+  topmenu = @driver.find_element(:id,"menu-center-block")
+  topmenu.find_element(:link, "Start").click
+end
+
+

@@ -15,8 +15,8 @@ Scenario: Startsidan ska innehålla en länk till Tjänster
 	Så ska jag komma till tjänster
 
 @4mars13
-Scenario: Startsidan ska innehålla en länk till Start
-	När jag klickar på start
+Scenario: Startsidan ska innehålla en länk till Start i topmenyn
+	När jag klickar på start i topmenyn
 	Så ska jag komma till sök
 
 @malvin @4mars13
