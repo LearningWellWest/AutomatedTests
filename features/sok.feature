@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Sök - Kategorifiltrering
+Egenskap: Sök
 	För att hitta en annons
 	Som vilken användare som helst
 	Vill jag kunna söka efter annonser
