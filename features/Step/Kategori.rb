@@ -1,5 +1,11 @@
 # encoding: utf-8
 
+Så /^ska det stå "(.*?)" i kategorilisten$/ do |arg1|
+  @driver.find_element(:class,"selectBox-dropdown").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
+end
+
+
+
 def pick_category_searchpage(catString)
   
     cat_before ="sdfgsdefg"

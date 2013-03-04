@@ -10,6 +10,13 @@ Bakgrund:
 	Givet att jag är inloggad
 	#Och att det inte finns några existerande annonser
 
+
+@4mars13
+Scenario: Det ska stå "Kategorier" som standard i kategorilisten vid sök
+	När jag klickar på sök
+	Så ska det stå "Kategorier" i kategorilisten
+
+
 Scenario: Kontrollera att en Möbel-annons visas när jag väljer kategorin Möbler
 	När jag skapar en annons med rubriken "Kökssoffa" samt kategorin "Möbler"
 	Och klickar på knappen Publicera

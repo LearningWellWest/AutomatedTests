@@ -33,7 +33,9 @@ Så /^ska annonsen "(.*?)" dyka upp under kategorin "(.*?)"$/ do |arg1, arg2|
    catDropdown.send_keys arg2
    
    #@driver.find_element(:xpath => "html/body/ul/li[2]/a").click 
-
-
-
 end
+
+Så /^ska jag komma till sök$/ do
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Start > Sök [\s\S]*$/ 
+end
+

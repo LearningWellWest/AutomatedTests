@@ -1,5 +1,10 @@
 # encoding: utf-8
 
+När /^jag klickar på start$/ do
+  @driver.find_element(:link, "Start").click
+end
+
+
 Givet /^att jag är på startsidan$/ do
   @driver.get(@base_url + "/")
 end
@@ -20,6 +25,10 @@ Så /^ska jag komma till startsidan$/ do
 end
 
 När /^jag klickar på Off(\d+)Off\-loggan$/ do |arg1|
+  @driver.find_element(:id, "logo").click
+end
+
+När /^jag klickar på malvin\-loggan$/ do
   @driver.find_element(:id, "logo").click
 end
 
