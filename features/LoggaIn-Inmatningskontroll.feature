@@ -11,7 +11,7 @@ Bakgrund: Användaren är utloggad och klickar på logga in
 	Och jag klickar på logga in-länken
 
 @seq
-Scenario: Efter 3 misslyckade inloggningsförsök så måste användaren bevisa att den inte är en robot
+Scenario: Efter 3 misslyckade inloggningsförsök så ska en sk. captcha visas för att användaren ska verifiera att den är människa
 	När jag försöker logga in 3 gånger med fel lösenord
 	Så ska texten "Ange de tecken du ser" visas
 
