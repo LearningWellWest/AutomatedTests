@@ -25,7 +25,7 @@ Scenario: Kontrollera att en Bord-annons visas när jag väljer kategorin Bord
 	Och söker efter "Matbord"
         Och väljer kategorin "Bord"
         Så ska annonsen "Matbord" visas
-@sok	
+@sok
 Scenario: Kontrollera att en Kontorstillbehör-annons visas när jag väljer kategorin Kontorstillbehör
 	När jag skapar en annons med rubriken "Blyertspennor" samt kategorin "Kontorstillbehör"
 	Och klickar på knappen Publicera
@@ -33,9 +33,3 @@ Scenario: Kontrollera att en Kontorstillbehör-annons visas när jag väljer kat
 	Och söker efter "Blyertspennor"
         Och väljer kategorin "Kontorstillbehör"
         Så ska annonsen "Blyertspennor" visas
-	
-
-@4mars13 @sok
-Scenario: Det ska stå "Kategorier" som standard i kategorilisten vid sök
-	När jag klickar på sök
-	Så ska det stå "Kategorier" i kategorilisten
