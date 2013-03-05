@@ -1,5 +1,5 @@
 defaults: &defaults
-  standard_uri: http://malvin.off2off.se
+  standard_uri: http://test.off2off.se
 
 development:
   <<: *defaults
