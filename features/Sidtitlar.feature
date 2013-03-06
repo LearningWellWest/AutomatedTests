@@ -9,27 +9,27 @@ Egenskap: Varje sida ska ha en anpassad sidtitel
 Bakgrund: Användaren är inloggad
 	Givet att jag är inloggad
 
-Scenario: Jag läser sidtiteln på min sida
+Scenario: Sidtiteln på min sida ska innehålla "Min sida"
 	När jag klickar på min sida
 	Så ska sidtiteln innehålla "Min sida"
 
-Scenario: Jag läser sidtiteln på söksidan
+Scenario: Sidtiteln på söksidan ska innehålla ordet "sök"
 	När jag klickar på sök
 	Så ska sidtiteln innehålla "Sök"
 
-Scenario: Jag läser sidtiteln på tjänster
+Scenario: Sidtiteln på tjänster-sidan ska innehålla ordet "Tjänster"
 	När jag klickar på tjänster
 	Så ska sidtiteln innehålla "Tjänster"
 	
-Scenario: Jag läser sidtiteln på annonsera
+Scenario: Sidtiteln på annonsera-sidan ska innehålla ordet "annonsera"
 	När jag klickar på annonsera
 	Så ska sidtiteln innehålla "Annonsera"
 
-Scenario: Jag läser sidtiteln på Admin
+Scenario: Sidtiteln på admin-sidan ska innehålla ordet "admin"
 	När jag går till admin
 	Så ska sidtiteln innehålla "Admin"
 
-Scenario: Jag läser sidtiteln på Logga In
+Scenario: Sidtiteln på logga-in-sidan ska innhålla orden "Logga in"
 	När jag klickar på logga ut
 	Och jag klickar på logga in
 	Så ska sidtiteln innehålla "Logga in"
