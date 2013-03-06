@@ -1,6 +1,6 @@
 # language: sv
 
-Egenskap: Skapa annons - Inmatningskontroll
+Egenskap: Annonsera - Inmatningskontroll
 	För att jag inte ska kunna skapa en annons med orimliga värden
     	Som en inloggad användare
 	Vill jag förhindra orimliga värden vid annonsskapandet
