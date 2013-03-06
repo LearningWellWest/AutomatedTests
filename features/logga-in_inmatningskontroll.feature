@@ -46,7 +46,7 @@ Scenario: Login-funktionen skall hantera Unicode-tecken
 
 Scenario: Användaren ska kunna logga in med bara gemener i användarnamnet
 	När jag fyller i användarnamn med "ghia"
-	Och jag fyller i lösenord med "learningwell"
+	Och jag fyller i lösenord med "ghia"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	

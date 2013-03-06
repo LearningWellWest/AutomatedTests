@@ -24,7 +24,8 @@ Scenario: Användaren vill kunna se sina adresser
 Scenario: Användaren vill kunna se sina annonser
 	När jag klickar på mina annonser
 	Så ska jag komma till mina annonser
-	
+
+@not_ready
 Scenario: Användaren vill kunna se sina avtal
 	När jag klickar på avtal
 	Så ska jag komma till avtal
