@@ -6,7 +6,7 @@ Egenskap: Hemsidan skall behålla minnet vid navigering
 	Som en användare
 	Vill jag navigera på sidan utan att förlora ifylld information
 	
-Scenario: Velig användare
+Scenario: Sidan ska hantera att en användare stegar framåt och bakåt på sidan många gånger
 	Givet att jag är inloggad
 	När jag klickar på sök
 	Och jag klickar på skapa annons
