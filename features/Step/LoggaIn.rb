@@ -36,9 +36,9 @@ Givet /^att jag är inloggad$/ do
     @driver.get(@base_url + "/")
     element_login_loginlink.click
     element_login_username.clear
-    element_login_username.send_keys "Testuser"
+    element_login_username.send_keys "ghia"
     element_login_password.clear
-    element_login_password.send_keys "learningwell"
+    element_login_password.send_keys "ghia"
     element_login_loginbutton.click
 end
 
@@ -59,7 +59,7 @@ max_attempts = arg1.to_i
 
 while i<max_attempts do
   element_login_username.clear
-  element_login_username.send_keys "Testuser"
+  element_login_username.send_keys "ghia"
 
   element_login_password.clear
   element_login_password.send_keys "rdftgyuhjiko"

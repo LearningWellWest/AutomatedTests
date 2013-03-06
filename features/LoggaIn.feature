@@ -16,20 +16,20 @@ Scenario: Vid inloggning via Malvin ska @malmo.se var förifyllt och ej redigerb
 	Så ska "@malmo.se" fortfarande visas någonstans på sidan
 
 Scenario: Användaren ska kunna logga in med korrekta uppgifter
-	När jag fyller i användarnamn med "Testuser"
-	Och jag fyller i lösenord med "learningwell"
+	När jag fyller i användarnamn med "ghia"
+	Och jag fyller i lösenord med "ghia"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt användarnamn
-	När jag fyller i användarnamn med "Testuser1"
-	Och jag fyller i lösenord med "learningwell"
+	När jag fyller i användarnamn med "ghia1"
+	Och jag fyller i lösenord med "ghia"
 	Och jag klickar på logga in
 	Så ska texten "Felaktiga inloggningsuppgifter" visas
 	
 Scenario: Användaren ska inte kunna logga in med fel eller ogiltigt lösenord
-	När jag fyller i användarnamn med "Testuser"
-	Och jag fyller i lösenord med "learningwel"
+	När jag fyller i användarnamn med "ghia"
+	Och jag fyller i lösenord med "ghi"
 	Och jag klickar på logga in
 	Så ska texten "Felaktiga inloggningsuppgifter" visas
 
