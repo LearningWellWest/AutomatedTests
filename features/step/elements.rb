@@ -90,9 +90,11 @@ cont12 = @driver.find_element(:class,"container_12")
 cont12.find_element(:class,"selectBox-dropdown")
 end
 
+#Mina annonser
 
-
-
+def element_my_ads_link
+  @driver.find_element(:link, "Mina publicerade annonser/utkast")
+end
 
 
 

@@ -20,10 +20,28 @@ def deleteAllAdsInCategory(catString)
 		links.each do |r|
 		@driver.find_element(:link, r).click
 		@driver.find_element(:link, "Ta bort").click
+		
+		#Verifiera borttagning i dialogruta
+		alert = @driver.switch_to().alert()
+		alert.accept()
+
 		@driver.find_element(:link, "Min sida").click
 		@driver.find_element(:link, "Mina publicerade annonser/utkast").click
 		pick_category_searchpage(catString)
 		end
 	end
+end
+
+När /^jag tar bort annonsen "(.*?)" under kategorin "(.*?)"$/ do |ad_name, cat_string|
+  	@driver.find_element(:link, "Min sida").click
+	@driver.find_element(:link, "Mina publicerade annonser/utkast").click
+	
+	pick_category_searchpage(cat_string)
+	@driver.find_element(:link, ad_name).click
+	@driver.find_element(:link, "Ta bort").click
+		
+	#Verifiera borttagning i dialogruta
+	alert = @driver.switch_to().alert()
+	alert.accept()
 end
 

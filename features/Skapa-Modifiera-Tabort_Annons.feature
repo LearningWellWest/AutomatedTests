@@ -7,32 +7,30 @@ Egenskap: Användaren ska kunna hantera annonser
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
+        Och att det inte finns några existerande annonser under "Lekmaterial"
 
-Scenario: Användaren skapar en ny annons
-	Givet att det inte finns några existerande annonser under "Belysning"
-	När jag skapar en annons med rubriken "Kokosboll" samt kategorin "Belysning"
+Scenario: Användaren skapar en ny annons	
+	När jag skapar en annons med rubriken "Kokosboll" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
 	Och jag går till mina annonser
-	Och väljer kategorin "Belysning"
+	Och väljer kategorin "Lekmaterial"
         Så ska annonsen "Kokosboll" visas
 
 Scenario: Användaren modifierar en annons
-	När jag skapar en annons med rubriken "Modifierabord" samt kategorin "Belysning"
+	När jag skapar en annons med rubriken "Modifierabord" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
 	När jag går till mina annonser
-        Och väljer kategorin "Belysning"
+        Och väljer kategorin "Lekmaterial"
 	Och klickar på annonsen "Modifierabord"
 	Och klickar på "Ändra"
 	Och ger annonsen rubriken "Modifieratbord"
 	Och klickar på knappen Publicera
-	Så ska annonsen "Modifieratbord" synas under kategorin "Belysning"
-	Så ska annonsen "Modifierabord" inte synas under kategorin "Belysning"
+	Så ska annonsen "Modifieratbord" synas under kategorin "Lekmaterial"
+	Så ska annonsen "Modifierabord" inte synas under kategorin "Lekmaterial"
 
 Scenario: Användaren tar bort en annons
-	När jag skapar en annons med rubriken "Tabortbord" samt kategorin "Belysning"
+	När jag skapar en annons med rubriken "Tabortbord" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
 	Och jag går till mina annonser
-	Och väljer kategorin "Belysning"
-	Och klickar på annonsen "Tabortbord"
-	Och klickar på "Ta bort"
-	Så ska annonsen "Tabortbord" inte synas under kategorin "Belysning"
+	Och jag tar bort annonsen "Tabortbord" under kategorin "Lekmaterial"
+	Så ska annonsen "Tabortbord" inte synas under kategorin "Lekmaterial"

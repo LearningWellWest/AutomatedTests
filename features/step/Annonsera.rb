@@ -74,6 +74,6 @@ end
 
 
 Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
-fill_CreateAd("Popcornmaskin","Har tröttnat på den","Möbler","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+fill_CreateAd("Popcornmaskin","Har tröttnat på den","Lekmaterial","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
 end
 

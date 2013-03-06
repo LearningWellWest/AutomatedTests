@@ -23,7 +23,7 @@ end
 
 När /^jag går till mina annonser$/ do
   @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina publicerade annonser/utkast").click
+  element_my_ads_link.click
 end
 
 

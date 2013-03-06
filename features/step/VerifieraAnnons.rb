@@ -18,7 +18,7 @@ end
 
 Så /^ska annonsen "(.*?)" inte synas under kategorin "(.*?)"$/ do |arg1, arg2|
     @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  element_my_ads_link.click
   pick_category_searchpage(arg2)
   @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
@@ -26,7 +26,7 @@ end
 
 Så /^ska annonsen "(.*?)" synas under kategorin "(.*?)"$/ do |arg1, arg2|
   @driver.find_element(:link, "Min sida").click
-  @driver.find_element(:link, "Mina utkast/publicerade annonser").click
+  element_my_ads_link.click
   pick_category_searchpage(arg2)
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
 end
