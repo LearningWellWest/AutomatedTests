@@ -8,6 +8,7 @@ gem 'page-object'
 gem 'rails'
 gem 'watir-webdriver'
 gem 'sauce-cucumber'
+gem 'syntax'
 
 
 #This may be needed

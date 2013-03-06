@@ -49,7 +49,7 @@ After do |scenario|
   screenshot = "./html/screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
   if scenario.failed?
     @driver.save_screenshot(screenshot)
-    embed "./screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png", 'image/png'
+    embed screenshot, 'image/png'
   end
     @driver.quit
     @verification_errors.should == []

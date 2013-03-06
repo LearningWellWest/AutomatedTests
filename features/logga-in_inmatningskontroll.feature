@@ -52,13 +52,13 @@ Scenario: Användaren ska kunna logga in med bara gemener i användarnamnet
 	
 Scenario: Användaren ska kunna logga in med bara versaler i användarnamnet
 	När jag fyller i användarnamn med "GHIA"
-	Och jag fyller i lösenord med "learningwell"
+	Och jag fyller i lösenord med "ghia"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	
 Scenario: Användaren ska kunna logga in med blandade gemener och versaler i användarnamnet
 	När jag fyller i användarnamn med "gHiA"
-	Och jag fyller i lösenord med "learningwell"
+	Och jag fyller i lösenord med "ghia"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	
