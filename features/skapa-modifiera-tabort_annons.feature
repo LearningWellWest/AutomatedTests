@@ -16,6 +16,7 @@ Scenario: Användaren skapar en ny annons
 	Och väljer kategorin "Lekmaterial"
         Så ska annonsen "Kokosboll" visas
 
+@not_ready
 Scenario: Användaren modifierar en annons
 	När jag skapar en annons med rubriken "Modifierabord" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
@@ -28,6 +29,7 @@ Scenario: Användaren modifierar en annons
 	Så ska annonsen "Modifieratbord" synas under kategorin "Lekmaterial"
 	Så ska annonsen "Modifierabord" inte synas under kategorin "Lekmaterial"
 
+@not_ready
 Scenario: Användaren tar bort en annons
 	När jag skapar en annons med rubriken "Tabortbord" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera

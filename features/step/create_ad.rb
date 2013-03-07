@@ -1,5 +1,5 @@
 
-def fill_CreateAd(title,description,category,price,unit,department,adressOne,adressTwo,postalCode,city,otherInfo)
+def fill_CreateAd(title,description,category,price,unit,department,adressOne,adressTwo,postalCode,city,otherInfo,imgname)
 
     element_annonsera_annonseralink.click
     #Rubrik
@@ -33,5 +33,13 @@ def fill_CreateAd(title,description,category,price,unit,department,adressOne,adr
     element_annonsera_city.send_keys city
     #Övrig info
     element_annonsera_otherinfo.clear
-    element_annonsera_otherinfo.send_keys otherInfo	
+    element_annonsera_otherinfo.send_keys otherInfo
+	
+    #Bild
+    annonsera_upload_picture(imgname);
+
+end
+
+def annonsera_upload_picture(imgname)
+   @driver.find_element(:xpath, "//input[@type='file']").send_keys Dir.pwd+"/features/images/" + imgname
 end

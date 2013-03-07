@@ -68,12 +68,12 @@ När /^jag fyller i Publiceringsstart med "(.*?)"$/ do |arg1|
   element_annonsera_postalcode.send_keys arg1
 end
 
+
 När /^jag skapar en annons med rubriken "(.*?)" samt kategorin "(.*?)"$/ do |arg1, arg2|
-  fill_CreateAd(arg1,"Har tröttnat på den",arg2,"10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+  fill_CreateAd(arg1,"Har tröttnat på den",arg2,"10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger","kokosboll.jpg")
 end
 
 
 Givet /^jag fyller i korrekta värden för alla fält när annonsen skapas$/ do
-fill_CreateAd("Popcornmaskin","Har tröttnat på den","Lekmaterial","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger")
+fill_CreateAd("Popcornmaskin","Har tröttnat på den","Lekmaterial","10","Testavdelningen","Testförvaltningen","Storgatan 1","Södra rondellen 2","65538","Karlstad","Trappa 2 till höger","kokosboll.jpg")
 end
-
