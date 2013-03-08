@@ -9,14 +9,14 @@ Egenskap: Sök - Kategorifiltrering
 Bakgrund:
 	Givet att jag är inloggad
 @sok
-Scenario: Kontrollera att en Möbel-annons visas när jag väljer kategorin Sitta
-        Givet att det inte finns några existerande annonser under "Sitta"
-	När jag skapar en annons med rubriken "Kökssoffa" samt kategorin "Sitta"
+Scenario: Kontrollera att en Förskola/Skola-annons visas när jag väljer kategorin Förskola/Skola
+        Givet att det inte finns några existerande annonser under "Förskola/Skola"
+	När jag skapar en annons med rubriken "Badboll" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
         Och jag klickar på sök
-	Och söker efter "Kökssoffa"
-        Och väljer kategorin "Möbler"
-        Så ska annonsen "Kökssoffa" visas
+	Och söker efter "Badboll"
+        Och väljer kategorin "Förskola/Skola"
+        Så ska annonsen "Badboll" visas
 @sok
 Scenario: Kontrollera att en Bord-annons visas när jag väljer kategorin Bord
 	Givet att det inte finns några existerande annonser under "Bord"
