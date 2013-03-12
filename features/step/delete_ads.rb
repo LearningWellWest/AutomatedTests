@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 def deleteAllAdsInCategory(catString)
 
 	@driver.get("http://malvin.off2off.se/Customer/Info");

@@ -1,6 +1,11 @@
 # encoding: utf-8
 
 När /^klickar på knappen Publicera$/ do
+sleep 5
+  @driver.find_element(:xpath, "//button[contains(text(),'Publicera')]").click
+end
+
+När /^jag klickar på knappen Publicera$/ do
   @driver.find_element(:xpath, "//button[contains(text(),'Publicera')]").click
 end
 
@@ -48,6 +53,18 @@ end
 
 Så /^ska fältet beskrivningsfältet innehålla högst (\d+) tecken$/ do |arg1|
  element_annonsera_description.attribute("value").length.should < arg1.to_i
+end
+
+#Förvaltning
+När /^fyller i förvaltning "(.*?)"$/ do |arg1|
+  element_annonsera_administration.clear
+  element_annonsera_administration.send_keys arg1
+end
+
+#Avdelning/Enhet
+När /^fyller i avdelning "(.*?)"$/ do |arg1|
+  element_annonsera_department.clear
+  element_annonsera_department.send_keys arg1
 end
 
 #Pris

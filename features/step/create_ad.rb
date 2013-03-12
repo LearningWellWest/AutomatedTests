@@ -1,3 +1,4 @@
+# encoding: utf-8
 
 def fill_CreateAd(title,description,category,price,unit,department,adressOne,adressTwo,postalCode,city,otherInfo,imgname)
 
@@ -41,5 +42,8 @@ def fill_CreateAd(title,description,category,price,unit,department,adressOne,adr
 end
 
 def annonsera_upload_picture(imgname)
-   @driver.find_element(:xpath, "//input[@type='file']").send_keys Dir.pwd+"/features/images/" + imgname
+   #works only on our linux-server at the moment
+   @driver.find_element(:xpath, "//input[@type='file']").send_keys Dir.pwd+"/features/images/" + imgname    
+
+   
 end

@@ -7,7 +7,7 @@ Egenskap: Användaren ska kunna hantera annonser
 
 Bakgrund: En användare är inloggad
 	Givet att jag är inloggad
-        Och att det inte finns några existerande annonser under "Lekmaterial"
+    Och att det inte finns några existerande annonser under "Lekmaterial"
 
 Scenario: Användaren skapar en ny annons	
 	När jag skapar en annons med rubriken "Kokosboll" samt kategorin "Lekmaterial"
@@ -21,7 +21,7 @@ Scenario: Användaren modifierar en annons
 	När jag skapar en annons med rubriken "Modifierabord" samt kategorin "Lekmaterial"
 	Och klickar på knappen Publicera
 	När jag går till mina annonser
-        Och väljer kategorin "Lekmaterial"
+    Och väljer kategorin "Lekmaterial"
 	Och klickar på annonsen "Modifierabord"
 	Och klickar på "Ändra"
 	Och ger annonsen rubriken "Modifieratbord"
