@@ -50,7 +50,7 @@ def pick_category_createpage(catString)
 #	end
 
   
-  category_dropdown =@driver.find_element(:class,"selectBox-dropdown")
+  category_dropdown =element_annonsera_category_dropdown
   
   cat_before ="sdfgsdefg"
   

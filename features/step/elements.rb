@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 
 
 ############-Login-############
@@ -83,6 +83,10 @@ def element_annonsera_otherinfo
     @driver.find_element(:id, "LocationAddress_OtherInfo")
 end
 
+def element_annonsera_category_dropdown
+cont12 = @driver.find_element(:class,"container_12")
+cont12.find_element(:class,"selectBox-dropdown")
+end
 
 #Sök
 def element_sok_category_dropdown
