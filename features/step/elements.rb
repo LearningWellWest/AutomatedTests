@@ -91,11 +91,17 @@ cont12.find_element(:class,"selectBox-dropdown")
 end
 
 #Mina annonser
-
 def element_my_ads_link
   @driver.find_element(:link, "Mina publicerade annonser/utkast")
 end
 
+#Navigering
+
+#topmeny
+
+def element_start_topmenu
+  @driver.find_element(:id,"menu-center-block")
+end
 
 
 

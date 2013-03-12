@@ -25,7 +25,6 @@ end
 def pick_category_searchpage(catString)
   
     cat_before ="sdfgsdefg"
-  
 	while 	cat_before != element_sok_category_dropdown.text do
           cat_before = element_sok_category_dropdown.text
 	  element_sok_category_dropdown.click

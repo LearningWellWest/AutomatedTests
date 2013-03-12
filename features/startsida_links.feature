@@ -24,4 +24,16 @@ Scenario: En utloggad användare ska komma till sök när den klickar på malvin
 	När jag klickar på malvin-loggan
 	Så ska jag komma till sök
 
+@12mars13
+Scenario: Topmenyn ska innehålla en länk till Start
+	Så ska topmenyn innehålla länken "Start"
+
+@12mars13
+Scenario: Topmenyn ska innehålla en länk till Om
+	Så ska topmenyn innehålla länken "Om"
+
+@12mars13
+Scenario: Topmenyn ska innehålla en länk till Hjälp
+	Så ska topmenyn innehålla länken "Hjälp"
+
 

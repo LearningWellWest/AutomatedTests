@@ -1,6 +1,9 @@
 # encoding: utf-8
 
 
+Så /^ska topmenyn innehålla länken "(.*?)"$/ do |arg1|
+  element_start_topmenu.find_elements(:link,arg1).size.should >0
+end
 
 
 När /^jag klickar på off(\d+)off$/ do |arg1|
