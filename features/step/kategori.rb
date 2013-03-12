@@ -8,7 +8,6 @@ Så /^ska kategorin "(.*?)" finnas i kategorilisten$/ do |arg1|
 end
 
 Så /^under ovan kategori ska kategorin "(.*?)" visas$/ do |arg1|
-sleep 5
   element_sok_category_dropdown.click
   element_sok_category_dropdown.send_keys :arrow_down
   element_sok_category_dropdown.text.should =~ /^[\s\S]*#{arg1}[\s\S]*$/
