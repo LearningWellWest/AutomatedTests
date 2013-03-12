@@ -1,6 +1,6 @@
 def deleteAllAdsInCategory(catString)
 
-	@driver.find_element(:link, "Min sida").click
+	@driver.get("http://malvin.off2off.se/Customer/Info");
 	@driver.find_element(:link, "Mina publicerade annonser/utkast").click
 	
 	pick_category_searchpage(catString)

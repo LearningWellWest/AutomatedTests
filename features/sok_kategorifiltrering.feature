@@ -8,6 +8,7 @@ Egenskap: Sök - Kategorifiltrering
 	
 Bakgrund:
 	Givet att jag är inloggad
+
 @sok
 Scenario: Kontrollera att en Förskola/Skola-annons visas när jag väljer kategorin Förskola/Skola
         Givet att det inte finns några existerande annonser under "Förskola/Skola"
