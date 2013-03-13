@@ -1,5 +1,9 @@
 # encoding: utf-8
 
+Så /^ska jag inte komma till min sida$/ do
+sleep 5
+  @driver.find_element(:css, "BODY").text.should_not =~ /^[\s\S]*Start > Min sida[\s\S]*$/
+end
 
 När /^jag klickar på min sida$/ do
 	

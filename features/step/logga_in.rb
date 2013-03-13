@@ -8,6 +8,16 @@ När /^jag klickar på logga in$/ do
   element_login_loginbutton.click
 end
 
+När /^jag är inloggad$/ do
+    element_login_loginlink.click
+    element_login_username.clear
+    element_login_username.send_keys "ghia"
+    element_login_password.clear
+    element_login_password.send_keys "ghia"
+    element_login_loginbutton.click
+end
+
+
 
 Så /^ska jag komma till logga\-in sidan$/ do
   @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Logga in[\s\S]*$/
