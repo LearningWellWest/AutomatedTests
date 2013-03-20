@@ -4,6 +4,7 @@ När /^jag klickar på sök$/ do
   @driver.find_element(:link, "Sök").click
 end
 
+
 Givet /^att jag går till sök$/ do
   @driver.get("http://malvin.off2off.se/Browse");
 end

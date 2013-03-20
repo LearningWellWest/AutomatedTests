@@ -10,5 +10,5 @@ Bakgrund:
 
 @4mars13
 Scenario: Det ska stå "Kategorier" som standard i kategorilisten vid sök
-	När jag klickar på sök
+	När jag klickar på start
 	Så ska det stå "Kategorier" i kategorilisten
