@@ -5,6 +5,6 @@ När /^jag klickar på tjänster$/ do
 end
 
 Så /^ska jag komma till tjänster$/ do
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Start > Tjänster [\s\S]*$/ 
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Start > Tjänster[\s\S]*$/ 
 end
 

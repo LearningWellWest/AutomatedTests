@@ -42,6 +42,6 @@ Så /^ska annonsen "(.*?)" dyka upp under kategorin "(.*?)"$/ do |arg1, arg2|
 end
 
 Så /^ska jag komma till sök$/ do
-  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Start > Sök [\s\S]*$/ 
+  @driver.find_element(:css, "BODY").text.should =~ /^[\s\S]*Start > Sök[\s\S]*$/ 
 end
 

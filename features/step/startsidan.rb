@@ -27,7 +27,8 @@ När /^jag klickar på Off(\d+)Off\-loggan$/ do |arg1|
 end
 
 När /^jag klickar på malvin\-loggan$/ do
-  @driver.find_element(:id, "logo").click
+  logodiv = @driver.find_element(:id, "logo")
+  logodiv.find_element(:xpath,"//img").click
 end
 
 När /^jag klickar på start i topmenyn$/ do
