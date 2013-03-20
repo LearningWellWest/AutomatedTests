@@ -52,6 +52,17 @@ Givet /^att jag är inloggad$/ do
     element_login_loginbutton.click
 end
 
+Givet /^att jag är inloggad som testuser$/ do
+    @driver.get(@base_url + "/")
+    element_login_loginlink.click
+    element_login_username.clear
+    element_login_username.send_keys "testuser"
+    element_login_password.clear
+    element_login_password.send_keys "l34rn1n6w3ll"
+    element_login_loginbutton.click
+end
+
+
 När /^jag fyller i lösenord med "(.*?)"$/ do |arg1|
   element_login_password.clear
   element_login_password.send_keys arg1
