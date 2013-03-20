@@ -8,7 +8,7 @@ Egenskap: Sök - Inmatningskontroll
 	
 Bakgrund:
 	Givet att jag är inloggad
-	Och jag klickar på sök
+	Och jag klickar på start
 	
 Scenario: Off2off skall hantera 2^16
 	När jag skriver in "65534"
