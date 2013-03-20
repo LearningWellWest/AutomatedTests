@@ -12,10 +12,11 @@ Bakgrund: Användaren är inloggad
 Scenario: Sidtiteln på min sida ska innehålla "Min sida"
 	När jag klickar på min sida
 	Så ska sidtiteln innehålla "Min sida"
-
-Scenario: Sidtiteln på söksidan ska innehålla ordet "sök"
-	När jag klickar på sök
-	Så ska sidtiteln innehålla "Sök"
+	
+@not_ready
+Scenario: Sidtiteln på startsidan ska innehålla ordet "start"
+	När jag klickar på start
+	Så ska sidtiteln innehålla "Start"
 
 Scenario: Sidtiteln på tjänster-sidan ska innehålla ordet "Tjänster"
 	När jag klickar på tjänster
