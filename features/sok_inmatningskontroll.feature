@@ -27,7 +27,7 @@ Scenario: Off2off skall hantera enkel unicode
 	Så ska sidan ge resultat i form av "Din sökning gav tyvärr inga resultat"
 	
 Scenario: Off2off skall hantera Extremt många tecken
-	Och jag skriver in "extremt många tecken"
+	Och jag skriver in extremt många tecken
 	Så ska sidan ge resultat i form av "Din sökning gav tyvärr inga resultat"
 	
 Scenario: Off2off skall hantera ovanligt många tecken
