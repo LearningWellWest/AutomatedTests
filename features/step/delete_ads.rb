@@ -5,7 +5,7 @@ def deleteAllAdsInCategory(catString)
 	@driver.get("http://malvin.off2off.se/Customer/Info");
 	@driver.find_element(:link, "Mina publicerade annonser/utkast").click
 	
-	pick_category_searchpage(catString)
+	#pick_category_searchpage(catString)
 	
 	while @driver.find_element(:css, "BODY").text =~ /^[\s\S]*poster[\s\S]*$/ do
 		#Gå igenom tabellen med alla annonser
@@ -27,9 +27,13 @@ def deleteAllAdsInCategory(catString)
 		alert = @driver.switch_to().alert()
 		alert.accept()
 
-		@driver.find_element(:link, "Min sida").click
+		#@driver.find_element(:link, "Min sida").click
+		#@driver.find_element(:link, "Mina publicerade annonser/utkast").click
+		#pick_category_searchpage(catString)
+
+		@driver.get("http://malvin.off2off.se/Customer/Info");
 		@driver.find_element(:link, "Mina publicerade annonser/utkast").click
-		pick_category_searchpage(catString)
+
 		end
 	end
 end
