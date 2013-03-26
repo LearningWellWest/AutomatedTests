@@ -22,22 +22,20 @@ Scenario: Användaren ska kunna ändra sina uppgifter på min sida
 	Och jag ändrar avdelning till 			"Superavdelningen"
 	Och klickar på spara
 
-	Och jag ändrar förnamnet till 			"Ture"
-	Och jag ändrar efternamnet till 		"Sventon"
-        Och jag ändrar mobilnumret till 		"0738365699"
+	Och jag ändrar förnamnet till 			"Admin"
+	Och jag ändrar efternamnet till 		"Off2Off"
+    Och jag ändrar mobilnumret till 		"0738365699"
 	Och jag ändrar telefonnummret till 		"054574375"
-	#Och jag ändrar epost-adressen till 		"ture@epost.se"
-	Och jag ändrar förvaltning till 		"Testförvaltningen"
-	Och jag ändrar avdelning till 			"Testavdelningen"
+	Och jag ändrar förvaltning till 		"Admin"
+	Och jag ändrar avdelning till 			"Off2Off"
 	Och klickar på spara
 	Och jag klickar på annonsera
 	Och jag klickar på min sida
-	Så ska texten i förnamns-fältet vara 		"Ture"
-	Och ska texten i efternamns-fältet vara 	"Sventon"
+	Så ska texten i förnamns-fältet vara 		"Admin"
+	Och ska texten i efternamns-fältet vara 	"Off2Off"
 	Och ska texten i mobilnummer-fältet vara 	"0738365699"
 	Och ska texten i telefon-fältet vara vara 	"054574375"
-        #Och ska texten i epost-fältet vara 		"ture@epost.se"
-	Och ska texten i förvaltnings-fältet vara 	"Testförvaltningen"
-	Och ska texten i avdelnings-fältet vara 	"Testavdelningen"
+	Och ska texten i förvaltnings-fältet vara 	"Admin"
+	Och ska texten i avdelnings-fältet vara 	"Off2Off"
 
 	
