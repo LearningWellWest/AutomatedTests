@@ -45,26 +45,26 @@ Scenario: Login-funktionen skall hantera Unicode-tecken
 	Så ska texten "Felaktiga inloggningsuppgifter" visas
 
 Scenario: Användaren ska kunna logga in med bara gemener i användarnamnet
-	När jag fyller i användarnamn med "ghia"
-	Och jag fyller i lösenord med "ghia"
+	När jag fyller i användarnamn med "off2off@malmo.se"
+	Och jag fyller i lösenord med "malvin"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	
 Scenario: Användaren ska kunna logga in med bara versaler i användarnamnet
-	När jag fyller i användarnamn med "GHIA"
-	Och jag fyller i lösenord med "ghia"
+	När jag fyller i användarnamn med "OFF2OFF@MALMO.SE"
+	Och jag fyller i lösenord med "malvin"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	
 Scenario: Användaren ska kunna logga in med blandade gemener och versaler i användarnamnet
-	När jag fyller i användarnamn med "gHiA"
-	Och jag fyller i lösenord med "ghia"
+	När jag fyller i användarnamn med "oFF2off@maLmo.se"
+	Och jag fyller i lösenord med "malvin"
 	Och jag klickar på logga in
 	Så ska jag vara inloggad
 	
 Scenario: Användaren ska inte kunna logga in med fel gemener och versaler ifyllda i lösenordet
-	När jag fyller i användarnamn med "ghia"
-	Och jag fyller i lösenord med "GHIa"
+	När jag fyller i användarnamn med "off2off@malmo.se"
+	Och jag fyller i lösenord med "MalviN"
 	Och jag klickar på logga in
 	Så ska texten "Felaktiga inloggningsuppgifter" visas
 

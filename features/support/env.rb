@@ -12,6 +12,7 @@ Before do |scenario|
 		#Run tests on our jenkins server with firefox
 		when 'local'
 		    @driver = Selenium::WebDriver.for :firefox
+		    @driver.manage.window.maximize
 		
 		#Run tests at SauceLabs with firefox and linux
 		when 'linux_firefox'

@@ -33,11 +33,13 @@ Scenario: Det ska inte gå att ladda upp en bild som är i formatet CRW
 Scenario: Det ska inte gå att ladda upp en bild som är i formatet XCF
 	När jag lägger till bilden "gimpfile.xcf"
 	Så ska sidan visa texten "Fel filtyp"
-
+	
+@not_ready
 Scenario: Det ska inte gå att ladda upp en bild som är större än 4mb
 	När jag lägger till bilden "sofa12mb.jpg"
 	Så ska sidan visa texten "Filen är för stor, max 4mb"
 
+@not_ready
 Scenario: Det ska inte gå att ladda upp så många bilder att dem tilsammans överstiger 20mb
 	När jag laddar upp många bilder så att dem tillsammans överstiger 20mb
 	Så ska sidan visa texten "Filernas kombinerade storlek överstiger 20mb"

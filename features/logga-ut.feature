@@ -10,7 +10,7 @@ Bakgrund: Användaren är på förstasidan
 	Givet att jag är på förstasidan
 
 Scenario: Användaren ska kunna logga ut korrekt
-    	Givet att jag är inloggad
+    Givet att jag är inloggad
 	När jag klickar på logga ut
 	Så ska sidan inte visa "Logga ut"
 	
